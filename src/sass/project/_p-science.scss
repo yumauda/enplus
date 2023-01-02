@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-science {
-  padding-top: rem(212);
-  padding-bottom: rem(148);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
   background: #f0f3f7;
+  @include mq(md) {
+    padding-top: rem(212);
+    padding-bottom: rem(148);
+  }
 }
 .p-science--white {
   background: $white;
@@ -16,5 +20,8 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(98);
+  margin-top: rem(48);
+  @include mq(md) {
+    margin-top: rem(98);
+  }
 }

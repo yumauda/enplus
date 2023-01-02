@@ -2,8 +2,12 @@
 
 .p-lists {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: rem(22.5);
+  grid-template-columns: 1fr 1fr;
+  gap: rem(16);
+  @include mq(md) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(22.5);
+  }
 }
 .p-lists__card:nth-child(n + 4) {
   @include mq(md) {

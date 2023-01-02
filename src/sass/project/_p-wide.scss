@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-wide {
-  padding-top: rem(150);
-  padding-bottom: rem(234.75);
   position: relative;
+  padding-top: rem(60);
+  padding-bottom: rem(234.75);
+  @include mq(md) {
+    padding-top: rem(150);
+  }
 }
 .p-wide::before {
   content: "";
@@ -77,4 +80,72 @@
   color: $black;
   letter-spacing: 0.06em;
   line-height: 2;
+}
+.p-wide__btns {
+  position: relative;
+}
+.p-wide__btn-wrapper--mecha {
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  right: 5%;
+  @include mq(md) {
+    top: 22%;
+    right: 22%;
+  }
+}
+.p-wide__btn-wrapper--optics {
+  position: absolute;
+  top: 50%;
+  right: -4%;
+  z-index: 10;
+  @include mq(md){
+    right: 10%;
+  }
+}
+.p-wide__btn-wrapper--conductor {
+  position: absolute;
+  z-index: 10;
+  right: 5%;
+  bottom: 15%;
+  @include mq(md) {
+    bottom: 21%;
+    right: 29%;
+  }
+}
+.p-wide__btn-wrapper--bio {
+  position: absolute;
+  bottom: 21%;
+  z-index: 10;
+  left: 0;
+  @include mq(md) {
+    left: 29%;
+  }
+}
+.p-wide__btn {
+  display: inline-block;
+  width: rem(135);
+  background: $white;
+  border: 2px solid $blue;
+  color: $blue;
+  font-size: rem(16.5);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  text-align: center;
+  position: relative;
+}
+.p-wide__btn::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/wide_icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(7.46);
+  height: rem(3.75);
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(6);
 }

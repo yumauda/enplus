@@ -17,12 +17,13 @@
 }
 .p-table__item,
 .p-table__body {
-  padding-top: rem(25);
-  padding-bottom: rem(25);
-  padding-left: rem(22.5);
-  padding-right: rem(22.5);
   display: block;
+  padding: rem(16);
   @include mq(md) {
+    padding-top: rem(25);
+    padding-bottom: rem(25);
+    padding-left: rem(22.5);
+    padding-right: rem(22.5);
     display: table-cell;
     border-bottom: 7.5px solid $white;
   }

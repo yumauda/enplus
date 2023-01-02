@@ -14,13 +14,16 @@
   font-family: $second-font-family;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: rem(138);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1;
   color: #f0f3f7;
   z-index: -1;
+  font-size: rem(48);
+  @include mq(md) {
+    font-size: rem(138);
+  }
 }
 .c-solution-title--white::before {
   color: $white;
@@ -31,5 +34,4 @@
 .c-solution-title--long::before {
   position: absolute;
   font-size: calc(184 / 1920) * 100vw;
-
 }

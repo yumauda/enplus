@@ -29,10 +29,14 @@
   font-family: $second-font-family;
   font-weight: 700;
   color: #f0f3f7;
-  font-size: rem(202.5);
   left: 0;
-  top: -42%;
+  top: -26%;
   z-index: -1;
+  font-size: rem(72);
+  @include mq(md) {
+    top: -42%;
+    font-size: rem(202.5);
+  }
 }
 .p-year3__detail {
   max-width: rem(254.25);

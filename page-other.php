@@ -8,15 +8,29 @@
     <div class="l-inner">
       <div class="p-wide__content">
         <div class="p-wide__title-wrapper">
-          <h3 class="c-page-sectionTitle">幅広い！エンプラスの活躍分野</h3>
+          <h3 class="c-page-sectionTitle">幅広い！<br class="u-mobile">エンプラスの活躍分野</h3>
         </div>
         <div class="p-wide__text-wrapper">
           <p class="c-page-text">エンプラスの活躍フィールドは実にさまざま。部品でできている製品であれば、<br>どんなものでも活躍できる可能性を秘めています。</p>
         </div>
       </div>
-      <figure class="p-wide__img">
-        <img src="<?php echo get_template_directory_uri() ?>/images/common/wide_img.png" alt="エンプラスの活躍分野">
-      </figure>
+      <div class="p-wide__btns">
+        <div class="p-wide__btn-wrapper--mecha">
+          <a href="<?php echo esc_url(home_url('/other#mecha')); ?>" class="p-wide__btn">メカ分野</a>
+        </div>
+        <div class="p-wide__btn-wrapper--optics">
+          <a href="<?php echo esc_url(home_url('/other#optics')); ?>" class="p-wide__btn">光学分野</a>
+        </div>
+        <div class="p-wide__btn-wrapper--conductor">
+          <a href="<?php echo esc_url(home_url('/other#conductor')); ?>" class="p-wide__btn">半導体分野</a>
+        </div>
+        <div class="p-wide__btn-wrapper--bio">
+          <a href="<?php echo esc_url(home_url('/other#bio')); ?>" class="p-wide__btn">バイオ分野</a>
+        </div>
+        <figure class="p-wide__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/wide_img.png" alt="エンプラスの活躍分野">
+        </figure>
+      </div>
       <div class="p-wide__subText-wrapper">
         <p class="p-wide__subText">ダミーです自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。ダミーです自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。</p>
       </div>

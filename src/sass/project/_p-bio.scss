@@ -1,26 +1,31 @@
 @use "global" as *;
 
 .p-bio {
-  padding-top: rem(213);
-  padding-bottom: rem(160);
   position: relative;
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(213);
+    padding-bottom: rem(160);
+  }
 }
 .p-bio::before {
   position: absolute;
-  content: '';
-  background: #F0F3F7;
+  content: "";
+  background: #f0f3f7;
   width: 85%;
   height: rem(380);
   left: 0;
   top: 42%;
   z-index: -1;
-} 
+}
 .p-bio__title {
   text-align: center;
 }
 .p-bio__content {
-  margin-top: rem(128);
+  margin-top: rem(32);
   @include mq(md) {
+    margin-top: rem(128);
     display: flex;
   }
 }
@@ -63,8 +68,11 @@
 }
 .p-bio__box {
   border: rem(20) solid #f0f3f7;
-  padding: rem(60);
   background: $white;
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(60);
+  }
 }
 .p-bio__boxText {
   font-size: rem(18);

@@ -7,7 +7,12 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: rem(22.5);
-  padding-top: rem(80);
-  padding-bottom: rem(160);
+  gap: rem(12);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(160);
+    gap: rem(22.5);
+  }
 }

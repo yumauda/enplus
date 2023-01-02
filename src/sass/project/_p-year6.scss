@@ -31,10 +31,13 @@
   font-family: $second-font-family;
   font-weight: 700;
   color: #f0f3f7;
-  font-size: rem(202.5);
   right: 0;
   top: -34%;
   z-index: -1;
+  font-size: rem(72);
+  @include mq(md) {
+    font-size: rem(202.5);
+  }
 }
 .p-year6__detail {
   max-width: rem(339.5);
@@ -42,10 +45,14 @@
   margin-top: rem(36);
   position: relative;
   z-index: 1;
-  margin-left: rem(53.25);
+  @include mq(md) {
+    margin-left: rem(53.25);
+  }
 }
 .p-year6__title {
-  white-space: nowrap;
+  @include mq(md) {
+    white-space: nowrap;
+  }
 }
 .p-year6__text {
   margin-top: rem(22.5);

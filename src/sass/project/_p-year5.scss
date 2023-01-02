@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-year5 {
-  padding-top: rem(157);
+  padding-top: rem(64);
   padding-bottom: rem(40);
   position: relative;
+  @include mq(md) {
+    padding-top: rem(157);
+  }
 }
 .p-year5::before {
   position: absolute;
@@ -30,10 +33,14 @@
   font-family: $second-font-family;
   font-weight: 700;
   color: #f0f3f7;
-  font-size: rem(202.5);
   left: 0;
-  top: -63%;
   z-index: -1;
+  font-size: rem(72);
+  top: -36%;
+  @include mq(md) {
+    top: -63%;
+    font-size: rem(202.5);
+  }
 }
 .p-year5__detail {
   max-width: rem(254.25);

@@ -66,7 +66,6 @@
             </td>
           </tr>
           <tr>
-          <tr>
             <th class="p-table__item">給与<br><span>(2018年4月より変更)</span></th>
             <td class="p-table__body">
               <div class="p-table__select">

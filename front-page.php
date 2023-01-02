@@ -3,13 +3,13 @@
   <section class="l-mv p-mv">
     <h3 class="c-section-title">あああ</h3>
   </section>
-  <section class="l-tomorrow p-tomorrow">
+  <div class="l-tomorrow p-tomorrow">
     <div class="l-header-inner">
       <figure class="p-tomorrow__img">
         <img src="<?php echo get_template_directory_uri() ?>/images/common/tomorrow.png" alt="よりよき明日を目指して">
       </figure>
     </div>
-  </section>
+  </div>
   <section class="l-target p-target" data-company="target">
     <div class="l-inner">
       <div class="p-target__content">
@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="p-target__btn">
-            <a href="#" class="c-btn">Read&nbsp;more</a>
+            <a href="<?php echo esc_url(home_url('/reading/')); ?>" class="c-btn">Read&nbsp;more</a>
           </div>
         </div>
         <figure class="p-target__img">
@@ -50,7 +50,7 @@
               <p class="c-small-title">エンプラスの事業</p>
             </div>
             <div class="p-pioneer__btn">
-              <a href="#" class="c-btn">Read&nbsp;more</a>
+              <a href="<?php echo esc_url(home_url('/other/')); ?>" class="c-btn">Read&nbsp;more</a>
             </div>
             <figure class="p-pioneer__small">
               <img src="<?php echo get_template_directory_uri() ?>/images/common/pioneer_img2.jpg" alt="">
@@ -78,7 +78,7 @@
               <h4 class="c-big-title">挑戦<span>の</span>軌跡</h4>
             </div>
             <div class="p-target__btn">
-              <a href="#" class="c-btn">Read&nbsp;more</a>
+              <a href="<?php echo esc_url(home_url('/challenge/')); ?>" class="c-btn">Read&nbsp;more</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
               <p class="p-message__subText">ー代表メッセージー</p>
             </div>
             <div class="p-pioneer__btn">
-              <a href="#" class="c-btn">Read&nbsp;more</a>
+              <a href="<?php echo esc_url(home_url('/future/')); ?>" class="c-btn">Read&nbsp;more</a>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
           <h3 class="p-slider__title">社員インタビュー</h3>
         </div>
         <div class="p-slider__btn">
-          <a href="#" class="c-btn">Read&nbsp;more</a>
+          <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="c-btn">Read&nbsp;more</a>
         </div>
       </div>
     </div>
@@ -219,7 +219,7 @@
             <div class="p-menu__detail">
               <h3 class="p-menu__title">福利厚生</h3>
               <div class="p-menu__btn">
-                <a href="#" class="c-btn">Read&nbsp;more</a>
+                <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="c-btn">Read&nbsp;more</a>
               </div>
             </div>
           </li>
@@ -246,10 +246,10 @@
       </div>
       <div class="p-information__content">
         <div class="p-information__btn-wrapper">
-          <a href="" class="p-information__btn">Q&A</a>
+          <a href="<?php echo esc_url(home_url('/question/')); ?>" class="p-information__btn">Q&A</a>
         </div>
         <div class="p-information__btn-wrapper">
-          <a href="" class="p-information__btn">新卒採用募集要項</a>
+          <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-information__btn">新卒採用募集要項</a>
         </div>
         <div class="p-information__btn-wrapper">
           <a href="" class="p-information__btn">中途採用募集要項</a>

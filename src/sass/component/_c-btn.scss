@@ -22,15 +22,15 @@
 .c-btn::after {
   position: absolute;
   content: "";
-  width: rem(75);
+  width: rem(88);
   height: rem(2);
   background: $blue;
   left: 0;
-  bottom: rem(-3);
+  bottom: rem(-5.5);
   transition: all 0.3s;
 }
 .c-btn:hover::after {
-  width: rem(60);
+  width: rem(75);
   left: rem(15);
 }
 .c-btn:hover::before {

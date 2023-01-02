@@ -1,12 +1,15 @@
 @use "global" as *;
 
 .p-optics {
-  padding-top: rem(213);
   position: relative;
+  padding-top: rem(64);
+  @include mq(md) {
+    padding-top: rem(213);
+  }
 }
 .p-optics::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 84.5%;
   height: rem(860);
   background: #f0f3f7;
@@ -18,7 +21,10 @@
   text-align: center;
 }
 .p-optics__contents {
-  margin-top: rem(128);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(128);
+  }
 }
 .p-optics__content {
   @include mq(md) {
@@ -63,7 +69,9 @@
 }
 .p-optics__content:nth-child(2n) > .p-optics__detail {
   margin-right: initial;
-  margin-left: rem(75);
+  @include mq(md) {
+    margin-left: rem(75);
+  }
 }
 .p-optics__text {
   margin-top: rem(36);
@@ -76,8 +84,11 @@
 }
 .p-optics__box {
   border: rem(20) solid #f0f3f7;
-  padding: rem(60);
   background: $white;
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(60);
+  }
 }
 .p-optics__boxText {
   font-size: rem(18);

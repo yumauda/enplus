@@ -1,13 +1,16 @@
 @use "global" as *;
 
 .c-year-title {
-  font-size: rem(30);
   background: $blue;
   color: $white;
   letter-spacing: 0.06em;
   font-weight: 700;
   display: inline-block;
   position: relative;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }
 .c-year-title::before {
   position: absolute;

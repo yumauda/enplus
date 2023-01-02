@@ -31,10 +31,13 @@
   font-family: $second-font-family;
   font-weight: 700;
   color: #f0f3f7;
-  font-size: rem(202.5);
   right: 0;
   top: -20%;
   z-index: -1;
+  font-size: rem(72);
+  @include mq(md) {
+    font-size: rem(202.5);
+  }
 }
 .p-year2__detail {
   max-width: rem(319.5);
@@ -42,7 +45,9 @@
   margin-top: rem(36);
   position: relative;
   z-index: 1;
-  margin-left: rem(53.25);
+  @include mq(md) {
+    margin-left: rem(53.25);
+  }
 }
 .p-year2__title {
   white-space: nowrap;

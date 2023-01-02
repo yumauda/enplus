@@ -1,11 +1,13 @@
 @use "global" as *;
 
 .c-solution-subTitle {
-  font-size: rem(41);
   font-weight: 700;
   color: $black;
   letter-spacing: 0.06em;
-
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(41);
+  }
 }
 .c-solution-subTitle::before {
   content: attr(data-subtitle) "";

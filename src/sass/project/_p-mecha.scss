@@ -17,8 +17,9 @@
   text-align: center;
 }
 .p-mecha__content {
-  margin-top: rem(128);
+  margin-top: rem(32);
   @include mq(md) {
+    margin-top: rem(128);
     display: flex;
   }
 }
@@ -61,8 +62,11 @@
 }
 .p-mecha__box {
   border: rem(20) solid #f0f3f7;
-  padding: rem(60);
   background: $white;
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(60);
+  }
 }
 .p-mecha__boxText {
   font-size: rem(18);

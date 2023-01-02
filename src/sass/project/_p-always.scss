@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-always {
-  padding-top: rem(200);
-  padding-bottom: rem(313);
   position: relative;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-top: rem(200);
+    padding-bottom: rem(313);
+  }
 }
 .p-always::before {
   content: "";

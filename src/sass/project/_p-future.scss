@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-future {
-  padding-top: rem(200);
-  padding-bottom: rem(148);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
   position: relative;
+  @include mq(md) {
+    padding-top: rem(200);
+    padding-bottom: rem(148);
+  }
 }
 .p-future::before {
   content: "";
@@ -41,7 +45,7 @@
   position: relative;
 }
 .p-future__img::before {
-  padding-top:  28.489%;
+  padding-top: 28.489%;
   display: block;
   content: "";
 }

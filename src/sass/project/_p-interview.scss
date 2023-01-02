@@ -8,9 +8,11 @@
   display: grid;
   gap: rem(22.5);
   grid-template-columns: 1fr 1fr;
-  padding-top: rem(142);
-  padding-bottom: rem(142);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
   @include mq(md) {
+    padding-top: rem(142);
+    padding-bottom: rem(142);
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
