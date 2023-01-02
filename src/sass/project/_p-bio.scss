@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.p-bio {
+  padding-top: rem(213);
+  padding-bottom: rem(160);
+  position: relative;
+}
+.p-bio::before {
+  position: absolute;
+  content: '';
+  background: #F0F3F7;
+  width: 85%;
+  height: rem(380);
+  left: 0;
+  top: 42%;
+  z-index: -1;
+} 
+.p-bio__title {
+  text-align: center;
+}
+.p-bio__content {
+  margin-top: rem(128);
+  @include mq(md) {
+    display: flex;
+  }
+}
+.p-bio__img {
+  max-width: rem(900);
+  width: 100%;
+  position: relative;
+}
+.p-bio__img::before {
+  padding-top: 72.2%;
+  display: block;
+  content: "";
+}
+.p-bio__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-bio__detail {
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(450);
+    margin-top: rem(32);
+    margin-left: rem(75);
+  }
+}
+.p-bio__text {
+  margin-top: rem(36);
+}
+.p-bio__under {
+  max-width: rem(922);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-bio__box {
+  border: rem(20) solid #f0f3f7;
+  padding: rem(60);
+  background: $white;
+}
+.p-bio__boxText {
+  font-size: rem(18);
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 0.06em;
+}

@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.c-solution-title {
+  font-size: rem(30);
+  font-weight: 700;
+  color: $black;
+  letter-spacing: 0.06em;
+  position: relative;
+  z-index: 1;
+}
+.c-solution-title::before {
+  content: attr(data-solution) "";
+  position: absolute;
+  font-family: $second-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: rem(138);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  color: #f0f3f7;
+  z-index: -1;
+}
+.c-solution-title--white::before {
+  color: $white;
+}
+.c-solution-title--long {
+  position: relative;
+}
+.c-solution-title--long::before {
+  position: absolute;
+  font-size: calc(184 / 1920) * 100vw;
+
+}

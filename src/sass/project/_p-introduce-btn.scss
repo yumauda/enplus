@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.p-introduce-btn {
+  padding-top: rem(150);
+  padding-bottom: rem(214.5);
+  background: $white;
+}
+.p-introduce-btn__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: rem(438);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-introduce-btn__link {
+  font-size: rem(30);
+  color: $blue;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  position: relative;
+}
+.p-introduce-btn__link::before {
+  content: "";
+  position: absolute;
+  width: rem(6);
+  height: rem(58.1);
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/common/introduce_arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  bottom: -150%;
+  transition: 0.3s;
+}
+.p-introduce-btn__link:hover::before {
+  bottom: -180%;
+}

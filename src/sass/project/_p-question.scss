@@ -1,0 +1,123 @@
+@use "global" as *;
+
+.p-question {
+  padding-top: rem(142.5);
+  padding-bottom: rem(147);
+}
+.p-question__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-question__block + .p-question__block {
+  margin-top: rem(60);
+}
+.p-question__title-wrapper {
+  background: #eef1f6;
+  padding-top: rem(9);
+  padding-bottom: rem(9);
+  padding-left: rem(15);
+  padding-right: rem(15);
+  margin-left: rem(48.75);
+  position: relative;
+}
+.p-question__title-wrapper::before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(45);
+  height: rem(45);
+  background: url(../images/common/question_left.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: rem(-48.75);
+}
+.p-question__title {
+  color: $blue;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: rem(18);
+}
+.p-question__detail {
+  margin-top: rem(22.5);
+}
+.p-question__text {
+  font-size: rem(12);
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+.p-question__text--space {
+  padding-left: rem(12);
+  position: relative;
+}
+.p-question__text--space::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/question_check.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(9.75);
+  height: rem(7.5);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.p-question__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: rem(56.1);
+  margin-top: rem(38);
+}
+.p-question__card {
+}
+.p-question__card-titleWrapper {
+  border-bottom: 1px solid #76778d;
+  padding-bottom: rem(9.3);
+}
+.p-question__card-title {
+  font-size: rem(15);
+  color: #76778d;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.p-question__card-titleWrapper {
+}
+.p-question__description-wrapper {
+  margin-top: rem(15.3);
+}
+.p-question__row {
+  display: flex;
+  margin-top: rem(22.5);
+}
+.p-question__row-detail {
+  max-width: rem(540);
+  width: 100%;
+}
+.p-question__img {
+  max-width: rem(360);
+  width: 100%;
+  position: relative;
+  margin-left: rem(22.5);
+}
+.p-question__img::before {
+  padding-top: 54.166%;
+  display: block;
+  content: "";
+}
+.p-question__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

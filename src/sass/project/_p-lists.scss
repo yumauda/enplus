@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.p-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: rem(22.5);
+}
+.p-lists__card:nth-child(n + 4) {
+  @include mq(md) {
+    margin-top: rem(16);
+  }
+}
+.p-lists__img {
+  width: 100%;
+  position: relative;
+}
+.p-lists__img::before {
+  padding-top: 79.487%;
+  display: block;
+  content: "";
+}
+.p-lists__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-lists__detail {
+  margin-top: rem(15);
+}
+.p-lists__title {
+  font-size: rem(15);
+  color: $blue;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.p-lists__description {
+  margin-top: rem(4);
+}
+.p-lists__text {
+  font-size: rem(12);
+  color: $black;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.c-company-title {
+  font-size: rem(18);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: $second-font-family;
+  color: $blue;
+  position: relative;
+  z-index: 2;
+}
+

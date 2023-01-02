@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-always {
+  padding-top: rem(200);
+  padding-bottom: rem(313);
+  position: relative;
+}
+.p-always::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/scroll_center.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(40);
+  height: rem(191);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-always__content {
+}
+.p-always__title-wrapper {
+  text-align: center;
+}
+.p-always__text-wrapper {
+  text-align: center;
+  margin-top: rem(38);
+}

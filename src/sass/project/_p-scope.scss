@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.p-scope {
+  background: url(../images/common/scope_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: rem(140);
+  padding-bottom: rem(185);
+}
+.p-scope__content {
+}
+.p-scope__title-wrapper {
+  text-align: center;
+}
+.p-scope__title {
+  color: $white;
+  font-size: rem(36);
+  font-weight: 700;
+}
+.p-scope__img {
+  margin-top: rem(66);
+  max-width: rem(679.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.p-scope__img::before {
+  padding-top: 99.263%;
+  display: block;
+  content: "";
+}
+.p-scope__img::after {
+  content: "";
+  position: absolute;
+  background: url(../images/common/scope_attention.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(294);
+  height: rem(120);
+  top: 2%;
+  right: -8%;
+}
+.p-scope__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-scope__text-wrapper {
+  max-width: rem(600);
+  width: 100%;
+  margin-top: rem(93);
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-scope__text {
+  color: $white;
+  font-size: rem(16);
+  letter-spacing: 0.06em;
+  line-height: 2;
+}

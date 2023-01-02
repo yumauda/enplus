@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-number {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(22.5);
+  padding-top: rem(80);
+  padding-bottom: rem(160);
+}

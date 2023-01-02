@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.p-menu {
+}
+.p-menu__content {
+}
+.p-menu__cards {
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(22.5);
+  }
+}
+.p-menu__card {
+}
+.p-menu__img {
+  max-width: rem(435);
+  width: 100%;
+  position: relative;
+}
+.p-menu__img::before {
+  padding-top: 77.586%;
+  display: block;
+  content: "";
+}
+.p-menu__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-menu__detail {
+  margin-top: rem(12.75);
+}
+.p-menu__title {
+  color: $black;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: rem(19.5);
+}
+.p-menu__btn {
+  margin-top: rem(26.25);
+}

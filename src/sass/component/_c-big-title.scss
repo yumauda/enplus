@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.c-big-title {
+  font-weight: 700;
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(56.25);
+  }
+}
+.c-big-title span {
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(36);
+  }
+}

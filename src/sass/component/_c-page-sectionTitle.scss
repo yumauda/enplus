@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.c-page-sectionTitle {
+  font-size: rem(40);
+  color: $blue;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}

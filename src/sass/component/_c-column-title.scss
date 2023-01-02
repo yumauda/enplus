@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.c-column-title {
+  font-size: rem(27);
+  color: $black;
+  font-weight: 700;
+}

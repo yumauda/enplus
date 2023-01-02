@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.c-page-text {
+  font-size: rem(18);
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 2.1111;
+}

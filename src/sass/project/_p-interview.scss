@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.p-interview {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  gap: rem(22.5);
+  grid-template-columns: 1fr 1fr;
+  padding-top: rem(142);
+  padding-bottom: rem(142);
+  @include mq(md) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.p-interview__list {
+  position: relative;
+}
+.p-interview__link {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.p-interview__img {
+  width: 100%;
+  position: relative;
+}
+.p-interview__img::before {
+  padding-top: 100%;
+  display: block;
+  content: "";
+}
+.p-interview__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-interview__detail {
+  padding-top: rem(11);
+}
+.p-interview__cardTitle {
+  color: $blue;
+  letter-spacing: 0.06em;
+  font-size: rem(13.5);
+  font-weight: 700;
+}
+.p-interview__name-wrapper {
+  margin-top: rem(11);
+}
+.p-interview__name {
+  font-size: rem(18);
+  color: $black;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}

@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.p-challenge {
+  padding-top: rem(150);
+  padding-bottom: rem(234.75);
+}
+
+.p-challenge__content {
+}
+.p-challenge__title-wrapper {
+  text-align: center;
+}
+.p-challenge__text-wrapper {
+  text-align: center;
+  margin-top: rem(38);
+  position: relative;
+}
+.p-challenge__text-wrapper::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/scroll_center.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(40);
+  height: rem(191.5);
+  bottom: -400%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-challenge__img-wrapper {
+}
+.p-challenge__img {
+  margin-top: rem(340);
+  max-width: rem(705);
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-challenge__img::before {
+  padding-top: 50.212%;
+  display: block;
+  content: "";
+}
+.p-challenge__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-challenge__subText-wrapper {
+  max-width: rem(450);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(22.5);
+}
+.p-challenge__subText {
+  font-size: rem(12);
+  font-weight: 400;
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}

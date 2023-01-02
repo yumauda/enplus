@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.p-target {
+  position: relative;
+}
+.p-target::before {
+  content: attr(data-company) "";
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $skyBlue;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-size: rem(48);
+  @include mq(md) {
+    font-size: rem(138);
+  }
+}
+.p-target__content {
+  @include mq(md) {
+    display: flex;
+  }
+}
+.p-target__jp {
+  margin-top: rem(27);
+}
+.p-target__title-wrapper {
+  margin-top: rem(120);
+  max-width: rem(428);
+  width: 100%;
+}
+.p-target__title {
+  @include mq(md) {
+  }
+}
+.p-target__subTitle {
+  margin-top: rem(24);
+}
+.p-target__btn {
+  margin-top: rem(48.75);
+}
+.p-target__img {
+  margin-top: rem(30);
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-left: auto;
+  width: 100vw;
+  z-index: -2;
+  @include mq(md) {
+    width: 58vw;
+  }
+}
+.p-target__img::before {
+  padding-top: 58.03%;
+  display: block;
+  content: "";
+}
+.p-target__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

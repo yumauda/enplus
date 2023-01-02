@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.c-section-title {
+  color: $white;
+  font-weight: 700;
+  font-family: $second-font-family;
+  line-height: 0.6;
+  text-transform: uppercase;
+  font-size: rem(56);
+  @include mq(md) {
+    font-size: rem(138);
+  }
+}

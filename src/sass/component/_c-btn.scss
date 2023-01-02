@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.c-btn {
+  color: $blue;
+  font-size: rem(10.5);
+  position: relative;
+  font-weight: 700;
+}
+.c-btn:before {
+  position: absolute;
+  content: "";
+  width: rem(37.5);
+  height: rem(37.5);
+  background: url(../images/common/btn_box.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid $blue;
+  right: -100%;
+  transition: all 0.3s;
+}
+.c-btn::after {
+  position: absolute;
+  content: "";
+  width: rem(75);
+  height: rem(2);
+  background: $blue;
+  left: 0;
+  bottom: rem(-3);
+  transition: all 0.3s;
+}
+.c-btn:hover::after {
+  width: rem(60);
+  left: rem(15);
+}
+.c-btn:hover::before {
+  width: rem(37.5);
+  height: rem(37.5);
+  background: url(../images/common/btn_box_reverse.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid $blue;
+}

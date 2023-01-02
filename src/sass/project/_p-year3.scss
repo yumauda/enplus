@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.p-year3 {
+  padding-bottom: rem(40);
+  position: relative;
+}
+.p-year3::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 60%;
+  background: #f0f3f7;
+  top: 17%;
+}
+.p-year3__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-year3__content::after {
+  content: "1990s";
+  position: absolute;
+  font-family: $second-font-family;
+  font-weight: 700;
+  color: #f0f3f7;
+  font-size: rem(202.5);
+  left: 0;
+  top: -42%;
+  z-index: -1;
+}
+.p-year3__detail {
+  max-width: rem(254.25);
+  width: 100%;
+  margin-top: rem(36);
+  position: relative;
+  z-index: 1;
+}
+.p-year3__title {
+  white-space: nowrap;
+}
+.p-year3__title + .p-year3__title {
+  margin-top: rem(54);
+}
+.p-year3__text {
+  margin-top: rem(22.5);
+  max-width: rem(254.25);
+  width: 100%;
+}
+.p-year3__img--1990 {
+  max-width: rem(389.25);
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  @include mq(md) {
+    margin-left: rem(228);
+  }
+}
+.p-year3__img--1990::before {
+  padding-top: 93.06%;
+  display: block;
+  content: "";
+}
+.p-year3__img--1990 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

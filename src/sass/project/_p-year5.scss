@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.p-year5 {
+  padding-top: rem(157);
+  padding-bottom: rem(40);
+  position: relative;
+}
+.p-year5::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 47%;
+  background: #f0f3f7;
+  top: 40%;
+}
+.p-year5__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-year5__content::after {
+  content: "2010s";
+  position: absolute;
+  font-family: $second-font-family;
+  font-weight: 700;
+  color: #f0f3f7;
+  font-size: rem(202.5);
+  left: 0;
+  top: -63%;
+  z-index: -1;
+}
+.p-year5__detail {
+  max-width: rem(254.25);
+  width: 100%;
+  margin-top: rem(36);
+  position: relative;
+  z-index: 1;
+}
+.p-year5__title {
+  white-space: nowrap;
+}
+.p-year5__title + .p-year5__title {
+  margin-top: rem(54);
+}
+.p-year5__text {
+  margin-top: rem(22.5);
+  max-width: rem(254.25);
+  width: 100%;
+}
+.p-year5__img {
+  max-width: rem(504.75);
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  @include mq(md) {
+    margin-left: rem(162);
+  }
+}
+.p-year5__img::before {
+  padding-top: 57.652%;
+  display: block;
+  content: "";
+}
+.p-year5__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.c-section-subTitle {
+  position: absolute;
+  font-size: rem(55);
+  color: $white;
+  font-weight: 700;
+  line-height: 0.6;
+  color: $black;
+  right: 0;
+  bottom: 0;
+  background: $white;
+}

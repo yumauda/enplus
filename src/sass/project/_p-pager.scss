@@ -1,0 +1,125 @@
+@use "global" as *;
+
+.p-pager {
+  margin-top: rem(67.5);
+  padding-bottom: rem(75);
+}
+.p-pager__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: rem(849.75);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-pager__box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.p-pager__box--next {
+  flex-direction: row-reverse;
+}
+.p-pager__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.p-pager__prev {
+  position: relative;
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 0.06em;
+  font-size: rem(10.5);
+  text-transform: uppercase;
+}
+.p-pager__prev::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/arrow_prev.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(106.5);
+  height: rem(6);
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-pager__next {
+  position: relative;
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 0.06em;
+  font-size: rem(10.5);
+  text-transform: uppercase;
+}
+.p-pager__next::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/arrow_next.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(106.5);
+  height: rem(6);
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-pager__prev,
+.p-pager__next {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+.p-pager__detail {
+  margin-left: rem(81.75);
+}
+.p-pager__detail--next {
+  margin-left: initial;
+  margin-right: rem(81.75);
+}
+.p-pager__img {
+  max-width: rem(105);
+  width: 100%;
+  position: relative;
+}
+.p-pager__img::before {
+  padding-top: 110%;
+  display: block;
+  content: "";
+}
+.p-pager__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-pager__center {
+}
+.p-pager__all {
+  display: inline-block;
+  width: rem(21);
+  height: rem(36.75);
+}
+.p-pager__data {
+  margin-top: rem(11);
+}
+.p-pager__text {
+  font-size: rem(12);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: $black;
+  line-height: 1.625;
+}

@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.p-message {
+  padding-top: rem(37.5);
+  padding-bottom: rem(148);
+  position: relative;
+}
+.p-message::before {
+  content: attr(data-company) "";
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $skyBlue;
+  font-size: rem(138);
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.p-message__content {
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.p-message__title-wrapper {
+  text-align: right;
+  margin-left: rem(-88);
+  margin-top: rem(114);
+  white-space: nowrap;
+}
+.p-message__text-wrapper {
+  margin-top: rem(38);
+  max-width: rem(675);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-message__text {
+  color: $black;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-size: rem(12);
+}
+.p-message__img {
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+    z-index: -2;
+  }
+}
+.p-message__img::before {
+  padding-top: 63.45%;
+  display: block;
+  content: "";
+}
+.p-message__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-message__jp {
+  margin-top: rem(27);
+  text-align: right;
+}
+.p-message__subTitle {
+  margin-top: rem(24);
+}
+.p-message__subText-wrapper {
+  margin-top: rem(24);
+}
+.p-message__subText {
+  font-size: rem(18);
+  color: $black;
+  letter-spacing: 0.08em;
+}

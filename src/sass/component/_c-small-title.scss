@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.c-small-title {
+  font-size: rem(33.75);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: $black;
+}

@@ -1,0 +1,119 @@
+@use "global" as *;
+
+.p-table {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-table__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: rem(20);
+}
+.p-table__table--possible {
+  margin-bottom: initial;
+}
+.p-table__item,
+.p-table__body {
+  padding-top: rem(25);
+  padding-bottom: rem(25);
+  padding-left: rem(22.5);
+  padding-right: rem(22.5);
+  display: block;
+  @include mq(md) {
+    display: table-cell;
+    border-bottom: 7.5px solid $white;
+  }
+}
+
+.p-table__item {
+  text-align: left;
+  background-color: #76778d;
+  width: 100%;
+  font-size: rem(14);
+  color: $white;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  @include mq(md) {
+    font-size: rem(19);
+    width: 18%;
+    font-size: rem(15);
+  }
+}
+.p-table__item span {
+  font-size: rem(10.5);
+}
+.p-table__body {
+  padding-left: rem(16);
+  background: #eef1f6;
+  @include mq(md) {
+    border-left: 3.75px solid $white;
+    width: 82%;
+    padding-left: rem(32);
+  }
+}
+
+.p-table__top {
+  color: $black;
+  font-size: rem(13);
+  margin-bottom: rem(8);
+  line-height: 2;
+  @include mq(md) {
+    font-size: rem(12);
+    margin-bottom: initial;
+  }
+}
+.p-table__top-link {
+  color: #0076ff;
+  text-decoration: underline;
+}
+.p-table__select + .p-table__select {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-left: rem(25);
+    margin-top: initial;
+  }
+}
+.p-table__occupation + .p-table__occupation {
+  margin-top: rem(15.75);
+}
+.p-table__occupation-for {
+  color: $blue;
+  font-weight: 700;
+  line-height: 2;
+  font-size: rem(12);
+}
+.p-table__more {
+  color: $black;
+  font-size: rem(14);
+  margin-bottom: rem(8);
+  line-height: 2;
+  position: relative;
+  padding-left: rem(12);
+  @include mq(md) {
+    font-size: rem(12);
+    margin-bottom: initial;
+  }
+}
+.p-table__more::before {
+  content: "▶︎";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: $blue;
+  font-size: rem(12);
+}
+.p-table__more a {
+  color: $blue;
+}
+.p-table__page {
+  margin-top: rem(8);
+}
+.p-table__link {
+  display: inline-block;
+  width: rem(146.25);
+  margin-top: rem(15.75);
+}

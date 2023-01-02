@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.p-people {
+  max-width: rem(437);
+  width: 100%;
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(22.5);
+  }
+}
+.p-people__subTitle-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: rem(8);
+  @include mq(md) {
+    display: block;
+  }
+}
+.p-people__subTitle {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #76778d;
+  line-height: 2;
+  font-size: rem(10);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+.p-people__year {
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  font-size: rem(10);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+.p-people__number {
+  color: $blue;
+  letter-spacing: 0.06em;
+  font-size: rem(12);
+  line-height: 2;
+  margin-left: rem(8);
+}

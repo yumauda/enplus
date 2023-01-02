@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.p-optics {
+  padding-top: rem(213);
+  position: relative;
+}
+.p-optics::before {
+  position: absolute;
+  content: '';
+  width: 84.5%;
+  height: rem(860);
+  background: #f0f3f7;
+  left: 0;
+  top: 32%;
+  z-index: -1;
+}
+.p-optics__title {
+  text-align: center;
+}
+.p-optics__contents {
+  margin-top: rem(128);
+}
+.p-optics__content {
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.p-optics__content:nth-child(2n) {
+  margin-top: rem(70);
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.p-optics__img {
+  max-width: rem(900);
+  width: 100%;
+  position: relative;
+}
+.p-optics__img::before {
+  padding-top: 72.2%;
+  display: block;
+  content: "";
+}
+.p-optics__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-optics__detail {
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(450);
+    margin-top: rem(32);
+    margin-right: rem(75);
+  }
+}
+.p-optics__content:nth-child(2n) > .p-optics__detail {
+  margin-right: initial;
+  margin-left: rem(75);
+}
+.p-optics__text {
+  margin-top: rem(36);
+}
+.p-optics__under {
+  max-width: rem(922);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-optics__box {
+  border: rem(20) solid #f0f3f7;
+  padding: rem(60);
+  background: $white;
+}
+.p-optics__boxText {
+  font-size: rem(18);
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 0.06em;
+}

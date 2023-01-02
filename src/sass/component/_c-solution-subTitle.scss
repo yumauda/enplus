@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.c-solution-subTitle {
+  font-size: rem(41);
+  font-weight: 700;
+  color: $black;
+  letter-spacing: 0.06em;
+
+}
+.c-solution-subTitle::before {
+  content: attr(data-subtitle) "";
+  color: $blue;
+  font-size: rem(15);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  display: block;
+}

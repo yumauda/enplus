@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-science {
+  padding-top: rem(212);
+  padding-bottom: rem(148);
+  background: #f0f3f7;
+}
+.p-science--white {
+  background: $white;
+}
+.p-science__title {
+  text-align: center;
+}
+.p-science__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(98);
+}

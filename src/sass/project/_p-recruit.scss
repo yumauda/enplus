@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-recruit {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(142.5);
+    padding-bottom: rem(142.5);
+  }
+}
