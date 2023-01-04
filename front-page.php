@@ -143,8 +143,36 @@
     <div class="swiper p-slider">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
+        <?php
+        // パラメータの設定
+        $args = array(
+          'posts_per_page' => 8,
+          'post_status' => 'publish',
+          'post_type' => 'post',
+          'orderby' => 'date',
+        );
+        // WP_Queryインスタンスの生成
+        $my_query = new WP_Query($args);
+        if ($my_query->have_posts()) :
+          while ($my_query->have_posts()) : $my_query->the_post();
+        ?>
+            <div class="swiper-slide p-slider__card">
+              <figure class="p-slider__img">
+                <img src="<?php the_field('group_img_top') ?>" alt="<?php the_title(); ?>">
+              </figure>
+              <div class="p-slider__detail">
+                <h4 class="p-slider__subTitle"><?php the_field('group_name') ?></h4>
+                <p class="p-slider__text"><?php the_field('group_year') ?></p>
+              </div>
+              <a href="<?php the_permalink(); ?>" class="p-slider__link"></a>
+            </div>
+        <?php
+          endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
         <!-- Slides -->
-        <div class="swiper-slide p-slider__card">
+        <!-- <div class="swiper-slide p-slider__card">
           <figure class="p-slider__img">
             <img src="<?php echo get_template_directory_uri() ?>/images/common/slider_1.jpg" alt="">
           </figure>
@@ -193,7 +221,7 @@
             <p class="p-slider__text">2020年入社</p>
           </div>
           <a href="#" class="p-slider__link"></a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

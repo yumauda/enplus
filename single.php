@@ -6,12 +6,12 @@
       <img src="<?php echo get_template_directory_uri() ?>/images/common/single_img.jpg" alt="人物写真">
     </figure>
     <div class="p-single__subTitle-wrapper">
-      <p class="p-single__subTitle">社員インタビュー#01</p>
+      <p class="p-single__subTitle">社員インタビュー#<?php the_field('group_number') ?></p>
     </div>
     <div class="l-inner">
-      <h3 class="p-single__sub">時代の一歩先を見据えた<br>ものづくりができる</h3>
+      <h3 class="p-single__sub"><?php the_field('group_reason') ?></h3>
       <div class="p-single__occupation-wrapper">
-        <p class="p-single__occupation">生産本部 生産部 品質管理G / 2020年入社</p>
+        <p class="p-single__occupation"><?php the_field('group_name') ?> / <?php the_field('group_year') ?></p>
       </div>
     </div>
   </section>
@@ -20,49 +20,40 @@
       <div class="p-column__contents">
         <div class="p-column__content">
           <figure class="p-column__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/column_img1.jpg" alt="紹介画像1">
+            <img src="<?php the_field('group_column_img1') ?>" alt="紹介画像1">
           </figure>
           <div class="p-column__detail">
             <div class="p-column__title">
-              <h4 class="c-column-title">見出しが入ります見出しが入ります見出しが入ります</h4>
+              <h4 class="c-column-title"><?php the_field('group_column_title1') ?></h4>
             </div>
             <div class="p-column__text-wrapper">
               <div class="p-column__text">
-                <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機能化を進め、更に、時代の変遷とともに、メカトロニクス領域からデジタル領域へと要素技術開発を展開し、オプト・半導体・液晶関連と事業領域の拡大を図ってまいりました。</p>
-              </div>
-              <div class="p-column__text">
-                <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機能化を進め、更に、時代の変遷とともに、メカトロニクス領域からデジタル領域へと要素技術開発を展開し、オプト・半導体・液晶関連と事業領域の拡大を図ってまいりました。</p>
+                <p class="c-solution-text"><?php the_field('group_column_text1') ?></p>
               </div>
             </div>
           </div>
         </div>
         <div class="p-column__content">
           <figure class="p-column__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/column_img2.jpg" alt="紹介画像2">
+            <img src="<?php the_field('group_column_img2') ?>" alt="紹介画像2">
           </figure>
           <div class="p-column__detail">
             <div class="p-column__title">
-              <h4 class="c-column-title">見出しが入ります見出しが入ります見出しが入ります</h4>
+              <h4 class="c-column-title"><?php the_field('group_column_title2') ?></h4>
             </div>
             <div class="p-column__text-wrapper">
               <div class="p-column__text">
-                <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機能化を進め、更に、時代の変遷とともに、メカトロニクス領域からデジタル領域へと要素技術開発を展開し、オプト・半導体・液晶関連と事業領域の拡大を図ってまいりました。</p>
-              </div>
-              <div class="p-column__text">
-                <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機能化を進め、更に、時代の変遷とともに、メカトロニクス領域からデジタル領域へと要素技術開発を展開し、オプト・半導体・液晶関連と事業領域の拡大を図ってまいりました。</p>
+                <p class="c-solution-text"><?php the_field('group_column_text2') ?></p>
               </div>
             </div>
           </div>
         </div>
         <div class="p-column__conclusion">
           <div class="p-column__title">
-            <h4 class="c-column-title">見出しが入ります見出しが入ります<br>見出しが入ります</h4>
+            <h4 class="c-column-title"><?php the_field('group_column_title3') ?></h4>
           </div>
           <div class="p-column__text p-column__text--conclusion">
-            <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機能化を進め、更に、時代の変遷とともに、メカトロニクス領域からデジタル領域へと要素技術開発を展開し、オプト・半導体・液晶関連と事業領域の拡大を図ってまいりました。</p>
-          </div>
-          <div class="p-column__text">
-            <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機能化を進め、更に、時代の変遷とともに、メカトロニクス領域からデジタル領域へと要素技術開発を展開し、オプト・半導体・液晶関連と事業領域の拡大を図ってまいりました。</p>
+            <p class="c-solution-text"><?php the_field('group_column_text3') ?></p>
           </div>
         </div>
       </div>
@@ -75,67 +66,26 @@
           <h3 class="p-schedule__title">1日のスケジュール</h3>
         </div>
         <ul class="p-schedule__cards">
-          <li class="p-schedule__card">
-            <time class="p-schedule__time">9:00</time>
-            <figure class="p-schedule__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_img1.jpg" alt="9:00">
-            </figure>
-            <div class="p-schedule__text">
-              <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機</p>
-            </div>
-          </li>
-          <li class="p-schedule__card">
-            <time class="p-schedule__time">10:00</time>
-            <figure class="p-schedule__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_img2.jpg" alt="9:00">
-            </figure>
-            <div class="p-schedule__text">
-              <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機</p>
-            </div>
-          </li>
-          <li class="p-schedule__card">
-            <time class="p-schedule__time">11:00</time>
-            <figure class="p-schedule__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_img3.jpg" alt="9:00">
-            </figure>
-            <div class="p-schedule__text">
-              <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機</p>
-            </div>
-          </li>
-          <li class="p-schedule__card">
-            <time class="p-schedule__time">12:00</time>
-            <figure class="p-schedule__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_img4.jpg" alt="9:00">
-            </figure>
-            <div class="p-schedule__text">
-              <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機</p>
-            </div>
-          </li>
-          <li class="p-schedule__card">
-            <time class="p-schedule__time">13:00</time>
-            <figure class="p-schedule__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_img5.jpg" alt="9:00">
-            </figure>
-            <div class="p-schedule__text">
-              <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機</p>
-            </div>
-          </li>
-          <li class="p-schedule__card">
-            <time class="p-schedule__time">14:00</time>
-            <figure class="p-schedule__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_img6.jpg" alt="9:00">
-            </figure>
-            <div class="p-schedule__text">
-              <p class="c-solution-text">ダミー。私たちは「豊かな社会の発展に貢献すること」を使命とし、さまざまな企業活動に取り組んでおります。創業以来、基幹事業としてエンプラ事業の高精度化・高機</p>
-            </div>
-          </li>
+          <?php if (have_rows('group_schedule')) : ?>
+            <?php while (have_rows('group_schedule')) : the_row(); ?>
+              <li class="p-schedule__card">
+                <time class="p-schedule__time"><?php the_sub_field('group_schedule_time'); ?></time>
+                <figure class="p-schedule__img">
+                  <img src="<?php the_sub_field('group_schedule_img'); ?>" alt="9:00">
+                </figure>
+                <div class="p-schedule__text">
+                  <p class="c-solution-text"><?php the_sub_field('group_schedule_text'); ?></p>
+                </div>
+              </li>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
       </div>
     </div>
   </section>
   <div class="p-schedule__bottom">
     <figure class="p-schedule__bottom-img">
-      <img src="<?php echo get_template_directory_uri() ?>/images/common/schedule_bigimg.jpg" alt="">
+      <img src="<?php the_field('group_column_bottom') ?>" alt="<?php the_title(); ?>">
     </figure>
   </div>
   <div class="p-pager">
