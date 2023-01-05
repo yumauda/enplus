@@ -3,9 +3,10 @@
 .p-wide {
   position: relative;
   padding-top: rem(60);
-  padding-bottom: rem(234.75);
+  padding-bottom: rem(60);
   @include mq(md) {
     padding-top: rem(150);
+    padding-bottom: rem(234.75);
   }
 }
 .p-wide::before {
@@ -15,11 +16,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: rem(744);
   width: 100%;
-  top: rem(580);
+  height: rem(200);
+  top: 35%;
   left: 0;
   right: 0;
+  @include mq(md) {
+    height: rem(744);
+    top: rem(580);
+  }
 }
 .p-wide__content {
 }
@@ -38,19 +43,27 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: rem(40);
-  height: rem(191.5);
-  bottom: -400%;
+  width: rem(20);
+  height: rem(95);
   left: 50%;
   transform: translateX(-50%);
+  bottom: -100%;
+  @include mq(md) {
+    bottom: -400%;
+    width: rem(40);
+    height: rem(191.5);
+  }
 }
 .p-wide__img {
-  margin-top: rem(155);
   max-width: rem(1173);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  margin-top: rem(56);
+  @include mq(md) {
+    margin-top: rem(155);
+  }
 }
 .p-wide__img::before {
   padding-top: 100%;
@@ -72,14 +85,19 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(-120);
+  @include mq(md) {
+    margin-top: rem(-120);
+  }
 }
 .p-wide__subText {
-  font-size: rem(16);
   font-weight: 400;
   color: $black;
   letter-spacing: 0.06em;
   line-height: 2;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-wide__btns {
   position: relative;
@@ -99,7 +117,7 @@
   top: 50%;
   right: -4%;
   z-index: 10;
-  @include mq(md){
+  @include mq(md) {
     right: 10%;
   }
 }

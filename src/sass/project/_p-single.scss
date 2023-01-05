@@ -50,21 +50,28 @@
   color: $black;
   font-weight: 700;
   letter-spacing: 0.06em;
-  margin-top: rem(-116);
   position: relative;
   z-index: 3;
-  font-size: rem(20);
+  font-size: rem(16);
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: rem(-116);
     font-size: rem(54);
   }
 }
 .p-single__occupation-wrapper {
-  text-align: right;
-  margin-top: rem(-32);
+  margin-top: rem(8);
+  @include mq(md) {
+    text-align: right;
+    margin-top: rem(-32);
+  }
 }
 .p-single__occupation {
   font-weight: 700;
   color: $blue;
   letter-spacing: 0.06em;
-  font-size: rem(16.5);
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(16.5);
+  }
 }

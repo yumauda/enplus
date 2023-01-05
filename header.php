@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" >
     <meta name="format-detection" content="telephone=no" >
     <!-- meta情報 -->
-    <title>CodeUps</title>
+    <title>enplus 2023年採用サイト</title>
     <meta name="description" content="" >
     <meta name="keywords" content="" >
     <!-- ogp -->
@@ -17,8 +17,6 @@
     <meta property="og:site_name" content="" >
     <meta property="og:description" content="">
     <?php wp_head(); ?>
-
-
 </head>
 
 <body>
@@ -39,10 +37,10 @@
                             <a href="#" class="p-header__link">仕事を知る</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">環境を知る</a>
+                            <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-header__link">環境を知る</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">採用情報</a>
+                            <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-header__link">採用情報</a>
                         </li>
                     </ul>
                 </nav>

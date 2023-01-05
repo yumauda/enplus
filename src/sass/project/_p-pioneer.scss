@@ -10,10 +10,16 @@
   text-transform: uppercase;
   font-weight: 700;
   color: $skyBlue;
-  font-size: rem(138);
   top: 0;
-  right: 0;
   z-index: -1;
+  font-size: rem(48);
+  font-family: $second-font-family;
+  left: 0;
+  @include mq(md) {
+    font-size: rem(138);
+    right: 0;
+    left: initial;
+  }
 }
 .p-pioneer__content {
   @include mq(md) {
@@ -30,8 +36,8 @@
   max-width: rem(428);
   width: 100%;
   white-space: nowrap;
-  margin-top: rem(120);
   @include mq(md) {
+    margin-top: rem(120);
     margin-left: rem(70.5);
   }
 }
@@ -97,4 +103,5 @@
 .p-pioneer__btn {
   text-align: right;
   margin-top: rem(48.75);
+  margin-right: rem(64);
 }

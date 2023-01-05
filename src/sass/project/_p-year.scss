@@ -48,7 +48,10 @@
   white-space: nowrap;
 }
 .p-year__title + .p-year__title {
-  margin-top: rem(54);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(54);
+  }
 }
 .p-year__text {
   margin-top: rem(22.5);
@@ -60,8 +63,10 @@
   width: 100%;
   position: relative;
   z-index: 0;
+  margin-top: rem(16);
   @include mq(md) {
     margin-left: rem(-60);
+    margin-top: initial;
   }
 }
 .p-year__img--1970::before {

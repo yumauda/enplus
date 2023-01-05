@@ -11,7 +11,7 @@
           <h3 class="c-page-sectionTitle">常に時代の先をいくエンプラス</h3>
         </div>
         <div class="p-always__text-wrapper">
-          <p class="c-page-text">高精度 × 高機能 × 高品質 × 大量生産を達成できる技術力で、<br>
+          <p class="c-page-text">高精度 × 高機能 × 高品質 × 大量生産を<br class="u-mobile">達成できる技術力で、<br>
             他社が参入しない、難易度が高い、はじめての領域を得意としています。</p>
         </div>
       </div>
@@ -51,7 +51,7 @@
     <div class="l-inner">
       <div class="p-plastic__content">
         <div class="p-plastic__title-wrapper">
-          <h3 class="p-plastic__title">エンジニアリングプラスチックとは？</h3>
+          <h3 class="p-plastic__title">エンジニアリングプラスチック<br class="u-mobile">とは？</h3>
         </div>
         <figure class="p-plastic__img">
           <img src="<?php echo get_template_directory_uri() ?>/images/common/plastic_img.png" alt="エンジニアリングプラスチックとは？">

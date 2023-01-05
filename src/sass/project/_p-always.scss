@@ -3,7 +3,7 @@
 .p-always {
   position: relative;
   padding-top: rem(60);
-  padding-bottom: rem(60);
+  padding-bottom: rem(100);
   @include mq(md) {
     padding-top: rem(200);
     padding-bottom: rem(313);
@@ -16,11 +16,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: rem(40);
-  height: rem(191);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: rem(20);
+  height: rem(95);
+  @include mq(md) {
+    width: rem(40);
+    height: rem(191);
+  }
 }
 .p-always__content {
 }

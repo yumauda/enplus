@@ -13,6 +13,12 @@
 }
 .p-menu__card {
 }
+.p-menu__card + .p-menu__card {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
 .p-menu__img {
   max-width: rem(435);
   width: 100%;

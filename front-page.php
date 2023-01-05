@@ -105,7 +105,7 @@
             <div class="p-message__subText-wrapper">
               <p class="p-message__subText">ー代表メッセージー</p>
             </div>
-            <div class="p-pioneer__btn">
+            <div class="p-message__btn">
               <a href="<?php echo esc_url(home_url('/future/')); ?>" class="c-btn">Read&nbsp;more</a>
             </div>
           </div>
@@ -140,7 +140,7 @@
       </div>
     </div>
     <!-- Slider main container -->
-    <div class="swiper p-slider">
+    <div class="swiper p-slider__swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <?php

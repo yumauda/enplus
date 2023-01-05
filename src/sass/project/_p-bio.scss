@@ -50,6 +50,7 @@
   transform: translate(-50%, -50%);
 }
 .p-bio__detail {
+  margin-top: rem(24);
   width: 100%;
   @include mq(md) {
     max-width: rem(450);
@@ -58,7 +59,10 @@
   }
 }
 .p-bio__text {
-  margin-top: rem(36);
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(36);
+  }
 }
 .p-bio__under {
   max-width: rem(922);
@@ -75,8 +79,11 @@
   }
 }
 .p-bio__boxText {
-  font-size: rem(18);
   font-weight: 700;
   color: $blue;
   letter-spacing: 0.06em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }

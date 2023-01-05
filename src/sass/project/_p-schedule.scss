@@ -2,8 +2,12 @@
 
 .p-schedule {
   background: #f0f3f7;
-  padding-top: rem(100);
-  padding-bottom: rem(183);
+  padding-top: rem(32);
+  padding-bottom: rem(32);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(183);
+  }
 }
 .p-schedule__content {
 }
@@ -17,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(24);
+  margin-top: rem(24);
   @include mq(md) {
     grid-template-columns: 1fr 1fr 1fr;
     gap: rem(82.5);
@@ -24,100 +29,99 @@
     position: relative;
   }
 }
-/* .p-schedule__cards::before {
+.p-schedule__cards::before {
   @include mq(md) {
     content: "";
     position: absolute;
-    background: url(../images/common/schedule_line.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: $white;
+    width: rem(806);
+    height: rem(18);
+    border-radius: rem(10);
+    top: 45%;
     left: 50%;
-    top: 50%;
+    transform: translateX(-50%);
   }
-} */
-.p-schedule__cards::before {
-  content: "";
-  position: absolute;
-  background: $white;
-  width: rem(806);
-  height: rem(18);
-  border-radius: rem(10);
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .p-schedule__card {
   position: relative;
 }
 .p-schedule__card:first-child::after {
-  position: absolute;
-  content: "";
-  right: -35%;
-  top: 32%;
-  width: rem(160);
-  height: rem(18);
-  background: $white;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    right: -35%;
+    top: 32%;
+    width: rem(160);
+    height: rem(18);
+    background: $white;
+  }
 }
 .p-schedule__card:nth-child(2)::after {
-  position: absolute;
-  content: "";
-  right: -35%;
-  top: 32%;
-  width: rem(160);
-  height: rem(18);
-  background: $white;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    right: -35%;
+    top: 32%;
+    width: rem(160);
+    height: rem(18);
+    background: $white;
+  }
 }
 .p-schedule__card:nth-child(3)::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 32%;
-  transform: translateX(-50%);
-  width: rem(18);
-  height: rem(260);
-  background: $white;
-  z-index: 0;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 32%;
+    transform: translateX(-50%);
+    width: rem(18);
+    height: rem(260);
+    background: $white;
+    z-index: 0;
+  }
 }
 .p-schedule__card:nth-child(4)::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: -30%;
-  transform: translateX(-50%);
-  width: rem(18);
-  height: rem(255);
-  background: $white;
-  z-index: 0;
-  border-radius: rem(10);
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%);
+    width: rem(18);
+    height: rem(255);
+    background: $white;
+    z-index: 0;
+    border-radius: rem(10);
+  }
 }
 .p-schedule__card:nth-child(5)::after {
-  position: absolute;
-  content: "";
-  left: -35%;
-  top: 32%;
-  width: rem(160);
-  height: rem(18);
-  background: $white;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    left: -35%;
+    top: 32%;
+    width: rem(160);
+    height: rem(18);
+    background: $white;
+  }
 }
 .p-schedule__card:nth-child(6)::after {
-  position: absolute;
-  content: "";
-  left: -35%;
-  top: 32%;
-  width: rem(160);
-  height: rem(18);
-  background: $white;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    left: -35%;
+    top: 32%;
+    width: rem(160);
+    height: rem(18);
+    background: $white;
+  }
 }
 .p-schedule__time {
   position: absolute;
   color: $blue;
   background: $white;
-  font-size: rem(19.5);
-  width: rem(77.25);
   display: inline-block;
-  padding-top: rem(9);
-  padding-bottom: rem(9);
+
   text-align: center;
   border: 1px solid $blue;
   font-weight: 700;
@@ -125,6 +129,16 @@
   margin-top: rem(-18);
   margin-left: rem(9);
   z-index: 2;
+  font-size: rem(12);
+  width: rem(56);
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  @include mq(md) {
+    font-size: rem(19.5);
+    width: rem(77.25);
+    padding-top: rem(9);
+    padding-bottom: rem(9);
+  }
 }
 
 .p-schedule__card:nth-child(n + 4) {

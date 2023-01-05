@@ -1,12 +1,15 @@
 @use "global" as *;
 
 .c-solution-title {
-  font-size: rem(30);
   font-weight: 700;
   color: $black;
   letter-spacing: 0.06em;
   position: relative;
   z-index: 1;
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }
 .c-solution-title::before {
   content: attr(data-solution) "";

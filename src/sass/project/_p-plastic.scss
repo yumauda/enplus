@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-plastic {
-  padding-top: rem(60);
+  padding-top: rem(32);
   padding-bottom: rem(120);
   background: url(../images/common/plastic_bg.jpg);
   background-size: cover;
@@ -19,28 +19,38 @@
   background: #d8d8d8;
   height: rem(440);
   width: 100%;
-  top: 0;
   left: 0;
   right: 0;
+  top: 0;
 }
 .p-plastic__content {
   background: $white;
   border: 20px solid #f0f3f7;
   position: relative;
-  padding-top: rem(110);
-  padding-bottom: rem(92);
+  padding-top: rem(32);
+  padding-bottom: rem(24);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  @include mq(md) {
+    padding-top: rem(110);
+    padding-bottom: rem(92);
+    padding-left: initial;
+    padding-right: initial;
+  }
 }
 .p-plastic__content::before {
   content: "column";
   position: absolute;
-  top: 0;
   left: rem(36);
   font-size: rem(56);
   font-family: $second-font-family;
+  font-weight: 700;
   color: #f0f3f7;
   text-transform: uppercase;
   line-height: 1;
+  top: 0;
   @include mq(md) {
+    top: -3%;
     font-size: rem(184);
   }
 }
@@ -52,18 +62,21 @@
   color: $blue;
   position: relative;
   z-index: 1;
-  font-size: rem(20);
+  font-size: rem(18);
   @include mq(md) {
     font-size: rem(36);
   }
 }
 .p-plastic__img {
-  margin-top: rem(86);
   max-width: rem(800);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(86);
+  }
 }
 .p-plastic__img::before {
   padding-top: 89.875%;
@@ -89,7 +102,10 @@
 }
 .p-plastic__text {
   color: $black;
-  font-size: rem(16);
   letter-spacing: 0.06em;
   line-height: 2;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }

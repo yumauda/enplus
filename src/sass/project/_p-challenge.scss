@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .p-challenge {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(32);
+  padding-bottom: rem(32);
   @include mq(md) {
     padding-top: rem(150);
     padding-bottom: rem(234.75);
@@ -26,13 +26,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: rem(40);
-  height: rem(191.5);
+  width: rem(20);
+  height: rem(95);
   left: 50%;
   transform: translateX(-50%);
   bottom: -180%;
   @include mq(md) {
     bottom: -400%;
+    width: rem(40);
+    height: rem(191.5);
   }
 }
 .p-challenge__img-wrapper {
@@ -43,7 +45,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(200);
+  margin-top: rem(100);
   @include mq(md) {
     margin-top: rem(340);
   }

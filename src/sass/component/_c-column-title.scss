@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .c-column-title {
-  font-size: rem(27);
   color: $black;
   font-weight: 700;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(27);
+  }
 }

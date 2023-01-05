@@ -1,23 +1,29 @@
 @use "global" as *;
 
 .p-slider {
-  padding-top: rem(56);
+  padding-top: rem(32);
+  @include mq(md) {
+    padding-top: rem(56);
+  }
 }
 .p-slider__inner {
-  position: absolute;
-  left: 10%;
-  top: 10%;
-  width: rem(360);
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
 .p-slider__title-wrapper {
 }
 .p-slider__title {
-  font-size: rem(36);
   font-weight: 700;
   color: $black;
   letter-spacing: 0.06em;
   position: relative;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(36);
+  }
 }
 .p-slider__title::before {
   content: "work";
@@ -29,6 +35,15 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: rem(18);
+}
+.p-slider__btn {
+  margin-right: rem(32);
+  @include mq(md) {
+    margin-right: initial;
+  }
+}
+.p-slider__swiper {
+  margin-top: rem(-32);
 }
 .p-slider__img {
   width: 100%;
@@ -61,13 +76,19 @@
   font-weight: 700;
   color: $blue;
   letter-spacing: 0.06em;
-  font-size: rem(13.5);
+  font-size: rem(10);
+  @include mq(md) {
+    font-size: rem(13.5);
+  }
 }
 .p-slider__text {
   font-weight: 700;
   color: $blue;
   letter-spacing: 0.06em;
-  font-size: rem(13.5);
+  font-size: rem(10);
+  @include mq(md) {
+    font-size: rem(13.5);
+  }
 }
 .p-slider__link {
   position: absolute;

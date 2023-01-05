@@ -11,7 +11,7 @@
           <h3 class="c-page-sectionTitle">幅広い！<br class="u-mobile">エンプラスの活躍分野</h3>
         </div>
         <div class="p-wide__text-wrapper">
-          <p class="c-page-text">エンプラスの活躍フィールドは実にさまざま。部品でできている製品であれば、<br>どんなものでも活躍できる可能性を秘めています。</p>
+          <p class="c-page-text">エンプラスの活躍フィールドは実にさまざま。<br class="u-mobile">部品でできている製品であれば、<br>どんなものでも活躍できる可能性を<br class="u-mobile">秘めています。</p>
         </div>
       </div>
       <div class="p-wide__btns">

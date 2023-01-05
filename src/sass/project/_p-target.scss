@@ -13,6 +13,7 @@
   left: 0;
   z-index: -1;
   font-size: rem(48);
+  font-family: $second-font-family;
   @include mq(md) {
     font-size: rem(138);
   }
@@ -26,9 +27,11 @@
   margin-top: rem(27);
 }
 .p-target__title-wrapper {
-  margin-top: rem(120);
   max-width: rem(428);
   width: 100%;
+  @include mq(md) {
+    margin-top: rem(120);
+  }
 }
 .p-target__title {
   @include mq(md) {
@@ -43,13 +46,12 @@
 .p-target__img {
   margin-top: rem(30);
   position: relative;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-left: auto;
-  width: 100vw;
   z-index: -2;
   @include mq(md) {
     width: 58vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-left: auto;
   }
 }
 .p-target__img::before {

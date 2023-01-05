@@ -2,8 +2,11 @@
 
 .p-message {
   padding-top: rem(37.5);
-  padding-bottom: rem(148);
+  padding-bottom: rem(32);
   position: relative;
+  @include mq(md) {
+    padding-bottom: rem(148);
+  }
 }
 .p-message::before {
   content: attr(data-company) "";
@@ -11,10 +14,14 @@
   text-transform: uppercase;
   font-weight: 700;
   color: $skyBlue;
-  font-size: rem(138);
   top: 0;
   right: 0;
   z-index: -1;
+  font-family: $second-font-family;
+  font-size: rem(48);
+  @include mq(md) {
+    font-size: rem(138);
+  }
 }
 .p-message__content {
   @include mq(md) {
@@ -25,8 +32,10 @@
 .p-message__title-wrapper {
   text-align: right;
   margin-left: rem(-88);
-  margin-top: rem(114);
   white-space: nowrap;
+  @include mq(md) {
+    margin-top: rem(114);
+  }
 }
 .p-message__text-wrapper {
   margin-top: rem(38);
@@ -44,10 +53,12 @@
 .p-message__img {
   width: 100%;
   position: relative;
+  margin-top: rem(32);
   @include mq(md) {
     margin-left: calc(50% - 50vw);
     width: 100vw;
     z-index: -2;
+    margin-top: initial;
   }
 }
 .p-message__img::before {
@@ -79,4 +90,9 @@
   font-size: rem(18);
   color: $black;
   letter-spacing: 0.08em;
+}
+.p-message__btn {
+  margin-right: rem(64);
+  text-align: right;
+  margin-top: rem(50.25);
 }

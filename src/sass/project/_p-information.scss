@@ -3,10 +3,13 @@
 .p-information {
 }
 .p-information__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: rem(22.5);
-  margin-top: rem(54);
+  margin-top: rem(32);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(22.5);
+    margin-top: rem(54);
+  }
 }
 .p-information__title-wrapper {
   text-align: center;
@@ -28,7 +31,11 @@
   display: block;
   font-family: $second-font-family;
 }
-.p-information__btn-wrapper {
+.p-information__btn-wrapper + .p-information__btn-wrapper {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 .p-information__btn {
   display: block;
@@ -42,10 +49,13 @@
   font-size: rem(16.5);
 }
 .p-information__img {
-  margin-top: rem(-48);
   width: 100%;
   position: relative;
   z-index: -1;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(-48);
+  }
 }
 .p-information__img::before {
   padding-top: 28.4895%;

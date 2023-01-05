@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-pager {
-  margin-top: rem(67.5);
-  padding-bottom: rem(75);
+  margin-top: rem(32);
+  padding-bottom: rem(32);
+  @include mq(md) {
+    margin-top: rem(67.5);
+    padding-bottom: rem(75);
+  }
 }
 .p-pager__content {
   display: flex;
@@ -14,9 +18,11 @@
   margin-right: auto;
 }
 .p-pager__box {
-  display: flex;
-  align-items: center;
   position: relative;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
 }
 .p-pager__box--next {
   flex-direction: row-reverse;
@@ -45,11 +51,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: rem(106.5);
-  height: rem(6);
-  bottom: -50%;
-  left: 50%;
   transform: translateX(-50%);
+  width: rem(53);
+  height: rem(3);
+  bottom: 0;
+  right: 0;
+  @include mq(md) {
+    width: rem(106.5);
+    height: rem(6);
+    left: 50%;
+    bottom: -50%;
+  }
 }
 .p-pager__next {
   position: relative;
@@ -66,25 +78,37 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: rem(106.5);
-  height: rem(6);
-  bottom: -50%;
-  left: 50%;
   transform: translateX(-50%);
+  width: rem(53);
+  height: rem(3);
+  right: rem(-10);
+  bottom: 0;
+  @include mq(md) {
+    right: initial;
+    left: 50%;
+    bottom: -50%;
+    width: rem(106.5);
+    height: rem(6);
+  }
 }
 .p-pager__prev,
 .p-pager__next {
-  display: none;
+  text-align: center;
   @include mq(md) {
+    text-align: left;
     display: block;
   }
 }
 .p-pager__detail {
-  margin-left: rem(81.75);
+  @include mq(md) {
+    margin-left: rem(81.75);
+  }
 }
 .p-pager__detail--next {
   margin-left: initial;
-  margin-right: rem(81.75);
+  @include mq(md) {
+    margin-right: rem(81.75);
+  }
 }
 .p-pager__img {
   max-width: rem(105);

@@ -3,7 +3,7 @@
   <section class="l-single p-single">
     <h2 class="p-single__title c-section-title">work</h2>
     <figure class="p-single__img">
-      <img src="<?php echo get_template_directory_uri() ?>/images/common/single_img.jpg" alt="人物写真">
+      <img src="<?php the_post_thumbnail('large'); ?>" alt="人物写真">
     </figure>
     <div class="p-single__subTitle-wrapper">
       <p class="p-single__subTitle">社員インタビュー#<?php the_field('group_number') ?></p>
@@ -91,39 +91,48 @@
   <div class="p-pager">
     <div class="l-inner">
       <div class="p-pager__content">
-        <div class="p-pager__box">
-          <p class="p-pager__prev">prev</p>
-          <div class="p-pager__detail">
-            <figure class="p-pager__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_before.jpg" alt="前に戻る">
-            </figure>
-            <div class="p-pager__data">
-              <p class="p-pager__text">生産本部生産部</p>
-              <p class="p-pager__text">品質管理G</p>
-              <p class="p-pager__text">2020年入社</p>
+        <?php $prevpost = get_adjacent_post(false, '', true);
+        if ($prevpost) : ?>
+          <div class="p-pager__box">
+            <p class="p-pager__prev">prev</p>
+            <div class="p-pager__detail">
+              <figure class="p-pager__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_before.jpg" alt="前に戻る">
+              </figure>
+              <div class="p-pager__data">
+                <p class="p-pager__text">生産本部生産部</p>
+                <p class="p-pager__text">品質管理G</p>
+                <p class="p-pager__text">2020年入社</p>
+              </div>
             </div>
+            <a href="<?php echo get_permalink($prevpost->ID); ?>" class="p-pager__link"></a>
           </div>
-          <a href="#" class="p-pager__link"></a>
-        </div>
+        <?php endif; ?>
         <div class="p-pager__center">
-          <a href="#" class="p-pager__all">
+          <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-pager__all">
             <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_center.png" alt="all">
           </a>
         </div>
-        <div class="p-pager__box p-pager__box--next">
-          <p class="p-pager__next">next</p>
-          <div class="p-pager__detail p-pager__detail--next">
-            <figure class="p-pager__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_before.jpg" alt="前に戻る">
-            </figure>
-            <div class="p-pager__data">
-              <p class="p-pager__text">生産本部生産部</p>
-              <p class="p-pager__text">品質管理G</p>
-              <p class="p-pager__text">2020年入社</p>
+        <?php $nextpost = get_adjacent_post(false, '', false);
+        if ($nextpost) : ?>
+          <div class="p-pager__box p-pager__box--next">
+            <p class="p-pager__next">next</p>
+            <div class="p-pager__detail p-pager__detail--next">
+              <!-- <figure class="p-pager__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_before.jpg" alt="前に戻る">
+              </figure> -->
+              <figure class="p-pager__img">
+                <img src="<?php the_field('group_column_img1') ?>" alt="前に戻る">
+              </figure>
+              <div class="p-pager__data">
+                <p class="p-pager__text">生産本部生産部</p>
+                <p class="p-pager__text">品質管理G</p>
+                <p class="p-pager__text">2020年入社</p>
+              </div>
             </div>
+            <a href="<?php echo get_permalink($nextpost->ID); ?>" class="p-pager__link"></a>
           </div>
-          <a href="#" class="p-pager__link"></a>
-        </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>

@@ -59,7 +59,8 @@
   width: 100%;
   position: relative;
 }
-.p-page-mv--question, .p-page-mv--recruit {
+.p-page-mv--question,
+.p-page-mv--recruit {
   background: url(../images/common/question_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,32 +86,44 @@
   bottom: 0;
 }
 .p-page-mv--number img {
-  max-width: rem(361);
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
+  max-width: rem(250);
+  @include mq(md) {
+    max-width: rem(361);
+  }
 }
 .p-page-mv--interview img {
-  max-width: rem(361);
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
+  max-width: rem(280);
+  @include mq(md) {
+    max-width: rem(361);
+  }
 }
 .p-page-mv--introduce img {
-  max-width: rem(306.75);
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
+  max-width: rem(220);
+  @include mq(md) {
+    max-width: rem(306.75);
+  }
 }
 .p-page-mv--environment img {
-  max-width: rem(305.25);
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
+  max-width: rem(220);
+  @include mq(md) {
+    max-width: rem(306.75);
+  }
 }
 .p-page-mv--challenge img {
   max-width: rem(571.5);
