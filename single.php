@@ -3,7 +3,7 @@
   <section class="l-single p-single">
     <h2 class="p-single__title c-section-title">work</h2>
     <figure class="p-single__img">
-      <img src="<?php the_post_thumbnail('large'); ?>" alt="人物写真">
+      <img src="<?php the_field('group_img_top') ?>" alt="人物写真">
     </figure>
     <div class="p-single__subTitle-wrapper">
       <p class="p-single__subTitle">社員インタビュー#<?php the_field('group_number') ?></p>
@@ -97,7 +97,7 @@
             <p class="p-pager__prev">prev</p>
             <div class="p-pager__detail">
               <figure class="p-pager__img">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_before.jpg" alt="前に戻る">
+                <img src="<?php echo get_the_post_thumbnail($prevpost->ID); ?>" alt="前に戻る">
               </figure>
               <div class="p-pager__data">
                 <p class="p-pager__text">生産本部生産部</p>
@@ -118,11 +118,8 @@
           <div class="p-pager__box p-pager__box--next">
             <p class="p-pager__next">next</p>
             <div class="p-pager__detail p-pager__detail--next">
-              <!-- <figure class="p-pager__img">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/pager_before.jpg" alt="前に戻る">
-              </figure> -->
               <figure class="p-pager__img">
-                <img src="<?php the_field('group_column_img1') ?>" alt="前に戻る">
+                <img src="<?php echo get_the_post_thumbnail($nextpost->ID); ?>" alt="前に戻る">
               </figure>
               <div class="p-pager__data">
                 <p class="p-pager__text">生産本部生産部</p>

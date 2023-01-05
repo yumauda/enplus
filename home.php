@@ -12,7 +12,7 @@
           <?php the_post(); ?>
           <li class="p-interview__list">
             <figure class="p-interview__img">
-              <img src="<?php the_post_thumbnail('large'); ?>" alt="人物写真">
+              <img src="<?php the_field('group_img_top')?>" alt="人物写真">
             </figure>
             <div class="p-interview__detail">
               <p class="p-interview__cardTitle"><?php the_field('group_name')?></p>

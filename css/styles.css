@@ -983,18 +983,41 @@ select::-ms-expand {
           transform: translateX(0%);
 }
 
+.p-drawer-content__items-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 12px;
+  margin-left: 0.75rem;
+  gap: 16px;
+  gap: 1rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
 .p-drawer-content__items {
-  text-align: center;
+  text-align: left;
+}
+
+.p-drawer-content__item {
+  line-height: 2;
+}
+
+.p-drawer-content__text {
+  color: #76778d;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .p-drawer-content__item a {
   display: block;
-  padding: 24px 20px;
-  padding: 1.5rem 1.25rem;
+  padding: 8px;
+  padding: 0.5rem;
   text-transform: capitalize;
   color: #fff;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .p-drawer-content__item img {
@@ -2511,17 +2534,18 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 849.75px;
-  max-width: 53.109375rem;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-pager__content {
+    max-width: 53.109375rem;
+  }
 }
 
 .p-pager__box {
@@ -2535,6 +2559,7 @@ select::-ms-expand {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 15.9375rem;
   }
 }
 
@@ -2543,6 +2568,7 @@ select::-ms-expand {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  margin-left: auto;
 }
 
 .p-pager__link {
@@ -2657,8 +2683,8 @@ select::-ms-expand {
 }
 
 .p-pager__img {
-  max-width: 105px;
-  max-width: 6.5625rem;
+  min-width: 105px;
+  min-width: 6.5625rem;
   width: 100%;
   position: relative;
 }
@@ -2677,6 +2703,14 @@ select::-ms-expand {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.p-pager__center {
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

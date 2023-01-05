@@ -10,22 +10,26 @@
 }
 .p-pager__content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: rem(849.75);
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(849.75);
+  }
 }
 .p-pager__box {
   position: relative;
   @include mq(md) {
     display: flex;
     align-items: center;
+    width: rem(255);
   }
 }
 .p-pager__box--next {
   flex-direction: row-reverse;
+  margin-left: auto;
 }
 .p-pager__link {
   position: absolute;
@@ -111,7 +115,7 @@
   }
 }
 .p-pager__img {
-  max-width: rem(105);
+  min-width: rem(105);
   width: 100%;
   position: relative;
 }
@@ -131,6 +135,10 @@
   transform: translate(-50%, -50%);
 }
 .p-pager__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .p-pager__all {
   display: inline-block;
