@@ -25,13 +25,14 @@
 }
 .p-plastic__content {
   background: $white;
-  border: 20px solid #f0f3f7;
   position: relative;
   padding-top: rem(32);
   padding-bottom: rem(24);
   padding-left: rem(16);
   padding-right: rem(16);
+  border: 8px solid #f0f3f7;
   @include mq(md) {
+    border: 20px solid #f0f3f7;
     padding-top: rem(110);
     padding-bottom: rem(92);
     padding-left: initial;

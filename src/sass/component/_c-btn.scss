@@ -16,19 +16,21 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid $blue;
-  right: -100%;
+  border: 1px solid transparent;
+  right: -77%;
   transition: all 0.3s;
+  z-index: 1;
 }
 .c-btn::after {
   position: absolute;
   content: "";
-  width: rem(88);
+  width: 88px;
   height: rem(2);
   background: $blue;
   left: 0;
   bottom: rem(-5.5);
   transition: all 0.3s;
+  z-index: 0;
 }
 .c-btn:hover::after {
   width: rem(75);

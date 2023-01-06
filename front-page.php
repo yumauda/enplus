@@ -4,11 +4,23 @@
     <h3 class="c-section-title">あああ</h3>
   </section>
   <div class="l-tomorrow p-tomorrow">
-    <div class="l-header-inner">
-      <figure class="p-tomorrow__img">
-        <img src="<?php echo get_template_directory_uri() ?>/images/common/tomorrow.png" alt="よりよき明日を目指して">
-      </figure>
-    </div>
+    <ul class="p-tomorrow__lists">
+      <li class="p-tomorrow__list p-tomorrow__list--left">
+        <figure class="p-tomorrow__left">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/tomorrow_left.png" alt="よりよき明日を目指して">
+        </figure>
+      </li>
+      <li class="p-tomorrow__list p-tomorrow__list--center">
+        <figure class="p-tomorrow__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/tomorrow_text.png" alt="よりよき明日を目指して">
+        </figure>
+      </li>
+      <li class="p-tomorrow__list p-tomorrow__list--right">
+        <figure class="p-tomorrow__right">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/tomorrow_right.png" alt="よりよき明日を目指して">
+        </figure>
+      </li>
+    </ul>
   </div>
   <section class="l-target p-target" data-company="target">
     <div class="l-inner">
@@ -171,57 +183,6 @@
         endif;
         wp_reset_postdata();
         ?>
-        <!-- Slides -->
-        <!-- <div class="swiper-slide p-slider__card">
-          <figure class="p-slider__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/slider_1.jpg" alt="">
-          </figure>
-          <div class="p-slider__detail">
-            <h4 class="p-slider__subTitle">生産本部 生産部 品質管理G</h4>
-            <p class="p-slider__text">2020年入社</p>
-          </div>
-          <a href="#" class="p-slider__link"></a>
-        </div>
-        <div class="swiper-slide p-slider__card">
-          <figure class="p-slider__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/slider_2.jpg" alt="">
-          </figure>
-          <div class="p-slider__detail">
-            <h4 class="p-slider__subTitle">生産本部 生産部 品質管理G</h4>
-            <p class="p-slider__text">2020年入社</p>
-          </div>
-          <a href="#" class="p-slider__link"></a>
-        </div>
-        <div class="swiper-slide p-slider__card">
-          <figure class="p-slider__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/slider_3.jpg" alt="">
-          </figure>
-          <div class="p-slider__detail">
-            <h4 class="p-slider__subTitle">生産本部 生産部 品質管理G</h4>
-            <p class="p-slider__text">2020年入社</p>
-          </div>
-          <a href="#" class="p-slider__link"></a>
-        </div>
-        <div class="swiper-slide p-slider__card">
-          <figure class="p-slider__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/slider_4.jpg" alt="">
-          </figure>
-          <div class="p-slider__detail">
-            <h4 class="p-slider__subTitle">生産本部 生産部 品質管理G</h4>
-            <p class="p-slider__text">2020年入社</p>
-          </div>
-          <a href="#" class="p-slider__link"></a>
-        </div>
-        <div class="swiper-slide p-slider__card">
-          <figure class="p-slider__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/common/slider_5.jpg" alt="">
-          </figure>
-          <div class="p-slider__detail">
-            <h4 class="p-slider__subTitle">生産本部 生産部 品質管理G</h4>
-            <p class="p-slider__text">2020年入社</p>
-          </div>
-          <a href="#" class="p-slider__link"></a>
-        </div> -->
       </div>
     </div>
   </section>
@@ -280,7 +241,7 @@
           <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-information__btn">新卒採用募集要項</a>
         </div>
         <div class="p-information__btn-wrapper">
-          <a href="" class="p-information__btn">中途採用募集要項</a>
+          <a href="#" class="p-information__btn">中途採用募集要項</a>
         </div>
       </div>
     </div>

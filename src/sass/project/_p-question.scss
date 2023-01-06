@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-question {
-  padding-top: rem(142.5);
-  padding-bottom: rem(147);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-top: rem(142.5);
+    padding-bottom: rem(147);
+  }
 }
 .p-question__content {
   max-width: rem(922.5);
@@ -11,7 +15,10 @@
   margin-right: auto;
 }
 .p-question__block + .p-question__block {
-  margin-top: rem(60);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
 }
 .p-question__title-wrapper {
   background: #eef1f6;
@@ -41,7 +48,10 @@
   color: $blue;
   font-weight: 700;
   letter-spacing: 0.06em;
-  font-size: rem(18);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 .p-question__detail {
   margin-top: rem(22.5);

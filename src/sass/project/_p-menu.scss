@@ -20,9 +20,11 @@
   }
 }
 .p-menu__img {
-  max-width: rem(435);
   width: 100%;
   position: relative;
+  @include mq(md) {
+    max-width: rem(435);
+  }
 }
 .p-menu__img::before {
   padding-top: 77.586%;

@@ -45,9 +45,12 @@
   position: relative;
 }
 .p-future__img::before {
-  padding-top: 28.489%;
   display: block;
   content: "";
+  padding-top: 65.489%;
+  @include mq(md) {
+    padding-top: 28.489%;
+  }
 }
 .p-future__img img {
   position: absolute;
