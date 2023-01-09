@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.p-recruitTable {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-recruitTable__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: rem(20);
+}
+.p-recruitTable__table--possible {
+  margin-bottom: initial;
+}
+.p-recruitTable__item,
+.p-recruitTable__body {
+  display: block;
+  padding: rem(16);
+  @include mq(md) {
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    padding-left: rem(22.5);
+    padding-right: rem(22.5);
+    display: table-cell;
+    border-bottom: 7.5px solid $white;
+  }
+}
+
+.p-recruitTable__item {
+  text-align: left;
+  background-color: $blue;
+  color: $white;
+  width: 100%;
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-family: $second-font-family;
+  @include mq(md) {
+    width: rem(45);
+    font-size: rem(25.5);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    text-align: center;
+  }
+}
+.p-recruitTable__item span {
+  font-size: rem(10.5);
+}
+.p-recruitTable__body {
+  padding-left: rem(16);
+  background: #eef1f6;
+  @include mq(md) {
+    border-left: 3.75px solid $white;
+    width: rem(873.75);
+    padding-left: rem(32);
+  }
+}
+
+.p-recruitTable__top {
+  color: $black;
+  font-size: rem(13);
+  margin-bottom: rem(8);
+  line-height: 2;
+  @include mq(md) {
+    font-size: rem(12);
+    margin-bottom: initial;
+  }
+}
+.p-recruitTable__top-link {
+  color: #0076ff;
+  text-decoration: underline;
+}
+.p-recruitTable__select + .p-recruitTable__select {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-left: rem(25);
+    margin-top: initial;
+  }
+}

@@ -133,9 +133,16 @@
       <figure class="p-work__img">
         <img src="<?php echo get_template_directory_uri() ?>/images/common/work_bg.jpg" alt="職種紹介">
       </figure>
-      <div class="l-inner p-work__inner">
-        <div class="p-work__title-wrapper">
-          <h3 class="p-work__title">職種紹介</h3>
+      <div class="l-inner">
+        <div class="p-work__content">
+          <div class="p-work__detail">
+            <div class="p-work__title-wrapper">
+              <h3 class="p-work__title">職種紹介</h3>
+            </div>
+            <div class="p-work__btn">
+              <a href="<?php echo esc_url(home_url('/introduce/')); ?>" class="c-btn c-btn--white">Read&nbsp;more</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

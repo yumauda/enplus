@@ -258,7 +258,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .l-slider {
-    margin-top: 6.9375rem;
+    margin-top: 17.5rem;
   }
 }
 
@@ -1634,6 +1634,11 @@ select::-ms-expand {
   z-index: 1;
 }
 
+.p-interview__link:hover + .p-interview__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .p-interview__img {
   width: 100%;
   position: relative;
@@ -2828,7 +2833,7 @@ select::-ms-expand {
   font-weight: 700;
   color: #f0f3f7;
   top: 0;
-  z-index: -1;
+  z-index: 1;
   font-size: 48px;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
@@ -3157,33 +3162,42 @@ select::-ms-expand {
   padding-top: 0.5625rem;
   padding-bottom: 9px;
   padding-bottom: 0.5625rem;
-  padding-left: 15px;
-  padding-left: 0.9375rem;
   padding-right: 15px;
   padding-right: 0.9375rem;
-  margin-left: 48.75px;
-  margin-left: 3.046875rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-question__title-wrapper {
+    padding-left: 0.9375rem;
+    margin-left: 3.046875rem;
+    padding-top: 0.5625rem;
+    padding-bottom: 0.5625rem;
+  }
 }
 
 .p-question__title-wrapper::before {
-  content: "";
-  position: absolute;
-  text-align: center;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 45px;
-  width: 2.8125rem;
-  height: 45px;
-  height: 2.8125rem;
-  background: url(../images/common/question_left.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: -48.75px;
-  margin-left: -3.046875rem;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-question__title-wrapper::before {
+    display: block;
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 2.8125rem;
+    height: 2.8125rem;
+    background: url(../images/common/question_left.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -3.046875rem;
+  }
 }
 
 .p-question__title {
@@ -3192,6 +3206,8 @@ select::-ms-expand {
   letter-spacing: 0.06em;
   font-size: 14px;
   font-size: 0.875rem;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
 }
 @media screen and (min-width: 768px) {
   .p-question__title {
@@ -3323,6 +3339,116 @@ select::-ms-expand {
   .p-recruit {
     padding-top: 8.90625rem;
     padding-bottom: 8.90625rem;
+  }
+}
+
+.p-recruitTable {
+  max-width: 922.5px;
+  max-width: 57.65625rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-recruitTable__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.p-recruitTable__table--possible {
+  margin-bottom: 0;
+  margin-bottom: initial;
+}
+
+.p-recruitTable__item,
+.p-recruitTable__body {
+  display: block;
+  padding: 16px;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recruitTable__item,
+  .p-recruitTable__body {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.40625rem;
+    padding-right: 1.40625rem;
+    display: table-cell;
+    border-bottom: 7.5px solid #fff;
+  }
+}
+
+.p-recruitTable__item {
+  text-align: left;
+  background-color: #050d9e;
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .p-recruitTable__item {
+    width: 2.8125rem;
+    font-size: 1.59375rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+  }
+}
+
+.p-recruitTable__item span {
+  font-size: 10.5px;
+  font-size: 0.65625rem;
+}
+
+.p-recruitTable__body {
+  padding-left: 16px;
+  padding-left: 1rem;
+  background: #eef1f6;
+}
+@media screen and (min-width: 768px) {
+  .p-recruitTable__body {
+    border-left: 3.75px solid #fff;
+    width: 54.609375rem;
+    padding-left: 2rem;
+  }
+}
+
+.p-recruitTable__top {
+  color: #14202e;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-recruitTable__top {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    margin-bottom: initial;
+  }
+}
+
+.p-recruitTable__top-link {
+  color: #0076ff;
+  text-decoration: underline;
+}
+
+.p-recruitTable__select + .p-recruitTable__select {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recruitTable__select + .p-recruitTable__select {
+    margin-left: 1.5625rem;
+    margin-top: 0;
+    margin-top: initial;
   }
 }
 
@@ -4682,20 +4808,18 @@ select::-ms-expand {
   right: 0.375rem;
 }
 
-.p-works__img {
-  margin-top: 30px;
-  margin-top: 1.875rem;
+.p-work__img {
   width: 100%;
   position: relative;
 }
 
-.p-works__img::before {
+.p-work__img::before {
   padding-top: 29.41%;
   display: block;
   content: "";
 }
 
-.p-works__img img {
+.p-work__img img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -4709,21 +4833,48 @@ select::-ms-expand {
           transform: translate(-50%, -50%);
 }
 
-.p-work__inner {
-  position: absolute;
-  left: 10%;
-  top: 10%;
-  width: 300px;
-  width: 18.75rem;
+.p-work__content {
+  margin-top: -80px;
+  margin-top: -5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-work__content {
+    margin-top: -18.75rem;
+  }
+}
+
+.p-work__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-work__detail {
+    padding-left: 0;
+    padding-left: initial;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
 }
 
 .p-work__title {
-  font-size: 36px;
-  font-size: 2.25rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.06em;
   position: relative;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-work__title {
+    font-size: 2.25rem;
+  }
 }
 
 .p-work__title::before {
@@ -4737,6 +4888,18 @@ select::-ms-expand {
   letter-spacing: 0.06em;
   font-size: 18px;
   font-size: 1.125rem;
+}
+
+.p-work__btn {
+  margin-left: auto;
+  margin-right: 64px;
+  margin-right: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-work__btn {
+    margin-right: 2rem;
+    margin-top: 10rem;
+  }
 }
 
 .p-year {
@@ -5573,6 +5736,75 @@ select::-ms-expand {
   border: 1px solid #050d9e;
 }
 
+.c-btn--white {
+  color: #fff;
+  font-size: 10.5px;
+  font-size: 0.65625rem;
+  position: relative;
+  font-weight: 700;
+  width: 112.5px;
+  width: 7.03125rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c-btn--white:before {
+  position: absolute;
+  content: "";
+  width: 37.5px;
+  width: 2.34375rem;
+  height: 37.5px;
+  height: 2.34375rem;
+  background: url(../images/common/btn_box_reverse.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  right: -77%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.c-btn--white::after {
+  position: absolute;
+  content: "";
+  width: 88px;
+  height: 2px;
+  height: 0.125rem;
+  background: #fff;
+  left: 0;
+  bottom: -5.5px;
+  bottom: -0.34375rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 0;
+}
+
+.c-btn--white:hover {
+  color: #050d9e;
+}
+
+.c-btn--white:hover::after {
+  width: 75px;
+  width: 4.6875rem;
+  left: 15px;
+  left: 0.9375rem;
+  background: #050d9e;
+}
+
+.c-btn--white:hover::before {
+  width: 37.5px;
+  width: 2.34375rem;
+  height: 37.5px;
+  height: 2.34375rem;
+  background: url(../images/common/btn_box.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+}
+
 .c-column-title {
   color: #14202e;
   font-weight: 700;
@@ -5773,6 +6005,7 @@ select::-ms-expand {
   letter-spacing: 0.06em;
   top: -75%;
   left: 0;
+  width: 105%;
   font-size: 14px;
   font-size: 0.875rem;
 }

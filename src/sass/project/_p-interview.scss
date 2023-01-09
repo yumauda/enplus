@@ -29,6 +29,9 @@
   right: 0;
   z-index: 1;
 }
+.p-interview__link:hover + .p-interview__img {
+  transform: scale(1.1);
+}
 .p-interview__img {
   width: 100%;
   position: relative;
