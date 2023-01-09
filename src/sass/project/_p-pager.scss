@@ -59,11 +59,11 @@
   width: rem(53);
   height: rem(3);
   bottom: 0;
-  right: 0;
+  left: 50%;
+  transition: 0.3s;
   @include mq(md) {
     width: rem(106.5);
     height: rem(6);
-    left: 50%;
     bottom: -50%;
   }
 }
@@ -82,14 +82,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  left: 50%;
   transform: translateX(-50%);
   width: rem(53);
   height: rem(3);
-  right: rem(-10);
   bottom: 0;
+  transition: 0.3s;
   @include mq(md) {
     right: initial;
-    left: 50%;
     bottom: -50%;
     width: rem(106.5);
     height: rem(6);
@@ -104,7 +104,9 @@
   }
 }
 .p-pager__detail {
+  margin-top: rem(8);
   @include mq(md) {
+    margin-top: initial;
     margin-left: rem(81.75);
   }
 }

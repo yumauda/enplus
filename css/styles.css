@@ -262,6 +262,40 @@ select::-ms-expand {
   }
 }
 
+.p-404 {
+  padding-top: 96px;
+  padding-top: 6rem;
+  padding-bottom: 96px;
+  padding-bottom: 6rem;
+}
+
+.p-404__content {
+  max-width: 600px;
+  max-width: 37.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.p-404__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #050d9e;
+}
+
+.p-404__text-wrapper {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+.p-404__text {
+  color: #050d9e;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+
 .p-always {
   position: relative;
   padding-top: 60px;
@@ -1494,6 +1528,27 @@ select::-ms-expand {
   color: #76778d;
   font-weight: 700;
   height: inherit;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.p-header__link::before {
+  width: 0%;
+  height: 2px;
+  height: 0.125rem;
+  background: #050d9e;
+  position: absolute;
+  content: "";
+  top: 68%;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.p-header__link:hover::before {
+  width: 100%;
 }
 
 .p-information__content {
@@ -2625,13 +2680,14 @@ select::-ms-expand {
   height: 3px;
   height: 0.1875rem;
   bottom: 0;
-  right: 0;
+  left: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   .p-pager__prev::before {
     width: 6.65625rem;
     height: 0.375rem;
-    left: 50%;
     bottom: -50%;
   }
 }
@@ -2653,21 +2709,21 @@ select::-ms-expand {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 53px;
   width: 3.3125rem;
   height: 3px;
   height: 0.1875rem;
-  right: -10px;
-  right: -0.625rem;
   bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   .p-pager__next::before {
     right: auto;
     right: initial;
-    left: 50%;
     bottom: -50%;
     width: 6.65625rem;
     height: 0.375rem;
@@ -2686,8 +2742,14 @@ select::-ms-expand {
   }
 }
 
+.p-pager__detail {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-pager__detail {
+    margin-top: 0;
+    margin-top: initial;
     margin-left: 5.109375rem;
   }
 }
@@ -3339,116 +3401,6 @@ select::-ms-expand {
   .p-recruit {
     padding-top: 8.90625rem;
     padding-bottom: 8.90625rem;
-  }
-}
-
-.p-recruitTable {
-  max-width: 922.5px;
-  max-width: 57.65625rem;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.p-recruitTable__table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
-}
-
-.p-recruitTable__table--possible {
-  margin-bottom: 0;
-  margin-bottom: initial;
-}
-
-.p-recruitTable__item,
-.p-recruitTable__body {
-  display: block;
-  padding: 16px;
-  padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .p-recruitTable__item,
-  .p-recruitTable__body {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.40625rem;
-    padding-right: 1.40625rem;
-    display: table-cell;
-    border-bottom: 7.5px solid #fff;
-  }
-}
-
-.p-recruitTable__item {
-  text-align: left;
-  background-color: #050d9e;
-  color: #fff;
-  width: 100%;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  font-family: "Montserrat", sans-serif;
-}
-@media screen and (min-width: 768px) {
-  .p-recruitTable__item {
-    width: 2.8125rem;
-    font-size: 1.59375rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    text-align: center;
-  }
-}
-
-.p-recruitTable__item span {
-  font-size: 10.5px;
-  font-size: 0.65625rem;
-}
-
-.p-recruitTable__body {
-  padding-left: 16px;
-  padding-left: 1rem;
-  background: #eef1f6;
-}
-@media screen and (min-width: 768px) {
-  .p-recruitTable__body {
-    border-left: 3.75px solid #fff;
-    width: 54.609375rem;
-    padding-left: 2rem;
-  }
-}
-
-.p-recruitTable__top {
-  color: #14202e;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  margin-bottom: 8px;
-  margin-bottom: 0.5rem;
-  line-height: 2;
-}
-@media screen and (min-width: 768px) {
-  .p-recruitTable__top {
-    font-size: 0.75rem;
-    margin-bottom: 0;
-    margin-bottom: initial;
-  }
-}
-
-.p-recruitTable__top-link {
-  color: #0076ff;
-  text-decoration: underline;
-}
-
-.p-recruitTable__select + .p-recruitTable__select {
-  margin-top: 16px;
-  margin-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .p-recruitTable__select + .p-recruitTable__select {
-    margin-left: 1.5625rem;
-    margin-top: 0;
-    margin-top: initial;
   }
 }
 

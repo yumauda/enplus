@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-404 {
+  padding-top: rem(96);
+  padding-bottom: rem(96);
+}
+.p-404__content {
+  max-width: rem(600);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.p-404__title-wrapper {
+}
+.p-404__title {
+  font-size: rem(24);
+  color: $blue;
+}
+.p-404__text-wrapper {
+  margin-top: rem(24);
+}
+.p-404__text {
+  color: $blue;
+  font-size: rem(16);
+  letter-spacing: 0.06em;
+}

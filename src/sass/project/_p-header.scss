@@ -50,4 +50,20 @@
   color: #76778d;
   font-weight: 700;
   height: inherit;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+.p-header__link::before {
+  width: 0%;
+  height: rem(2);
+  background: $blue;
+  position: absolute;
+  content: "";
+  top: 68%;
+  left: 0;
+  transition: 0.3s;
+}
+.p-header__link:hover::before {
+  width: 100%;
 }
