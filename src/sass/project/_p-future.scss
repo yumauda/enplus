@@ -9,19 +9,6 @@
     padding-bottom: rem(148);
   }
 }
-.p-future::before {
-  content: "";
-  position: absolute;
-  background: url(../images/common/future_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: rem(744);
-  width: 100%;
-  top: rem(580);
-  left: 0;
-  right: 0;
-}
 .p-future__content {
 }
 .p-future__title-wrapper {

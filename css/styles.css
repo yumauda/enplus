@@ -1387,22 +1387,6 @@ select::-ms-expand {
   }
 }
 
-.p-future::before {
-  content: "";
-  position: absolute;
-  background: url(../images/common/future_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 744px;
-  height: 46.5rem;
-  width: 100%;
-  top: 580px;
-  top: 36.25rem;
-  left: 0;
-  right: 0;
-}
-
 .p-future__title-wrapper {
   text-align: center;
 }
@@ -3418,6 +3402,14 @@ select::-ms-expand {
   }
 }
 
+.p-schedule__content {
+  max-width: 922.5px;
+  max-width: 57.65625rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .p-schedule__title {
   color: #050d9e;
   font-size: 15px;
@@ -3440,18 +3432,24 @@ select::-ms-expand {
     gap: 5.15625rem;
     margin-top: 4.5rem;
     position: relative;
+    max-width: 57.65625rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .p-schedule__cards::before {
-    content: "";
     position: absolute;
-    background: #fff;
-    width: 73.5%;
-    height: 1.125rem;
-    border-radius: 0.625rem;
-    top: 45%;
+    content: "";
+    background: url(../images/common/line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 41.859375rem;
+    height: 26.0625rem;
+    top: 11%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -3460,85 +3458,6 @@ select::-ms-expand {
 
 .p-schedule__card {
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .p-schedule__card:first-child::after {
-    position: absolute;
-    content: "";
-    right: -35%;
-    top: 32%;
-    width: 10rem;
-    height: 1.125rem;
-    background: #fff;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-schedule__card:nth-child(2)::after {
-    position: absolute;
-    content: "";
-    right: -35%;
-    top: 32%;
-    width: 10rem;
-    height: 1.125rem;
-    background: #fff;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-schedule__card:nth-child(3)::after {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 32%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 1.125rem;
-    height: 16.25rem;
-    background: #fff;
-    z-index: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-schedule__card:nth-child(4)::after {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: -35%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 1.125rem;
-    height: 15.9375rem;
-    background: #fff;
-    z-index: 0;
-    border-radius: 0.625rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-schedule__card:nth-child(5)::after {
-    position: absolute;
-    content: "";
-    left: -35%;
-    top: 32%;
-    width: 10rem;
-    height: 1.125rem;
-    background: #fff;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-schedule__card:nth-child(6)::after {
-    position: absolute;
-    content: "";
-    left: -35%;
-    top: 32%;
-    width: 10rem;
-    height: 1.125rem;
-    background: #fff;
-  }
 }
 
 .p-schedule__time {
@@ -3575,7 +3494,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .p-schedule__card:nth-child(n+4) {
-    margin-top: 3.75rem;
+    margin-top: 2rem;
   }
 }
 
@@ -5873,6 +5792,7 @@ select::-ms-expand {
   letter-spacing: 0.06em;
   line-height: 2;
   font-weight: 400;
+  text-align: justify;
 }
 
 .c-solution-title {

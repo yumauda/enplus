@@ -10,6 +10,10 @@
   }
 }
 .p-schedule__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .p-schedule__title {
   color: $blue;
@@ -27,17 +31,23 @@
     gap: rem(82.5);
     margin-top: rem(72);
     position: relative;
+    max-width: rem(922.5);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .p-schedule__cards::before {
   @include mq(md) {
-    content: "";
     position: absolute;
-    background: $white;
-    width: 73.5%;
-    height: rem(18);
-    border-radius: rem(10);
-    top: 45%;
+    content: "";
+    background: url(../images/common/line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: rem(669.75);
+    height: rem(417);
+    top: 11%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -45,83 +55,11 @@
 .p-schedule__card {
   position: relative;
 }
-.p-schedule__card:first-child::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    right: -35%;
-    top: 32%;
-    width: rem(160);
-    height: rem(18);
-    background: $white;
-  }
-}
-.p-schedule__card:nth-child(2)::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    right: -35%;
-    top: 32%;
-    width: rem(160);
-    height: rem(18);
-    background: $white;
-  }
-}
-.p-schedule__card:nth-child(3)::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 32%;
-    transform: translateX(-50%);
-    width: rem(18);
-    height: rem(260);
-    background: $white;
-    z-index: 0;
-  }
-}
-.p-schedule__card:nth-child(4)::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: -35%;
-    transform: translateX(-50%);
-    width: rem(18);
-    height: rem(255);
-    background: $white;
-    z-index: 0;
-    border-radius: rem(10);
-  }
-}
-.p-schedule__card:nth-child(5)::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    left: -35%;
-    top: 32%;
-    width: rem(160);
-    height: rem(18);
-    background: $white;
-  }
-}
-.p-schedule__card:nth-child(6)::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    left: -35%;
-    top: 32%;
-    width: rem(160);
-    height: rem(18);
-    background: $white;
-  }
-}
 .p-schedule__time {
   position: absolute;
   color: $blue;
   background: $white;
   display: inline-block;
-
   text-align: center;
   border: 1px solid $blue;
   font-weight: 700;
@@ -143,7 +81,7 @@
 
 .p-schedule__card:nth-child(n + 4) {
   @include mq(md) {
-    margin-top: rem(60);
+    margin-top: rem(32);
   }
 }
 .p-schedule__img {
