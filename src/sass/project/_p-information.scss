@@ -1,6 +1,16 @@
 @use "global" as *;
 
 .p-information {
+  position: relative;
+}
+.p-information::before {
+  position: fixed;
+  background: url(../images/common/recruit_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: rem(400);
 }
 .p-information__content {
   margin-top: rem(32);
@@ -44,18 +54,29 @@
 .p-information__btn {
   display: block;
   text-align: center;
-  padding-top: rem(36);
-  padding-bottom: rem(36);
   background: #f0f3f7;
   font-weight: 700;
   color: $black;
   font-size: rem(16.5);
+  transition: 0.3s;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  @include mq(md) {
+    padding-top: rem(36);
+    padding-bottom: rem(36);
+  }
+}
+.p-information__btn:hover {
+  color: $white;
+  background: $blue;
+  opacity: 1;
 }
 .p-information__img {
   width: 100%;
   position: relative;
   z-index: -1;
   margin-top: rem(24);
+
   @include mq(md) {
     margin-top: rem(-48);
   }

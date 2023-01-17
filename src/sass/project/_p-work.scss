@@ -1,15 +1,19 @@
 @use "global" as *;
 
 .p-work {
+  background: $white;
 }
 .p-work__img {
   width: 100%;
   position: relative;
 }
 .p-work__img::before {
-  padding-top: 29.41%;
   display: block;
   content: "";
+  padding-top: 50%;
+  @include mq(md) {
+    padding-top: 29.41%;
+  }
 }
 .p-work__img img {
   position: absolute;
@@ -24,7 +28,7 @@
 .p-work__content {
   margin-top: rem(-80);
   @include mq(md) {
-    margin-top: rem(-300);
+    margin-top: (-360 / 1440) * 100vw;
   }
 }
 .p-work__detail {

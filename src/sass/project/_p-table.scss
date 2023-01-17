@@ -62,11 +62,11 @@
 
 .p-table__top {
   color: $black;
-  font-size: rem(13);
+  font-size: rem(14);
   margin-bottom: rem(8);
   line-height: 2;
   @include mq(md) {
-    font-size: rem(12);
+    font-size: rem(14);
     margin-bottom: initial;
   }
 }

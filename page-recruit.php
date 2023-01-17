@@ -12,7 +12,7 @@
             <th class="p-table__item">募集職種</th>
             <td class="p-table__body">
               <div class="p-table__select">
-                <p class="p-table__top">交通誘導員</p>
+                <p class="p-table__top">2023年3月卒業見込みの方</p>
               </div>
             </td>
           </tr>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="p-table__occupation">
                   <p class="p-table__occupation-for">文系向け</p>
-                  <p class="p-table__top">営業／購買／資材／マーケティング／財務・経理／人事／総務／経営企画／広報・IR／法務／システム管理ほか</p>
+                  <p class="p-table__top">営業／購買／資材／マーケティング／財務・経理／人事／総務／経営企画／広報・IR／法務／システム管理&nbsp;&nbsp;ほか</p>
                 </div>
               </div>
             </td>
@@ -77,7 +77,7 @@
             <th class="p-table__item">各種手当</th>
             <td class="p-table__body">
               <div class="p-table__select">
-                <p class="p-table__top">在宅勤務手当/外勤手当/単身赴任手当/通勤手当(当社規定による)/休日勤務手当/深夜勤務手当/交代勤務手当/役職手当ほか</p>
+                <p class="p-table__top">在宅勤務手当/外勤手当/単身赴任手当/通勤手当(当社規定による)/休日勤務手当/深夜勤務手当/交代勤務手当/役職手当&nbsp;&nbsp;ほか</p>
               </div>
             </td>
           </tr>
@@ -167,7 +167,7 @@
             <td class="p-table__body">
               <div class="p-table__select">
                 <p class="p-table__top">〒332-0034　埼玉県川口市並木2-30-1<br>
-                  株式会社エンプラス　人事グループ　採用担当　 　⇒　適性検査・座談会　⇒　最終面接　⇒　内々定</p>
+                  株式会社エンプラス　人事グループ　採用担当</p>
               </div>
             </td>
           </tr>
@@ -188,6 +188,9 @@
             </td>
           </tr>
         </table>
+      </div>
+      <div class="p-recruit__btn">
+        <a href="#" class="c-btn--big">entry</a>
       </div>
     </div>
   </div>

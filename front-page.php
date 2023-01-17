@@ -61,6 +61,7 @@
             <div class="p-pioneer__smallTitle">
               <p class="c-small-title">エンプラスの事業</p>
             </div>
+
             <div class="p-pioneer__btn">
               <a href="<?php echo esc_url(home_url('/other/')); ?>" class="c-btn">Read&nbsp;more</a>
             </div>
@@ -133,7 +134,7 @@
       <figure class="p-work__img">
         <img src="<?php echo get_template_directory_uri() ?>/images/common/work_bg.jpg" alt="職種紹介">
       </figure>
-      <div class="l-inner">
+      <div class="l-work-inner">
         <div class="p-work__content">
           <div class="p-work__detail">
             <div class="p-work__title-wrapper">
@@ -148,8 +149,8 @@
     </div>
   </section>
   <section class="l-slider p-slider">
-    <div class="l-menu-inner">
-      <div class="l-inner p-slider__inner">
+    <div class="l-work-inner">
+      <div class="p-slider__inner">
         <div class="p-slider__title-wrapper">
           <h3 class="p-slider__title">社員インタビュー</h3>
         </div>
@@ -177,7 +178,7 @@
         ?>
             <div class="swiper-slide p-slider__card">
               <figure class="p-slider__img">
-                <img src="<?php the_field('group_img_top') ?>" alt="<?php the_title(); ?>">
+                <img src="<?php the_post_thumbnail('large') ?>" alt="<?php the_title(); ?>">
               </figure>
               <div class="p-slider__detail">
                 <h4 class="p-slider__subTitle"><?php the_field('group_name') ?></h4>
@@ -194,7 +195,7 @@
     </div>
   </section>
   <section class="l-menu p-menu">
-    <div class="l-inner">
+    <div class="l-second-inner">
       <div class="p-menu__content">
         <ul class="p-menu__cards">
           <li class="p-menu__card">
@@ -255,6 +256,13 @@
     <figure class="p-information__img">
       <img src="<?php echo get_template_directory_uri() ?>/images/common/recruit_bg.jpg" alt="採用情報">
     </figure>
+    <!-- <img class="p-information__img" src="<?php echo get_template_directory_uri() ?>/images/common/recruit_bg.jpg" alt="採用情報"> -->
+
   </section>
+  <div class="p-banner">
+    <a href="#" class="p-banner__link">
+      <img src="<?php echo get_template_directory_uri() ?>/images/common/banner.png" alt="エントリー">
+    </a>
+  </div>
 </main>
 <?php get_footer(); ?>

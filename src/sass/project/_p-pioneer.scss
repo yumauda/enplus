@@ -3,6 +3,11 @@
 .p-pioneer {
   position: relative;
   overflow: hidden;
+  background: $white;
+  padding-top: rem(48);
+  @include mq(md) {
+    padding-top: initial;
+  }
 }
 .p-pioneer::before {
   content: attr(data-company) "";
@@ -33,10 +38,10 @@
   height: 100%;
 }
 .p-pioneer__title-wrapper {
-  max-width: rem(428);
   width: 100%;
   white-space: nowrap;
   @include mq(md) {
+    max-width: rem(428);
     margin-top: rem(120);
     margin-left: rem(70.5);
   }
@@ -51,11 +56,17 @@
   width: 100%;
 }
 .p-pioneer__subTitle {
-  margin-top: rem(24);
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 .p-pioneer__smallTitle {
+  margin-top: rem(8);
   text-align: right;
-  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(16);
+  }
 }
 .p-pioneer__img1 {
   position: relative;
@@ -81,9 +92,11 @@
 }
 .p-pioneer__small {
   margin-top: auto;
-  margin-right: calc(50% - 50vw);
-  width: 42vw;
   position: relative;
+  @include mq(md) {
+    margin-right: calc(50% - 50vw);
+    width: 44vw;
+  }
 }
 .p-pioneer__small::before {
   padding-top: 48.6692%;
@@ -101,7 +114,11 @@
   transform: translate(-50%, -50%);
 }
 .p-pioneer__btn {
-  text-align: right;
-  margin-top: rem(48.75);
-  margin-right: rem(64);
+  margin-top: rem(24);
+  margin-left: auto;
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-top: rem(48.75);
+    margin-bottom: initial;
+  }
 }

@@ -68,10 +68,13 @@
   margin-top: rem(22.5);
 }
 .p-question__text {
-  font-size: rem(12);
+  font-size: rem(14);
   color: $black;
   letter-spacing: 0.06em;
   line-height: 2;
+}
+.p-question__text span {
+  color: $blue;
 }
 .p-question__text--space {
   padding-left: rem(12);

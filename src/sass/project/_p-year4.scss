@@ -35,12 +35,14 @@
   font-family: $second-font-family;
   font-weight: 700;
   color: #f0f3f7;
-  right: 0;
-  top: -28%;
+  top: rem(-100);
   z-index: -1;
   font-size: rem(72);
+  left: 0;
   @include mq(md) {
     font-size: rem(202.5);
+    right: 0;
+    left: initial;
   }
 }
 .p-year4__detail {
@@ -57,9 +59,12 @@
   white-space: nowrap;
 }
 .p-year4__text {
-  margin-top: rem(22.5);
   max-width: rem(254.25);
   width: 100%;
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(22.5);
+  }
 }
 .p-year4__img {
   max-width: rem(549.75);

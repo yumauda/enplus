@@ -142,17 +142,21 @@
 }
 .p-wide__btn {
   display: inline-block;
-  width: rem(135);
   background: $white;
   border: 2px solid $blue;
   color: $blue;
-  font-size: rem(16.5);
   font-weight: 700;
   letter-spacing: 0.06em;
   padding-top: rem(4);
   padding-bottom: rem(4);
   text-align: center;
   position: relative;
+  width: rem(110);
+  font-size: rem(14);
+  @include mq(md) {
+    width: rem(135);
+    font-size: rem(16.5);
+  }
 }
 .p-wide__btn::before {
   content: "";

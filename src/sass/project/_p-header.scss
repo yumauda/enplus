@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   height: rem(73);
-  background: $white;
+  background: rgba(255, 255, 255, 0.8);
   z-index: 9999;
 }
 .p-header__content {
@@ -40,6 +40,25 @@
 }
 .p-header__list {
   height: inherit;
+  position: relative;
+  font-size: rem(15);
+  letter-spacing: 0.06em;
+  color: #76778d;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.p-header__list::before {
+  width: 0%;
+  position: absolute;
+  content: "";
+  height: rem(2);
+  bottom: rem(16);
+  background: $blue;
+  transition: 0.3s;
+}
+.p-header__list:hover::before {
+  width: 100%;
 }
 .p-header__list + .p-header__list {
   margin-left: rem(48);
@@ -51,10 +70,10 @@
   font-weight: 700;
   height: inherit;
   display: block;
-  transition: 0.3s;
+  transition: all 0.3s;
   position: relative;
 }
-.p-header__link::before {
+/* .p-header__link::before {
   width: 0%;
   height: rem(2);
   background: $blue;
@@ -66,4 +85,26 @@
 }
 .p-header__link:hover::before {
   width: 100%;
+} */
+.p-header__menus {
+  position: absolute;
+  display: none;
+  transition: all 0.3s;
+  background: $white;
+  text-align: center;
+}
+.p-header__list:hover .p-header__menus {
+  display: block;
+  top: rem(64);
+  left: rem(-160);
+  width: rem(300);
+  transition: all 0.3s;
+}
+.p-header__menuLink {
+  display: block;
+  transition: 0.3s;
+}
+.p-header__menuLink:hover {
+  color: $white;
+  background: $blue;
 }

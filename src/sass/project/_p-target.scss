@@ -2,6 +2,11 @@
 
 .p-target {
   position: relative;
+  background: $white;
+  padding-top: rem(48);
+  @include mq(md) {
+    padding-top: initial;
+  }
 }
 .p-target::before {
   content: attr(data-company) "";
@@ -11,7 +16,7 @@
   color: $skyBlue;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 3;
   font-size: rem(48);
   font-family: $second-font-family;
   @include mq(md) {
@@ -24,12 +29,16 @@
   }
 }
 .p-target__jp {
-  margin-top: rem(27);
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(27);
+  }
 }
 .p-target__title-wrapper {
   max-width: rem(428);
   width: 100%;
   @include mq(md) {
+    max-width: rem(510);
     margin-top: rem(120);
   }
 }
@@ -38,7 +47,10 @@
   }
 }
 .p-target__subTitle {
-  margin-top: rem(24);
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 .p-target__btn {
   margin-top: rem(48.75);
@@ -46,7 +58,7 @@
 .p-target__img {
   margin-top: rem(30);
   position: relative;
-  z-index: -2;
+  z-index: 1;
   @include mq(md) {
     width: 58vw;
     margin-left: calc(50% - 50vw);

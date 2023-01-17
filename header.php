@@ -31,16 +31,63 @@
                 <nav class="p-header__nav">
                     <ul class="p-header__lists">
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">会社を知る</a>
+                            会社を知る
+                            <ul class="p-header__menus">
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/reading/')); ?>" class="p-header__menuLink">先を読むターゲット領域</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/other/')); ?>" class="p-header__menuLink">他がやらないエンプラスの事業</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/challenge/')); ?>" class="p-header__menuLink">エンプラス挑戦の軌跡</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-header__menuLink">エンプラスがよむ未来</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/number/')); ?>" class="p-header__menuLink">数字で見る</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">仕事を知る</a>
+                            仕事を知る
+                            <ul class="p-header__menus">
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/introduce/')); ?>" class="p-header__menuLink">職種紹介</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-header__menuLink">社員インタビュー</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-header__link">環境を知る</a>
+                            環境を知る
+                            <ul class="p-header__menus">
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/introduce/')); ?>" class="p-header__menuLink">研修制度</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-header__menuLink">福利厚生</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-header__menuLink">エンプラスの取り組み</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-header__link">採用情報</a>
+                            採用情報
+                            <ul class="p-header__menus">
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/question/')); ?>" class="p-header__menuLink">Q&A</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-header__menuLink">新卒募集要項</a>
+                                </li>
+                                <li class="p-header__menu">
+                                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-header__menuLink">中途募集要項</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -78,7 +125,7 @@
                             <p class="p-drawer-content__text">採用情報</p>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/question/')); ?>">Q&A</a></div>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/recruit/')); ?>">新卒採用募集要項</a></div>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">新卒採用募集要項</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">中途採用募集要項</a></div>
                         </div>
                     </div>
                 </div>

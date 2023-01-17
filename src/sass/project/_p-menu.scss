@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .p-menu {
+  background: $white;
 }
 .p-menu__content {
 }
@@ -27,9 +28,12 @@
   }
 }
 .p-menu__img::before {
-  padding-top: 77.586%;
   display: block;
   content: "";
+  padding-top: 55%;
+  @include mq(md) {
+    padding-top: 77.586%;
+  }
 }
 .p-menu__img img {
   position: absolute;
@@ -42,7 +46,12 @@
   transform: translate(-50%, -50%);
 }
 .p-menu__detail {
+  display: flex;
+  justify-content: space-between;
   margin-top: rem(12.75);
+  @include mq(md) {
+    display: block;
+  }
 }
 .p-menu__title {
   color: $black;
@@ -51,5 +60,9 @@
   font-size: rem(19.5);
 }
 .p-menu__btn {
-  margin-top: rem(26.25);
+  margin-right: rem(17);
+  @include mq(md) {
+    margin-right: initial;
+    margin-top: rem(26.25);
+  }
 }

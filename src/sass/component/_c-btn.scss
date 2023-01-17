@@ -2,83 +2,118 @@
 
 .c-btn {
   color: $blue;
-  font-size: rem(10.5);
+  font-size: rem(14);
   position: relative;
   font-weight: 700;
   width: rem(112.5);
+  display: block;
 }
 .c-btn:before {
   position: absolute;
   content: "";
-  width: rem(37.5);
-  height: rem(37.5);
+  width: 37.5px;
+  height: 37.5px;
   background: url(../images/common/btn_box.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid transparent;
-  right: -77%;
+  right: -18px;
   transition: all 0.3s;
   z-index: 1;
+  top: -2.5px;
+  transition: 0.3s;
 }
 .c-btn::after {
   position: absolute;
   content: "";
-  width: 88px;
-  height: rem(2);
-  background: $blue;
+  background: url(../images/common/btn_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(106);
+  height: 6px;
+  top: 16.5px;
   left: 0;
-  bottom: rem(-5.5);
-  transition: all 0.3s;
   z-index: 0;
+  transition: 0.3s;
 }
-.c-btn:hover::after {
-  width: rem(75);
-  left: rem(15);
-}
+
 .c-btn:hover::before {
-  width: rem(37.5);
-  height: rem(37.5);
+  width: 37.5px;
+  height: 37.5px;
   background: url(../images/common/btn_box_reverse.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid $blue;
+  z-index: 3;
+}
+.c-btn:hover::after {
+  background: url(../images/common/btn_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 97px;
+  height: 6px;
+  left: 9px;
 }
 .c-btn--white {
   color: $white;
-  font-size: rem(10.5);
+  font-size: rem(14);
   position: relative;
   font-weight: 700;
   width: rem(112.5);
+  display: block;
   transition: 0.3s;
 }
-.c-btn--white:before {
+.c-btn--white::before {
   position: absolute;
   content: "";
-  width: rem(37.5);
-  height: rem(37.5);
+  width: 37.5px;
+  height: 37.5px;
   background: url(../images/common/btn_box_reverse.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid transparent;
-  right: -77%;
+  right: -18px;
   transition: all 0.3s;
   z-index: 1;
+  top: -2.5px;
+  transition: 0.3s;
 }
 .c-btn--white::after {
   position: absolute;
   content: "";
-  width: 88px;
-  height: rem(2);
   background: $white;
+  width: rem(106);
+  height: 2px;
+  top: 20.5px;
   left: 0;
-  bottom: rem(-5.5);
-  transition: all 0.3s;
   z-index: 0;
+  transition: 0.3s;
 }
 .c-btn--white:hover {
+  color: $blue;
+}
+.c-btn--white:hover::before {
+  width: 37.5px;
+  height: 37.5px;
+  background: url(../images/common/btn_box.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 3;
+}
+.c-btn--white:hover::after {
+  background: $blue;
+  width: 97px;
+  left: 9px;
+  height: 2.5px;
+}
+/* .c-btn--white:hover {
   color: $blue;
 }
 .c-btn--white:hover::after {
@@ -94,4 +129,65 @@
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid $white;
+} */
+.c-btn--big {
+  font-size: rem(30);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $blue;
+  font-family: $second-font-family;
+  font-weight: 700;
+  position: relative;
+  width: rem(200);
+  display: block;
+}
+.c-btn--big:before {
+  position: absolute;
+  content: "";
+  width: rem(44);
+  height: rem(44);
+  background: url(../images/common/btn_box.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  z-index: 1;
+  top: rem(10);
+  right: rem(38);
+  transition: 0.3s;
+}
+.c-btn--big::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/btn_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(136);
+  height: 8px;
+  bottom: 5px;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s;
+}
+
+.c-btn--big:hover::before {
+  width: 44px;
+  height: 44px;
+  background: url(../images/common/btn_box_reverse.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid $blue;
+  z-index: 3;
+}
+.c-btn--big:hover::after {
+  background: url(../images/common/btn_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(124);
+  height: 8px;
+  left: 9px;
 }

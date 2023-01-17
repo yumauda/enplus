@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.p-banner {
+  position: fixed;
+  left: rem(16);
+  bottom: rem(16);
+  z-index: 10;
+  @include mq(md) {
+    left: rem(32);
+    bottom: rem(32);
+  }
+}
+.p-banner__link {
+  width: rem(132);
+  height: rem(113.25);
+  display: inline-block;
+  @include mq(md) {
+    width: rem(176.25);
+    height: rem(151.5);
+  }
+}

@@ -2,16 +2,22 @@
 
 .p-slider {
   padding-top: rem(32);
+  background: $white;
   @include mq(md) {
     padding-top: rem(56);
   }
 }
 .p-slider__inner {
+  height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   z-index: 10;
+  padding-right: rem(20);
+  @include mq(md) {
+    padding-right: initial;
+  }
 }
 .p-slider__title-wrapper {
 }
@@ -37,13 +43,20 @@
   font-size: rem(18);
 }
 .p-slider__btn {
-  margin-right: rem(32);
-  /* @include mq(md) {
-    margin-right: initial;
-  } */
+  /* position: absolute;
+
+  left: 0; */
+  @include mq(md) {
+    margin-right: rem(32);
+    position: static;
+    margin-top: initial;
+  }
 }
 .p-slider__swiper {
-  margin-top: rem(-32);
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(-32);
+  }
 }
 .p-slider__img {
   width: 100%;

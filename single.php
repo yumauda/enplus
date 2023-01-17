@@ -8,7 +8,7 @@
     <div class="p-single__subTitle-wrapper">
       <p class="p-single__subTitle">社員インタビュー#<?php the_field('group_number') ?></p>
     </div>
-    <div class="l-inner">
+    <div class="l-second-inner">
       <h3 class="p-single__sub"><?php the_field('group_reason') ?></h3>
       <div class="p-single__occupation-wrapper">
         <p class="p-single__occupation"><?php the_field('group_name') ?> / <?php the_field('group_year') ?></p>
@@ -93,19 +93,22 @@
       <div class="p-pager__content">
         <?php $prevpost = get_adjacent_post(false, '', true);
         if ($prevpost) : ?>
-          <div class="p-pager__box">
-            <p class="p-pager__prev">prev</p>
-            <div class="p-pager__detail">
-              <figure class="p-pager__img">
-                <img src="<?php echo get_the_post_thumbnail($prevpost->ID); ?>" alt="前に戻る">
-              </figure>
-              <div class="p-pager__data">
-                <p class="p-pager__text">生産本部生産部</p>
-                <p class="p-pager__text">品質管理G</p>
-                <p class="p-pager__text">2020年入社</p>
+          <div class="p-pager__link-wrapper">
+            <a href="<?php echo get_permalink($prevpost->ID); ?>" class="p-pager__link">
+              <div class="p-pager__box">
+                <p class="p-pager__prev">prev</p>
+                <div class="p-pager__detail">
+                  <figure class="p-pager__img">
+                    <img src="<?php echo get_the_post_thumbnail($prevpost->ID); ?>" alt="前に戻る">
+                  </figure>
+                  <div class="p-pager__data">
+                    <p class="p-pager__text">生産本部生産部</p>
+                    <p class="p-pager__text">品質管理G</p>
+                    <p class="p-pager__text">2020年入社</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <a href="<?php echo get_permalink($prevpost->ID); ?>" class="p-pager__link"></a>
+            </a>
           </div>
         <?php endif; ?>
         <div class="p-pager__center">
@@ -115,19 +118,22 @@
         </div>
         <?php $nextpost = get_adjacent_post(false, '', false);
         if ($nextpost) : ?>
-          <div class="p-pager__box p-pager__box--next">
-            <p class="p-pager__next">next</p>
-            <div class="p-pager__detail p-pager__detail--next">
-              <figure class="p-pager__img">
-                <img src="<?php echo get_the_post_thumbnail($nextpost->ID); ?>" alt="前に戻る">
-              </figure>
-              <div class="p-pager__data">
-                <p class="p-pager__text">生産本部生産部</p>
-                <p class="p-pager__text">品質管理G</p>
-                <p class="p-pager__text">2020年入社</p>
+          <div class="p-pager__link-wrapper--next">
+            <a href="<?php echo get_permalink($nextpost->ID); ?>" class="p-pager__link">
+              <div class="p-pager__box p-pager__box--next">
+                <p class="p-pager__next">next</p>
+                <div class="p-pager__detail p-pager__detail--next">
+                  <figure class="p-pager__img">
+                    <img src="<?php echo get_the_post_thumbnail($nextpost->ID); ?>" alt="前に戻る">
+                  </figure>
+                  <div class="p-pager__data">
+                    <p class="p-pager__text">生産本部生産部</p>
+                    <p class="p-pager__text">品質管理G</p>
+                    <p class="p-pager__text">2020年入社</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <a href="<?php echo get_permalink($nextpost->ID); ?>" class="p-pager__link"></a>
+            </a>
           </div>
         <?php endif; ?>
       </div>

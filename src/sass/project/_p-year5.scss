@@ -36,7 +36,7 @@
   left: 0;
   z-index: -1;
   font-size: rem(72);
-  top: -36%;
+  top: rem(-100);
   @include mq(md) {
     top: -63%;
     font-size: rem(202.5);
@@ -56,9 +56,12 @@
   margin-top: rem(54);
 }
 .p-year5__text {
-  margin-top: rem(22.5);
   max-width: rem(254.25);
   width: 100%;
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(22.5);
+  }
 }
 .p-year5__img {
   max-width: rem(504.75);

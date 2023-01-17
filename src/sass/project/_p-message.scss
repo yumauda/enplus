@@ -4,6 +4,8 @@
   padding-top: rem(37.5);
   padding-bottom: rem(32);
   position: relative;
+  background: $white;
+
   @include mq(md) {
     padding-bottom: rem(148);
   }
@@ -16,7 +18,7 @@
   color: $skyBlue;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 2;
   font-family: $second-font-family;
   font-size: rem(48);
   @include mq(md) {
@@ -35,6 +37,7 @@
   white-space: nowrap;
   @include mq(md) {
     margin-top: rem(114);
+    z-index: 2;
   }
 }
 .p-message__text-wrapper {
@@ -57,7 +60,7 @@
   @include mq(md) {
     margin-left: calc(50% - 50vw);
     width: 100vw;
-    z-index: -2;
+    z-index: 1;
     margin-top: initial;
   }
 }
@@ -77,22 +80,38 @@
   transform: translate(-50%, -50%);
 }
 .p-message__jp {
-  margin-top: rem(27);
+  margin-top: rem(8);
   text-align: right;
+  @include mq(md) {
+    margin-top: rem(27);
+  }
 }
 .p-message__subTitle {
-  margin-top: rem(24);
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 .p-message__subText-wrapper {
-  margin-top: rem(24);
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 .p-message__subText {
   font-size: rem(18);
   color: $black;
   letter-spacing: 0.08em;
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-message__btn {
-  margin-right: rem(64);
-  text-align: right;
-  margin-top: rem(50.25);
+  text-align: left;
+  margin-top: rem(24);
+  display: flex;
+  justify-content: end;
+  @include mq(md) {
+    margin-top: rem(50.25);
+  }
 }
