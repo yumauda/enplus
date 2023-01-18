@@ -146,3 +146,27 @@
   right: 0;
   bottom: 0;
 }
+.p-page-mv__text {
+  color: $black;
+  background: $white;
+  font-weight: 700;
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  padding-left: rem(8);
+  padding-right: rem(32);
+  font-size: rem(20);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @include mq(md) {
+    font-size: rem(40);
+    padding-right: calc(80 / 1440) * 100vw;
+    padding-left: rem(32);
+    letter-spacing: 0.06em;
+  }
+}
+.p-page-mv__text--sp {
+  text-align: right;
+}
+
+

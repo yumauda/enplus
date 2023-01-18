@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--recruit">
     <h2 class="c-section-title">recruiting</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_recruit_text.jpg" alt="新卒募集要項">
+    <p class="p-page-mv__text u-desktop">新卒募集要項</p>
   </section>
   <div class="l-recruit p-recruit">
     <div class="l-inner">
@@ -194,5 +194,7 @@
       </div>
     </div>
   </div>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

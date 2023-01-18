@@ -2,10 +2,9 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--number">
     <h2 class="c-section-title">company</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_number_img.jpg" alt="数字で見る">
+    <p class="p-page-mv__text">数字で見る</p>
   </section>
   <div class="l-inner">
-
     <ul class="p-number">
       <li class="p-number__list">
         <figure class="p-number__img">
@@ -69,5 +68,7 @@
       </li>
     </ul>
   </div>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

@@ -48,10 +48,9 @@
   font-weight: 700;
   color: #f0f3f7;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 0.5;
   top: 0;
   @include mq(md) {
-    top: -3%;
     font-size: rem(184);
   }
 }

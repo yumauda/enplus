@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--other">
     <h2 class="c-section-title">company</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_other_text.jpg" alt="先をよむターゲット領域">
+    <p class="p-page-mv__text">"他がやらない"エンプラスの事業</p>
   </section>
   <section class="l-wide p-wide">
     <div class="l-inner">
@@ -153,5 +153,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

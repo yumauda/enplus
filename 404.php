@@ -11,5 +11,7 @@
         </div>
     </div>
 </section>
+<?php get_template_part('includes/banner'); ?>
+
 
 <?php get_footer();?>

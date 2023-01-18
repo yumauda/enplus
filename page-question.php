@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--question">
     <h2 class="c-section-title">recruiting</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_question_text.jpg" alt="質問">
+    <p class="p-page-mv__text">Q&A</p>
   </section>
   <div class="l-question p-question">
     <div class="l-inner">
@@ -84,5 +84,7 @@
       </div>
     </div>
   </div> -->
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

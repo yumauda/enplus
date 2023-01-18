@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .l-target {
-  margin-top: rem(16);
+  margin-top: rem(32);
   @include mq(md) {
     margin-top: initial;
   }

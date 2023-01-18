@@ -139,5 +139,7 @@
       </div>
     </div>
   </div>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--reading">
     <h2 class="c-section-title">company</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_target_text.jpg" alt="先をよむターゲット領域">
+    <p class="p-page-mv__text">先をよむターゲット領域</p>
   </section>
   <section class="l-always p-always">
     <div class="l-inner">
@@ -62,5 +62,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

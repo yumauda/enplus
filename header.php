@@ -16,6 +16,9 @@
     <meta property="og:image" content="">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -26,6 +29,7 @@
                 <h1 class="p-header__logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__home">
                         <img src="<?php echo get_template_directory_uri() ?>/images/common/header_logo.png" alt="エンプラス">
+                        <p class="p-header__logo-text">recruiting&nbsp;site</p>
                     </a>
                 </h1>
                 <nav class="p-header__nav">

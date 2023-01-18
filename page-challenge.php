@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--challenge">
     <h2 class="c-section-title">company</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_challenge_text.jpg" alt="挑戦の軌跡">
+    <p class="p-page-mv__text">エンプラス挑戦の軌跡</p>
   </section>
   <section class="l-challenge p-challenge">
     <div class="l-inner">
@@ -137,5 +137,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

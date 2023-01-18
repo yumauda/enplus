@@ -115,3 +115,22 @@
     margin-top: rem(50.25);
   }
 }
+.p-message__hover:hover .c-btn::before {
+  width: 37.5px;
+  height: 37.5px;
+  background: url(../images/common/btn_box_reverse.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid $blue;
+  z-index: 3;
+}
+.p-message__hover:hover .c-btn::after {
+  background: url(../images/common/btn_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 97px;
+  height: 6px;
+  left: 9px;
+}

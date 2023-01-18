@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--environment">
     <h2 class="c-section-title">environment</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_environment_text.jpg" alt="福利厚生">
+    <p class="p-page-mv__text">福利厚生</p>
   </section>
   <div class="l-environment p-environment">
     <div class="l-inner">
@@ -195,5 +195,7 @@
       </div>
     </div>
   </div>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

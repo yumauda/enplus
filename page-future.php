@@ -2,7 +2,7 @@
 <main>
   <section class="l-future-mv p-future-mv">
     <h2 class="c-section-title">company</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/common/page_future_text.jpg" alt="エンプラスがよむ未来">
+    <p class="p-page-mv__text">エンプラスがよむ未来</p>
   </section>
   <section class="l-future p-future">
     <div class="l-inner">
@@ -19,5 +19,7 @@
   <figure class="p-future__img">
     <img src="<?php echo get_template_directory_uri() ?>/images/common/future_person.jpg" alt="代表取締役社長">
   </figure>
+  <?php get_template_part('includes/banner'); ?>
+
 </main>
 <?php get_footer(); ?>

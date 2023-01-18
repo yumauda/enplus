@@ -18,23 +18,22 @@
 }
 .p-interview__list {
   position: relative;
+  overflow: hidden;
+  display: block;
 }
 .p-interview__link {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  overflow: hidden;
+  display: block;
 }
-.p-interview__link:hover + .p-interview__img {
-  transform: scale(1.1);
+.p-interview__link:hover .p-interview__img {
+  transform: scale(1.05);
+  transition: 0.3s;
+  overflow: hidden;
 }
 .p-interview__img {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .p-interview__img::before {
   padding-top: 100%;
