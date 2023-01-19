@@ -23,18 +23,18 @@
 </head>
 
 <body>
-    <header class="l-header p-header">
+    <header class="l-header p-header js-background">
         <div class="l-header-inner">
             <div class="p-header__content">
                 <h1 class="p-header__logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__home">
                         <img src="<?php echo get_template_directory_uri() ?>/images/common/header_logo.png" alt="エンプラス">
-                        <p class="p-header__logo-text">recruiting&nbsp;site</p>
+                        <p class="p-header__logo-text js-text">recruiting&nbsp;site</p>
                     </a>
                 </h1>
                 <nav class="p-header__nav">
-                    <ul class="p-header__lists">
-                        <li class="p-header__list">
+                    <ul class="p-header__lists js-texts">
+                        <li class="p-header__list js-text">
                             会社を知る
                             <ul class="p-header__menus">
                                 <li class="p-header__menu">
@@ -54,7 +54,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="p-header__list">
+                        <li class="p-header__list js-text">
                             仕事を知る
                             <ul class="p-header__menus">
                                 <li class="p-header__menu">
@@ -65,7 +65,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="p-header__list">
+                        <li class="p-header__list js-text">
                             環境を知る
                             <ul class="p-header__menus">
                                 <li class="p-header__menu">
@@ -79,7 +79,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="p-header__list">
+                        <li class="p-header__list js-text">
                             採用情報
                             <ul class="p-header__menus">
                                 <li class="p-header__menu">

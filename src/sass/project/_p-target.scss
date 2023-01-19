@@ -45,6 +45,8 @@
 }
 .p-target__title {
   @include mq(md) {
+    position: relative;
+    z-index: 10;
   }
 }
 .p-target__subTitle {
@@ -62,7 +64,7 @@
 .p-target__img {
   margin-top: rem(30);
   position: relative;
-  z-index: 1;
+  z-index: 0;
   @include mq(md) {
     width: 58vw;
     margin-left: calc(50% - 50vw);

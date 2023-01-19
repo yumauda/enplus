@@ -57,7 +57,10 @@
   color: $black;
   letter-spacing: 0.06em;
   font-weight: 700;
-  font-size: rem(19.5);
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(19.5);
+  }
 }
 .p-menu__btn {
   margin-right: rem(17);

@@ -688,6 +688,7 @@ select::-ms-expand {
   color: #14202e;
   letter-spacing: 0.06em;
   line-height: 2;
+  text-align: justify;
 }
 
 .p-column {
@@ -1021,7 +1022,7 @@ select::-ms-expand {
   right: 0;
   z-index: 10001;
   display: block;
-  background: #fff;
+  background: transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 70px;
@@ -1549,8 +1550,14 @@ select::-ms-expand {
   right: 0;
   height: 73px;
   height: 4.5625rem;
-  background: rgba(255, 255, 255, .8);
   z-index: 9999;
+  background: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.p-header.headerBack {
+  background: rgba(255, 255, 255, .8);
 }
 
 .p-header__content {
@@ -1602,6 +1609,10 @@ select::-ms-expand {
   text-transform: uppercase;
 }
 
+.p-header__logo-text.textBlack {
+  color: #14202e;
+}
+
 .p-header__nav {
   display: none;
 }
@@ -1634,6 +1645,10 @@ select::-ms-expand {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.p-header__list.textBlack {
+  color: #14202e;
 }
 
 .p-header__list::before {
@@ -2277,8 +2292,13 @@ select::-ms-expand {
   color: #14202e;
   letter-spacing: 0.06em;
   font-weight: 700;
-  font-size: 19.5px;
-  font-size: 1.21875rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__title {
+    font-size: 1.21875rem;
+  }
 }
 
 .p-menu__btn {
@@ -4696,6 +4716,13 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .p-target__title {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .p-target__subTitle {
   margin-top: 8px;
   margin-top: 0.5rem;
@@ -4720,7 +4747,7 @@ select::-ms-expand {
   margin-top: 30px;
   margin-top: 1.875rem;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 @media screen and (min-width: 768px) {
   .p-target__img {
@@ -5430,7 +5457,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-year2::before {
     top: 40%;
-    height: 33%;
+    height: 37%;
   }
 }
 
@@ -5701,8 +5728,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-year4::before {
-    height: 38%;
-    top: 37%;
+    height: 41%;
+    top: 39%;
   }
 }
 
@@ -5843,7 +5870,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-year5::before {
     top: 40%;
-    height: 47%;
+    height: 49%;
   }
 }
 
@@ -6535,8 +6562,8 @@ select::-ms-expand {
 }
 
 .c-year-text {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.06em;
   line-height: 2;
   color: #14202e;

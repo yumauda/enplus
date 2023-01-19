@@ -43,5 +43,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+  $(function () {
+    $(window).on("scroll", function () {
+      const sliderHeight = $(".p-page-mv,.p-tomorrow,.p-future-mv").height();
+      if (sliderHeight - 30 < $(this).scrollTop()) {
+        $(".js-background").addClass("headerBack");
+        $(".js-text").addClass("textBlack");
+      } else {
+        $(".js-background").removeClass("headerBack");
+        $(".js-text").removeClass("textBlack");
+      }
+    });
+  });
 
 });

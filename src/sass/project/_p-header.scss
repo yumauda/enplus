@@ -7,8 +7,12 @@
   left: 0;
   right: 0;
   height: rem(73);
-  background: rgba(255, 255, 255, 0.8);
   z-index: 9999;
+  background: transparent;
+  transition: 0.3s;
+}
+.p-header.headerBack {
+  background: rgba(255, 255, 255, 0.8);
 }
 .p-header__content {
   display: flex;
@@ -38,6 +42,9 @@
   margin-left: rem(14);
   text-transform: uppercase;
 }
+.p-header__logo-text.textBlack {
+  color: $black;
+}
 .p-header__nav {
   display: none;
   @include mq(md) {
@@ -60,6 +67,9 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s;
+}
+.p-header__list.textBlack {
+  color: $black;
 }
 .p-header__list::before {
   width: 0%;
