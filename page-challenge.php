@@ -18,7 +18,8 @@
             <img src="<?php echo get_template_directory_uri() ?>/images/common/challenge_graph.png" alt="挑戦しつづける姿勢から生まれた製品">
           </figure>
           <div class="p-challenge__subText-wrapper">
-            <p class="p-challenge__subText">ダミーです自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。ダミーです自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。自動車やプリンター、OA機器、家電などで、エンプラス製のギヤが活躍中です。</p>
+            <p class="p-challenge__subText">エンプラスは、「挑戦」と「創造」を繰り返し、成長しています。<br>
+              既成概念にとらわれず挑戦しつづける姿勢から、数々の世界初・世界一の製品を生み出し、事業ポートフォリオを変革し続けています。</p>
           </div>
         </div>
       </div>
@@ -29,16 +30,16 @@
       <div class="p-year__content">
         <div class="p-year__detail">
           <div class="p-year__title">
-            <h3 class="c-year-title" data-year="オーディオカセット用">エントランスハブ</h3>
+            <h3 class="c-year-title" data-year="オーディオカセット用">エンプラスハブ</h3>
           </div>
           <div class="p-year__title">
-            <h3 class="c-year-title" data-year="ビデオカセット用">エントランスリール</h3>
+            <h3 class="c-year-title" data-year="ビデオカセット用">エンプラスリール</h3>
           </div>
           <div class="p-year__title">
             <h3 class="c-year-title" data-year="テープレコーダー用">プラスチックカウンター</h3>
           </div>
           <div class="p-year__text">
-            <p class="c-year-text">ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。</p>
+            <p class="c-year-text">【世界初・世界一】<br>独自設計ビデオカセット用リール「エンプラスリール｣を開発・製品化テープレコーダー用プラスチックカウンターを開発・製品化VTR用テープガイドローラー「VDGローラー｣を開発</p>
           </div>
         </div>
         <figure class="p-year__img--1970">

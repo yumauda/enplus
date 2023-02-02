@@ -50,6 +50,9 @@
   margin-top: rem(36);
   position: relative;
   z-index: 1;
+  @include mq(md) {
+    max-width: rem(480);
+  }
 }
 .p-year__title {
   white-space: nowrap;
@@ -65,32 +68,18 @@
   width: 100%;
   margin-top: rem(12);
   @include mq(md) {
+    max-width: rem(700);
     margin-top: rem(22.5);
   }
 }
 .p-year__img--1970 {
-  max-width: rem(638.25);
   width: 100%;
   position: relative;
   z-index: 0;
   margin-top: rem(16);
   @include mq(md) {
-    margin-left: rem(-60);
-    margin-top: initial;
+    max-width: rem(800);
+    margin-left: rem(-240);
+    margin-top: rem(24);
   }
-}
-.p-year__img--1970::before {
-  padding-top: 58.871%;
-  display: block;
-  content: "";
-}
-.p-year__img--1970 img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

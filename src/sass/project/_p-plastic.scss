@@ -16,12 +16,15 @@
 .p-plastic::before {
   content: "";
   position: absolute;
-  background: #d8d8d8;
   height: rem(440);
   width: 100%;
   left: 0;
   right: 0;
   top: 0;
+  background: url(../images/common/plastic_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .p-plastic__content {
   background: $white;

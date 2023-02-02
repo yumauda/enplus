@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.p-invite {
+  padding-top: rem(150);
+  padding-bottom: rem(100);
+}
+.p-invite__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-invite__title {
+  text-align: center;
+}
+.p-invite__lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(12);
+  margin-top: rem(28);
+
+  @include mq(md) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(22.5);
+    margin-top: rem(40);
+  }
+}
+.p-invite__link {
+  display: inline-block;
+  width: rem(292);
+  text-align: center;
+  padding-top: rem(26);
+  padding-bottom: rem(26);
+  background: #eef1f6;
+  font-size: rem(16);
+  color: $black;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  position: relative;
+}
+.p-invite__link::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/invite_arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(32);
+  height: rem(6);
+  bottom: rem(10);
+  right: rem(10);
+  transition: 0.3s;
+}
+.p-invite__link:hover::before {
+    right: rem(2);
+}

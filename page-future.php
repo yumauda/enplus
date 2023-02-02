@@ -2,7 +2,7 @@
 <main>
   <section class="l-future-mv p-future-mv">
     <h2 class="c-section-title">company</h2>
-    <p class="p-page-mv__text">エンプラスがよむ未来</p>
+    <p class="p-page-mv__text">エンプラスが目指すこと</p>
   </section>
   <section class="l-future p-future">
     <div class="l-inner">

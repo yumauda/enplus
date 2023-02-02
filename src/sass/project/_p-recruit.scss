@@ -8,6 +8,15 @@
     padding-bottom: rem(142.5);
   }
 }
+.p-recruit--bottom {
+  padding-top: initial;
+}
+.p-recruit__title {
+  text-align: center;
+}
+.p-recruit__table {
+  margin-top: rem(50);
+}
 .p-recruit__btn {
   display: flex;
   justify-content: center;

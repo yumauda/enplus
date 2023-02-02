@@ -15,7 +15,7 @@
                     <a href="<?php echo esc_url(home_url('/challenge/')); ?>" class="p-footer__link">エンプラス挑戦の軌跡</a>
                 </div>
                 <div class="p-footer__list">
-                    <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-footer__link">エンプラスがよむ未来</a>
+                    <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-footer__link">エンプラスが目指すこと</a>
                 </div>
                 <div class="p-footer__list">
                     <a href="<?php echo esc_url(home_url('/number/')); ?>" class="p-footer__link">数字で見る</a>
@@ -43,7 +43,7 @@
                     <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-footer__link">福利厚生</a>
                 </div>
                 <div class="p-footer__list">
-                    <a href="#" class="p-footer__link">エンプラスの取り組み</a>
+                    <a href="#" class="p-footer__link">ギャラリー</a>
                 </div>
             </div>
             <div class="p-footer__lists">
@@ -54,10 +54,10 @@
                     <a href="<?php echo esc_url(home_url('/question/')); ?>" class="p-footer__link">Q＆A</a>
                 </div>
                 <div class="p-footer__list">
-                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-footer__link">新卒採用募集要項</a>
+                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-footer__link">新卒募集要項</a>
                 </div>
                 <div class="p-footer__list">
-                    <a href="#" class="p-footer__link">中途採用募集要項</a>
+                    <a href="<?php echo esc_url(home_url('/career/')); ?>" class="p-footer__link">キャリア募集要項</a>
                 </div>
             </div>
             <div class="p-footer__logo-wrapper">

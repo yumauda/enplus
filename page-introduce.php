@@ -7,21 +7,21 @@
   <div class="p-introduce-btn">
     <div class="l-inner">
       <div class="p-introduce-btn__content">
-        <a href="#science" class="p-introduce-btn__link">理系職種</a>
-        <a href="#humanities" class="p-introduce-btn__link">文系職種</a>
+        <a href="#science" class="p-introduce-btn__link">理系向け</a>
+        <a href="#humanities" class="p-introduce-btn__link">文系向け</a>
       </div>
     </div>
   </div>
   <section class="l-science p-science" id="science">
     <div class="l-inner">
       <div class="p-science__title">
-        <h3 class="c-solution-title c-solution-title--white" data-solution="science">理系職種</h3>
+        <h3 class="c-solution-title c-solution-title--white" data-solution="science">理系向け</h3>
       </div>
       <div class="p-science__content">
         <ul class="p-science__cards p-lists">
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img1.jpg" alt="研究開発">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">研究開発</h4>
@@ -32,7 +32,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img2.jpg" alt="設計">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">設計</h4>
@@ -43,7 +43,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img3.jpg" alt="知的財産">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">知的財産</h4>
@@ -54,7 +54,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img4.jpg" alt="品質管理">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">品質管理</h4>
@@ -65,7 +65,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="品質保証">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img5.jpg" alt="品質保証">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">品質保証</h4>
@@ -76,7 +76,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="生産管理">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img6.jpg" alt="生産管理">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">生産管理</h4>
@@ -87,7 +87,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="金型製造">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img7.jpg" alt="金型製造">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">金型製造</h4>
@@ -98,7 +98,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="生産技術">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/science_img8.jpg" alt="生産技術">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">生産技術</h4>
@@ -114,13 +114,13 @@
   <section class="l-science p-science p-science--white" id="humanities">
     <div class="l-inner">
       <div class="p-science__title">
-        <h3 class="c-solution-title" data-solution="humanities">文系職種</h3>
+        <h3 class="c-solution-title" data-solution="humanities">文系向け</h3>
       </div>
       <div class="p-science__content">
         <ul class="p-science__cards p-lists">
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img1.jpg" alt="営業">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">営業</h4>
@@ -131,7 +131,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img2.jpg" alt="資材購買">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">資材購買</h4>
@@ -142,7 +142,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img3.jpg" alt="マーケティング">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">マーケティング</h4>
@@ -153,7 +153,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="理系職種">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img4.jpg" alt="財務・経理">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">財務・経理</h4>
@@ -164,7 +164,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="品質保証">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img5.jpg" alt="人事・研修">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">人事・研修</h4>
@@ -175,7 +175,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="金型製造">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img6.jpg" alt="総務">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">総務</h4>
@@ -186,7 +186,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="生産技術">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img7.jpg" alt="経営企画">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">経営企画</h4>
@@ -197,7 +197,7 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="生産技術">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img8.jpg" alt="法務">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">法務</h4>
@@ -208,12 +208,12 @@
           </li>
           <li class="p-lists__card">
             <figure class="p-lists__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/lists_img.jpg" alt="生産技術">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/humanities_img9.jpg" alt="IT企画">
             </figure>
             <div class="p-lists__detail">
               <h4 class="p-lists__title">IT企画</h4>
               <div class="p-lists__description">
-                <p class="p-lists__text">経営基盤システムの構築・確実性安全性の確保等、会社や組織内での「 IT システム」に関わる業務</p>
+                <p class="p-lists__text">経営基盤システムの構築・確実性安全性の確保等、会社や組織内での「IT システム」に関わる業務</p>
               </div>
             </div>
           </li>

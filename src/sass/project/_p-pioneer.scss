@@ -42,7 +42,7 @@
   @include mq(md) {
     max-width: rem(428);
     margin-top: rem(120);
-    margin-left: rem(70.5);
+    /* margin-left: rem(70.5); */
   }
 }
 .p-pioneer__title {
@@ -60,6 +60,11 @@
     margin-top: rem(24);
   }
 }
+.p-pioneer__subTitle--next {
+  @include mq(md) {
+    text-align: right;
+  }
+}
 .p-pioneer__smallTitle {
   margin-top: rem(8);
   text-align: right;
@@ -75,7 +80,7 @@
   }
 }
 .p-pioneer__img1::before {
-  padding-top: 91.4285%;
+  padding-top: 62.571%;
   display: block;
   content: "";
 }

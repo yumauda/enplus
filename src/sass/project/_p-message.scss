@@ -54,18 +54,17 @@
   font-size: rem(12);
 }
 .p-message__img {
-  width: 100%;
   position: relative;
   margin-top: rem(32);
+  width: 100%;
   @include mq(md) {
     margin-left: calc(50% - 50vw);
-    width: 100vw;
     z-index: 1;
     margin-top: initial;
   }
 }
 .p-message__img::before {
-  padding-top: 63.45%;
+  padding-top: 62.571%;
   display: block;
   content: "";
 }

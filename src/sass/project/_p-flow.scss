@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.p-flow {
+}
+.p-flow__content {
+  max-width: rem(922.5);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-flow__title {
+  text-align: center;
+}
+.p-flow__dl {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(51);
+  }
+}
+.p-flow__row {
+  display: flex;
+  align-items: center;
+  padding-top: rem(22.5);
+  padding-bottom: rem(22.5);
+  padding-right: rem(24);
+  background: #eef1f6;
+  position: relative;
+}
+.p-flow__row::before {
+  content: "";
+  position: absolute;
+  width: rem(22.5);
+  height: rem(15);
+  background: url(../images/common/flow_arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: rem(-36);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-flow__row:last-child::before {
+  display: none;
+}
+.p-flow__row + .p-flow__row {
+  margin-top: rem(28);
+  @include mq(md) {
+    margin-top: rem(56);
+  }
+}
+.p-flow__dt {
+  @include mq(md) {
+    width: rem(150);
+  }
+}
+
+.p-flow__subTitle {
+  font-size: rem(18);
+  color: $blue;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.p-flow__subTitle::before {
+  position: absolute;
+  content: attr(data-number) "";
+  color: $white;
+  font-family: $second-font-family;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  @include mq(md) {
+    font-size: rem(85);
+  }
+}
+.p-flow__dd {
+  @include mq(md) {
+    width: calc(100% - rem(150));
+  }
+}
+.p-flow__description {
+  font-size: rem(14);
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 1.88888;
+}
+.p-flow__description span {
+  color: $blue;
+  font-weight: 700;
+}
+.p-flow__description a {
+  color: $black;
+  border-bottom: 1px solid $black;
+}

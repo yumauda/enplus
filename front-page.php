@@ -66,13 +66,10 @@
               <div class="p-pioneer__smallTitle">
                 <p class="c-small-title">エンプラスの事業</p>
               </div>
-
               <div class="p-pioneer__btn">
                 <div class="c-btn">Read&nbsp;more</div>
               </div>
-              <figure class="p-pioneer__small">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/pioneer_img2.jpg" alt="">
-              </figure>
+
             </div>
           </div>
           <figure class="p-pioneer__img1">
@@ -109,53 +106,51 @@
       </a>
     </div>
   </section>
-  <section class="l-message p-message" data-company="future">
+  <section class="l-pioneer p-pioneer" data-company="future">
     <div class="l-inner">
-      <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-message__hover">
-        <div class="p-message__content">
-          <div class="p-message__title-wrapper">
-            <div class="p-message__title">
+      <a href="<?php echo esc_url(home_url('/other/')); ?>" class="p-pioneer__hover">
+        <div class="p-pioneer__content">
+          <div class="p-pioneer__title-wrapper">
+            <div class="p-pioneer__title">
               <h3 class="c-company-title">company</h3>
             </div>
-            <div class="p-message__jp">
-              <div class="p-message__smallTitle">
+            <div class="p-pioneer__jp">
+              <div class="p-pioneer__smallTitle">
                 <p class="c-small-title">エンプラスが</p>
               </div>
-              <div class="p-message__subTitle">
-                <h4 class="c-big-title"><span>よむ</span>未来</h4>
+              <div class="p-pioneer__subTitle p-pioneer__subTitle--next">
+                <h4 class="c-big-title">目指すこと</h4>
               </div>
-              <div class="p-message__subText-wrapper">
-                <p class="p-message__subText">ー代表メッセージー</p>
-              </div>
-              <div class="p-message__btn">
+
+              <div class="p-pioneer__btn">
                 <div class="c-btn">Read&nbsp;more</div>
               </div>
+
             </div>
           </div>
-          <figure class="p-message__img">
+          <figure class="p-pioneer__img1">
             <img src="<?php echo get_template_directory_uri() ?>/images/common/message_img.jpg" alt="先をよむターゲット領域">
           </figure>
         </div>
       </a>
     </div>
   </section>
+  <section class="l-top-number p-top-number">
+    <div class="l-menu-inner">
+      <a href="" class="p-top-number__content">
+        <div class="p-top-number__title-wrapper">
+          <h3 class="p-top-number__title">数字を見る</h3>
+        </div>
+      </a>
+    </div>
+  </section>
   <section class="l-work p-work">
     <div class="l-menu-inner">
-      <figure class="p-work__img">
-        <img src="<?php echo get_template_directory_uri() ?>/images/common/work_bg.jpg" alt="職種紹介">
-      </figure>
-      <div class="l-work-inner">
-        <div class="p-work__content">
-          <div class="p-work__detail">
-            <div class="p-work__title-wrapper">
-              <h3 class="p-work__title">職種紹介</h3>
-            </div>
-            <div class="p-work__btn">
-              <a href="<?php echo esc_url(home_url('/introduce/')); ?>" class="c-btn c-btn--white">Read&nbsp;more</a>
-            </div>
-          </div>
+      <a href="" class="p-work__content">
+        <div class="p-work__title-wrapper">
+          <h3 class="p-work__title">職種紹介</h3>
         </div>
-      </div>
+      </a>
     </div>
   </section>
   <section class="l-slider p-slider">
@@ -236,7 +231,7 @@
               <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img3.jpg" alt="エンプラスの取り組み">
             </figure>
             <div class="p-menu__detail">
-              <h3 class="p-menu__title">エンプラスの取り組み</h3>
+              <h3 class="p-menu__title">ギャラリー</h3>
               <div class="p-menu__btn">
                 <a href="#" class="c-btn">Read&nbsp;more</a>
               </div>
@@ -260,15 +255,13 @@
           <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-information__btn">新卒採用募集要項</a>
         </div>
         <div class="p-information__btn-wrapper">
-          <a href="#" class="p-information__btn">中途採用募集要項</a>
+          <a href="<?php echo esc_url(home_url('/career/')); ?>" class="p-information__btn">中途採用募集要項</a>
         </div>
       </div>
     </div>
     <figure class="p-information__img">
       <img src="<?php echo get_template_directory_uri() ?>/images/common/recruit_bg.jpg" alt="採用情報">
     </figure>
-    <!-- <img class="p-information__img" src="<?php echo get_template_directory_uri() ?>/images/common/recruit_bg.jpg" alt="採用情報"> -->
-
   </section>
   <?php get_template_part('includes/banner'); ?>
 </main>

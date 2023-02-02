@@ -42,7 +42,7 @@
           <img src="<?php echo get_template_directory_uri() ?>/images/common/solution_img2.png" alt="未開拓市場をリードし続ける">
         </figure>
         <div class="p-solution__text-wrapper">
-          <p class="p-solution__text">まだ製品が存在しない開発現場を探し、0から1を生み出すのが私たちエンプラスのビジネススタイルです。価格競争が激化する成熟期には離脱し、また新たな市場を見つけてリードするため、常に市場価値の高いフェーズに位置しています。</p>
+          <p class="p-solution__text">まだ製品市場や技術が確立していない開発現場を探し、0.1を1にするためのアイデアをカタチにしていくことが、私たちエンプラスのビジネスモデルです。一方で価格競争が主体となった成熟期には、我々の役目を終えたと判断し、また新たな市場への挑戦に注力するフェーズに移ります。</p>
         </div>
       </div>
     </div>

@@ -1,50 +1,29 @@
 @use "global" as *;
 
-.p-work {
-  background: $white;
-}
-.p-work__img {
-  width: 100%;
-  position: relative;
-}
-.p-work__img::before {
-  display: block;
-  content: "";
-  padding-top: 50%;
-  @include mq(md) {
-    padding-top: 29.41%;
-  }
-}
-.p-work__img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .p-work__content {
-  margin-top: rem(-80);
+  height: rem(250);
+  background: url(../images/common/top_work_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: rem(600);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: rem(40);
+  padding-left: rem(60);
   @include mq(md) {
-    margin-top: (-360 / 1440) * 100vw;
+    max-width: rem(1800);
+    width: 100%;
+    height: rem(530);
+    padding-top: rem(60);
+    padding-left: rem(100);
   }
-}
-.p-work__detail {
-  display: flex;
-  align-items: center;
-  padding-left: rem(20);
-  @include mq(md) {
-    padding-left: initial;
-    align-items: stretch;
-  }
-}
-.p-work__title-wrapper {
 }
 .p-work__title {
   font-weight: 700;
-  color: $white;
+  color: $black;
   letter-spacing: 0.06em;
   position: relative;
   font-size: rem(20);
@@ -58,7 +37,7 @@
   text-align: left;
   font-weight: 700;
   font-family: $second-font-family;
-  color: $white;
+  color: $blue;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: rem(18);

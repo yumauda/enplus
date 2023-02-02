@@ -47,7 +47,7 @@
                                     <a href="<?php echo esc_url(home_url('/challenge/')); ?>" class="p-header__menuLink">エンプラス挑戦の軌跡</a>
                                 </li>
                                 <li class="p-header__menu">
-                                    <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-header__menuLink">エンプラスがよむ未来</a>
+                                    <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-header__menuLink">エンプラスが目指すこと</a>
                                 </li>
                                 <li class="p-header__menu">
                                     <a href="<?php echo esc_url(home_url('/number/')); ?>" class="p-header__menuLink">数字で見る</a>
@@ -75,7 +75,7 @@
                                     <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-header__menuLink">福利厚生</a>
                                 </li>
                                 <li class="p-header__menu">
-                                    <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-header__menuLink">エンプラスの取り組み</a>
+                                    <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-header__menuLink">ギャラリー</a>
                                 </li>
                             </ul>
                         </li>
@@ -89,7 +89,7 @@
                                     <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-header__menuLink">新卒募集要項</a>
                                 </li>
                                 <li class="p-header__menu">
-                                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-header__menuLink">中途募集要項</a>
+                                    <a href="<?php echo esc_url(home_url('/career/')); ?>" class="p-header__menuLink">中途募集要項</a>
                                 </li>
                             </ul>
                         </li>
@@ -109,7 +109,7 @@
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/reading/')); ?>">先をよむターゲット領域</a></div>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/other/')); ?>">他がやらないエンプラスの事業</a></div>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/challenge/')); ?>">エンプラス挑戦の軌跡</a></div>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/future/')); ?>">エンプラスがよむ未来</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/future/')); ?>">エンプラスが目指すこと</a></div>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/number/')); ?>">数字で見る</a></div>
                         </div>
                         <div class="p-drawer-content__items">
@@ -123,13 +123,13 @@
                             <p class="p-drawer-content__text">環境を知る</p>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">研修制度</a></div>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/environment')); ?>">福利厚生</a></div>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">エンプラスの取り組み</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">ギャラリー</a></div>
                         </div>
                         <div class="p-drawer-content__items">
                             <p class="p-drawer-content__text">採用情報</p>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/question/')); ?>">Q&A</a></div>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/recruit/')); ?>">新卒採用募集要項</a></div>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">中途採用募集要項</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/recruit/')); ?>">新卒募集要項</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/career')); ?>">キャリア募集要項</a></div>
                         </div>
                     </div>
                 </div>
