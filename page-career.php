@@ -177,6 +177,39 @@
       </div>
     </div>
   </div>
+  <section class="l-invite p-invite p-invite--bottom">
+    <div class="l-inner">
+      <div class="p-invite__content">
+        <div class="p-invite__title">
+          <h3 class="c-page-sectionTitle">労働施策総合推進法に基づく<br class="u-mobile">中途採用比率の公表</h3>
+        </div>
+        <div class="p-invite__text-wrapper">
+          <p class="p-invite__text">当社における正規雇用労働者の中途採用比率は下記の通りでございます。<br>
+            公表日：2022年8月1日</p>
+        </div>
+        <ul class="p-invite__lists">
+          <li class="p-invite__list">
+            <a href="#" class="p-invite__link p-invite__list--percent">
+              <p class="p-invite__year">2019年度</p>
+              <p class="p-invite__percent">41%</p>
+            </a>
+          </li>
+          <li class="p-invite__list">
+            <a href="#" class="p-invite__link p-invite__list--percent">
+              <p class="p-invite__year">2020年度</p>
+              <p class="p-invite__percent">30%</p>
+            </a>
+          </li>
+          <li class="p-invite__list">
+            <a href="#" class="p-invite__link p-invite__list--percent">
+              <p class="p-invite__year">2021年度</p>
+              <p class="p-invite__percent">45%</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <?php get_template_part('includes/banner'); ?>
 
 </main>

@@ -1,8 +1,15 @@
 @use "global" as *;
 
 .p-invite {
-  padding-top: rem(150);
-  padding-bottom: rem(100);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-top: rem(150);
+    padding-bottom: rem(100);
+  }
+}
+.p-invite--bottom {
+  padding-top: initial;
 }
 .p-invite__content {
   max-width: rem(922.5);
@@ -18,7 +25,6 @@
   grid-template-columns: 1fr 1fr;
   gap: rem(12);
   margin-top: rem(28);
-
   @include mq(md) {
     grid-template-columns: 1fr 1fr 1fr;
     gap: rem(22.5);
@@ -27,16 +33,21 @@
 }
 .p-invite__link {
   display: inline-block;
-  width: rem(292);
   text-align: center;
-  padding-top: rem(26);
-  padding-bottom: rem(26);
   background: #eef1f6;
   font-size: rem(16);
   color: $black;
   letter-spacing: 0.06em;
   font-weight: 700;
   position: relative;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  width: 100%;
+  @include mq(md) {
+    width: rem(292);
+    padding-top: rem(26);
+    padding-bottom: rem(26);
+  }
 }
 .p-invite__link::before {
   content: "";
@@ -52,5 +63,37 @@
   transition: 0.3s;
 }
 .p-invite__link:hover::before {
-    right: rem(2);
+  right: rem(2);
+}
+.p-invite__list--percent {
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  position: relative;
+}
+.p-invite__list--percent::before {
+  display: none;
+}
+.p-invite__text-wrapper {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(48);
+  }
+}
+.p-invite__text {
+  font-size: rem(13.5);
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 1.88888;
+}
+.p-invite__year {
+  font-weight: 400;
+  font-size: rem(13.5);
+  color: $black;
+  letter-spacing: 0.06em;
+}
+.p-invite__percent {
+  font-size: rem(16);
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 0.06em;
 }

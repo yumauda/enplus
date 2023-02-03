@@ -41,6 +41,7 @@ function my_script_init()
 
 	wp_enqueue_script('my-swiper', '//unpkg.com/swiper@8/swiper-bundle.min.js', '', "1.0.1", true);
 	wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.min.js', '', "1.0.1", true);
+	wp_enqueue_script('js-modal', get_template_directory_uri() . '/js/modals.js', array('jquery'), '1.0.1', true);
 	wp_enqueue_script('js-swiper', get_template_directory_uri() . '/js/swiper.js', array('jquery'), '1.0.1', true);
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.7', true);
 }

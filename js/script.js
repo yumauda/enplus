@@ -29,6 +29,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     jQuery('.p-drawer-background').toggleClass('is-active');
     return false;
   });
+  jQuery('.modalClose').on('click',function(e){
+    e.preventDefault();
+    jQuery('.p-modal').removeClass('is-active');
+    return false;
+  });
 
 
 

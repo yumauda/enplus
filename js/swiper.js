@@ -14,3 +14,11 @@ var slider2 = new Swiper ('.p-slider__swiper', {
       disableOnInteraction: false,
     },
 });
+var slider3 = new Swiper ('.slider3', {
+  effect: 'slide',
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

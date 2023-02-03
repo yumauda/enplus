@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--recruit">
     <h2 class="c-section-title">recruiting</h2>
-    <p class="p-page-mv__text u-desktop">新卒募集要項</p>
+    <p class="p-page-mv__text">新卒募集要項</p>
   </section>
   <div class="l-recruit p-recruit">
     <div class="l-inner">

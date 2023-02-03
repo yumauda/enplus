@@ -1,0 +1,146 @@
+@use "global" as *;
+
+/* モーダル */
+.p-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+  background-color: $black;
+}
+
+/* モーダルがactiveの時 */
+.p-modal.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* モーダル背景のオーバーレイ部分 */
+.p-modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* モーダルのコンテンツ */
+.p-modal__content {
+  position: relative;
+  width: 100%;
+  max-width: rem(984);
+  padding: rem(20);
+  display: flex;
+}
+.p-modal__content .swiper-button-next,
+.p-modal__content .swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.p-modal__inner {
+  max-width: rem(980);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.p-modal__slide {
+  position: relative;
+}
+/* 閉じるボタン */
+.p-modal__close-btn {
+  position: absolute;
+  top: 27%;
+  background: transparent;
+  cursor: pointer;
+  z-index: 20;
+  right: 10%;
+  width: rem(40);
+  height: rem(40);
+  @include mq(md) {
+    width: rem(52);
+    height: rem(52);
+    top: 32%;
+    right: 1%;
+  }
+}
+/* 閉じるボタンのX */
+.p-modal__lineClose {
+  display: inline-block;
+  vertical-align: middle;
+  color: $white;
+  line-height: 1;
+  height: 0.1rem;
+  background: currentColor;
+  border-radius: 0.1rem;
+  position: relative;
+  transform: rotate(45deg);
+  top: rem(4);
+  left: rem(8);
+  width: rem(20);
+  @include mq(md) {
+    width: rem(24);
+    top: rem(10);
+    left: rem(12);
+  }
+}
+.p-modal__lineClose::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  transform: rotate(90deg);
+}
+.p-modal__img {
+  max-width: rem(580);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+}
+.p-modal__prev {
+  background: url(../images/common/modal-prev.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: rem(41.5);
+  height: rem(8);
+  left: -5%;
+  @include mq(md) {
+    left: -8%;
+    width: rem(41.5);
+    height: rem(8);
+  }
+}
+.p-modal__next {
+  background: url(../images/common/modal-next.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(41.5);
+  height: rem(8);
+  right: -5%;
+  color: transparent;
+  @include mq(md) {
+    right: -8%;
+    width: rem(41.5);
+    height: rem(8);
+  }
+}
+.p-modal__swiper-wrapper {
+  margin-top: 60%;
+}
