@@ -108,7 +108,7 @@
   top: 10%;
   right: 5%;
   @include mq(md) {
-    top: 22%;
+    top: 28%;
     right: 22%;
   }
 }
@@ -118,7 +118,8 @@
   right: -4%;
   z-index: 10;
   @include mq(md) {
-    right: 10%;
+    right: 5%;
+    top: 53%;
   }
 }
 .p-wide__btn-wrapper--conductor {
@@ -127,7 +128,7 @@
   right: 5%;
   bottom: 15%;
   @include mq(md) {
-    bottom: 21%;
+    bottom: 20%;
     right: 29%;
   }
 }
@@ -138,6 +139,7 @@
   left: 0;
   @include mq(md) {
     left: 29%;
+    bottom: 19%;
   }
 }
 .p-wide__btn {
@@ -151,11 +153,14 @@
   padding-bottom: rem(4);
   text-align: center;
   position: relative;
-  width: rem(110);
+  padding-left: rem(8);
+  padding-right: rem(8);
   font-size: rem(14);
   @include mq(md) {
-    width: rem(135);
+    /* width: rem(135); */
     font-size: rem(16.5);
+    padding-left: rem(8);
+    padding-right: rem(16);
   }
 }
 .p-wide__btn::before {

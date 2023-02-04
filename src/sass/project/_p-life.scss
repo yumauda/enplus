@@ -1,58 +1,48 @@
 @use "global" as *;
 
-.p-mecha {
+.p-life {
   padding-top: rem(64);
-  padding-bottom: rem(64);
-
   position: relative;
   @include mq(md) {
-    padding-top: rem(180);
-    padding-bottom: rem(120);
+    padding-top: rem(213);
   }
 }
-.p-mecha::before {
+.p-life::before {
   position: absolute;
   content: "";
   background: #f0f3f7;
-  width: 80%;
-  height: rem(386);
-  top: 35%;
+  width: (1680 / 1920) * 100vw;
+  height: rem(376);
+  top: 41%;
   left: 0;
   z-index: -1;
 }
-.p-mecha__title {
+.p-life__title {
   text-align: center;
 }
-.p-mecha__contents {
+.p-life__contents {
   margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(128);
   }
 }
-.p-mecha__content {
+.p-life__content {
   @include mq(md) {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
-.p-mecha__content:nth-child(2n) {
-  margin-top: rem(70);
-  @include mq(md) {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-}
-.p-mecha__img {
+.p-life__img {
   max-width: rem(900);
   width: 100%;
   position: relative;
 }
-.p-mecha__img::before {
+.p-life__img::before {
   padding-top: 72.2%;
   display: block;
   content: "";
 }
-.p-mecha__img img {
+.p-life__img img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -62,52 +52,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.p-mecha__detail {
+.p-life__detail {
   margin-top: rem(24);
   width: 100%;
   @include mq(md) {
     max-width: rem(450);
     margin-top: rem(32);
-    margin-left: rem(75);
+    margin-right: rem(75);
   }
 }
-.p-mecha__content:nth-child(2n) > .p-mecha__detail {
+.p-life__content:nth-child(2n) > .p-life__detail {
   margin-right: initial;
   margin-left: rem(75);
 }
-.p-mecha__text {
+.p-life__text {
   margin-top: rem(20);
   @include mq(md) {
     margin-top: initial;
     width: rem(266);
   }
 }
-.p-mecha__under {
+.p-life__under {
+  max-width: rem(922);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
     margin-top: rem(56);
   }
 }
-
-.p-mecha__row {
+.p-life__row {
   @include mq(md) {
     display: flex;
     align-items: flex-start;
+    margin-top: rem(16);
   }
 }
-.p-mecha__sub {
+.p-life__sub {
   margin-top: rem(16);
   @include mq(md) {
     margin-top: initial;
     margin-left: rem(22);
     width: rem(199);
   }
-}
-.p-mecha__row {
-  margin-top: rem(16);
-}
-.p-mecha__small + .p-mecha__small {
-  margin-top: rem(12);
-}
-.p-mecha__small-text {
-  margin-top: rem(2);
 }

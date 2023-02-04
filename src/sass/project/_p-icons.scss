@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.p-icons {
+  max-width: rem(922);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-icons__box {
+  border: rem(20) solid #f0f3f7;
+  background: $white;
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
+.p-icons__boxText {
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-icons__icons {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: rem(628);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(32);
+  }
+}
+.p-icons__icon {
+  text-align: center;
+}
+.p-icons__icon--car {
+  width: rem(137);
+  margin: auto;
+}
+.p-icons__icon--pc {
+  width: rem(170);
+}
+.p-icons__icon--mobile {
+  width: rem(66);
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-icons__icon--gene {
+  width: rem(146);
+}
+.p-icons__icon--medical {
+  width: rem(149);
+}
+.p-icons__icon--food {
+  width: rem(142);
+}
+.p-icons__icon--data {
+  width: rem(200);
+}
+.p-icons__icon--tv {
+  width: rem(153);
+}
+.p-icons__icon--sai {
+  width: rem(89);
+}
+.p-icons__icon--printer {
+  width: rem(146);
+}
+.p-icons__icon--souji {
+  width: rem(120);
+}
+.p-icons__icon-text {
+  font-weight: 700;
+  font-size: rem(16);
+  color: $black;
+  margin-top: rem(16);
+}

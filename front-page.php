@@ -233,7 +233,7 @@
             <div class="p-menu__detail">
               <h3 class="p-menu__title">ギャラリー</h3>
               <div class="p-menu__btn">
-                <a href="#" class="c-btn">Read&nbsp;more</a>
+                <a href="<?php echo esc_url(home_url('/gallery/')); ?>" class="c-btn">Read&nbsp;more</a>
               </div>
             </div>
           </li>

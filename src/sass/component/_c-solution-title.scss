@@ -25,7 +25,8 @@
   z-index: -1;
   font-size: rem(48);
   @include mq(md) {
-    font-size: rem(138);
+    font-size: rem(93);
+    width: 100%;
   }
 }
 .c-solution-title--white::before {
@@ -36,5 +37,5 @@
 }
 .c-solution-title--long::before {
   position: absolute;
-  font-size: calc(172 / 1920) * 100vw;
+  font-size: calc(124 / 1920) * 100vw;
 }

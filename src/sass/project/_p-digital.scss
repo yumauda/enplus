@@ -1,58 +1,58 @@
 @use "global" as *;
 
-.p-mecha {
+.p-digital {
   padding-top: rem(64);
-  padding-bottom: rem(64);
-
   position: relative;
   @include mq(md) {
     padding-top: rem(180);
-    padding-bottom: rem(120);
   }
 }
-.p-mecha::before {
+.p-digital::before {
   position: absolute;
   content: "";
   background: #f0f3f7;
-  width: 80%;
-  height: rem(386);
-  top: 35%;
-  left: 0;
+  width: 75%;
+  height: rem(890);
+  top: 28%;
+  right: 0;
   z-index: -1;
+  @include mq(md){
+
+  }
 }
-.p-mecha__title {
+.p-digital__title {
   text-align: center;
 }
-.p-mecha__contents {
+.p-digital__contents {
   margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(128);
   }
 }
-.p-mecha__content {
+.p-digital__content {
   @include mq(md) {
     display: flex;
   }
 }
-.p-mecha__content:nth-child(2n) {
+.p-digital__content:nth-child(2n) {
   margin-top: rem(70);
   @include mq(md) {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
-.p-mecha__img {
+.p-digital__img {
   max-width: rem(900);
   width: 100%;
   position: relative;
 }
-.p-mecha__img::before {
+.p-digital__img::before {
   padding-top: 72.2%;
   display: block;
   content: "";
 }
-.p-mecha__img img {
+.p-digital__img img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -62,39 +62,39 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.p-mecha__detail {
+.p-digital__detail {
   margin-top: rem(24);
   width: 100%;
   @include mq(md) {
     max-width: rem(450);
     margin-top: rem(32);
-    margin-left: rem(75);
+    margin-left: rem(56);
   }
 }
-.p-mecha__content:nth-child(2n) > .p-mecha__detail {
-  margin-right: initial;
-  margin-left: rem(75);
+.p-digital__content:nth-child(2n) > .p-digital__detail {
+  margin-left: initial;
+  margin-right: rem(75);
 }
-.p-mecha__text {
+.p-digital__text {
   margin-top: rem(20);
   @include mq(md) {
     margin-top: initial;
     width: rem(266);
   }
 }
-.p-mecha__under {
+.p-digital__under {
   @include mq(md) {
     margin-top: rem(56);
   }
 }
 
-.p-mecha__row {
+.p-digital__row {
   @include mq(md) {
     display: flex;
     align-items: flex-start;
   }
 }
-.p-mecha__sub {
+.p-digital__sub {
   margin-top: rem(16);
   @include mq(md) {
     margin-top: initial;
@@ -102,12 +102,6 @@
     width: rem(199);
   }
 }
-.p-mecha__row {
+.p-digital__row {
   margin-top: rem(16);
-}
-.p-mecha__small + .p-mecha__small {
-  margin-top: rem(12);
-}
-.p-mecha__small-text {
-  margin-top: rem(2);
 }
