@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="l-page-mv p-page-mv p-page-mv--recruit">
+  <section class="l-page-mv p-page-mv p-page-mv--career">
     <h2 class="c-section-title">recruiting</h2>
     <p class="p-page-mv__text">新卒募集要項</p>
   </section>

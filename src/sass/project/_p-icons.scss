@@ -1,10 +1,13 @@
 @use "global" as *;
 
 .p-icons {
-  max-width: rem(922);
+  margin-top: rem(24);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @include mq(md) {
+    max-width: rem(922);
+  }
 }
 
 .p-icons__box {
@@ -20,12 +23,15 @@
   color: $blue;
   letter-spacing: 0.06em;
   font-size: rem(14);
+  text-align: center;
   @include mq(md) {
     font-size: rem(18);
+    text-align: left;
   }
 }
 
 .p-icons__icons {
+  margin-top: rem(24);
   @include mq(md) {
     display: flex;
     align-items: flex-end;
@@ -40,12 +46,25 @@
 .p-icons__icon {
   text-align: center;
 }
+.p-icons__icon + .p-icons__icon {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
 .p-icons__icon--car {
   width: rem(137);
   margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--pc {
   width: rem(170);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--mobile {
   width: rem(66);
@@ -54,27 +73,59 @@
 }
 .p-icons__icon--gene {
   width: rem(146);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--medical {
   width: rem(149);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--food {
   width: rem(142);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--data {
   width: rem(200);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--tv {
   width: rem(153);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--sai {
   width: rem(89);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--printer {
   width: rem(146);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon--souji {
   width: rem(120);
+  margin: auto;
+  @include mq(md) {
+    margin: initial;
+  }
 }
 .p-icons__icon-text {
   font-weight: 700;

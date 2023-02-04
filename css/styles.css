@@ -1559,16 +1559,25 @@ select::-ms-expand {
 }
 
 .p-environment__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 38px;
   margin-top: 2.375rem;
-  gap: 24px;
-  gap: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-environment__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3.50625rem;
+  }
+}
+
+.p-environment__card + .p-environment__card {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-environment__card + .p-environment__card {
+    margin-top: 0;
+    margin-top: initial;
   }
 }
 
@@ -1917,7 +1926,8 @@ select::-ms-expand {
 }
 
 .p-future-mv {
-  height: 100vh;
+  height: 360px;
+  height: 22.5rem;
   position: relative;
   background: url(../images/common/mv_future.jpg);
   background-size: cover;
@@ -1954,9 +1964,31 @@ select::-ms-expand {
   text-align: center;
 }
 
+.p-future__detail {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-future__detail {
+    margin-top: 3.75rem;
+  }
+}
+
+.p-future__subTitle-wrapper {
+  text-align: center;
+}
+
+.p-future__subTitle {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #14202e;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
 .p-future__text-wrapper {
-  margin-top: 38px;
-  margin-top: 2.375rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
   max-width: 675px;
   max-width: 42.1875rem;
   width: 100%;
@@ -2326,11 +2358,16 @@ select::-ms-expand {
 }
 
 .p-icons {
-  max-width: 922px;
-  max-width: 57.625rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons {
+    max-width: 57.625rem;
+  }
 }
 
 .p-icons__box {
@@ -2352,13 +2389,19 @@ select::-ms-expand {
   letter-spacing: 0.06em;
   font-size: 14px;
   font-size: 0.875rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-icons__boxText {
     font-size: 1.125rem;
+    text-align: left;
   }
 }
 
+.p-icons__icons {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-icons__icons {
     display: -webkit-box;
@@ -2382,15 +2425,39 @@ select::-ms-expand {
   text-align: center;
 }
 
+.p-icons__icon + .p-icons__icon {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon + .p-icons__icon {
+    margin-top: 0;
+    margin-top: initial;
+  }
+}
+
 .p-icons__icon--car {
   width: 137px;
   width: 8.5625rem;
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .p-icons__icon--car {
+    margin: 0;
+    margin: initial;
+  }
+}
 
 .p-icons__icon--pc {
   width: 170px;
   width: 10.625rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--pc {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--mobile {
@@ -2403,41 +2470,97 @@ select::-ms-expand {
 .p-icons__icon--gene {
   width: 146px;
   width: 9.125rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--gene {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--medical {
   width: 149px;
   width: 9.3125rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--medical {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--food {
   width: 142px;
   width: 8.875rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--food {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--data {
   width: 200px;
   width: 12.5rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--data {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--tv {
   width: 153px;
   width: 9.5625rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--tv {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--sai {
   width: 89px;
   width: 5.5625rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--sai {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--printer {
   width: 146px;
   width: 9.125rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--printer {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon--souji {
   width: 120px;
   width: 7.5rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-icons__icon--souji {
+    margin: 0;
+    margin: initial;
+  }
 }
 
 .p-icons__icon-text {
@@ -4050,8 +4173,7 @@ select::-ms-expand {
   position: relative;
 }
 
-.p-page-mv--question,
-.p-page-mv--recruit {
+.p-page-mv--question {
   background: url(../images/common/question_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;

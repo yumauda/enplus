@@ -69,13 +69,13 @@
                             環境を知る
                             <ul class="p-header__menus">
                                 <li class="p-header__menu">
-                                    <a href="<?php echo esc_url(home_url('/introduce/')); ?>" class="p-header__menuLink">研修制度</a>
+                                    <a href="<?php echo esc_url(home_url('/training/')); ?>" class="p-header__menuLink">研修制度</a>
                                 </li>
                                 <li class="p-header__menu">
                                     <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-header__menuLink">福利厚生</a>
                                 </li>
                                 <li class="p-header__menu">
-                                    <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-header__menuLink">ギャラリー</a>
+                                    <a href="<?php echo esc_url(home_url('/gallery/')); ?>" class="p-header__menuLink">ギャラリー</a>
                                 </li>
                             </ul>
                         </li>

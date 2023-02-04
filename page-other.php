@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--other">
     <h2 class="c-section-title">company</h2>
-    <p class="p-page-mv__text">"他がやらない"エンプラスの事業</p>
+    <p class="p-page-mv__text">“他がやらない”エンプラスの事業</p>
   </section>
   <section class="l-wide p-wide">
     <div class="l-inner">
@@ -19,10 +19,10 @@
           <a href="<?php echo esc_url(home_url('/other#conductor')); ?>" class="p-wide__btn">半導体分野</a>
         </div>
         <div class="p-wide__btn-wrapper--optics">
-          <a href="<?php echo esc_url(home_url('/other#conductor')); ?>" class="p-wide__btn">ライフサイエンス分野</a>
+          <a href="<?php echo esc_url(home_url('/other#life')); ?>" class="p-wide__btn">ライフサイエンス分野</a>
         </div>
         <div class="p-wide__btn-wrapper--conductor">
-          <a href="<?php echo esc_url(home_url('/other#optics')); ?>" class="p-wide__btn">光学分野</a>
+          <a href="<?php echo esc_url(home_url('/other#digital')); ?>" class="p-wide__btn">光学分野</a>
         </div>
         <div class="p-wide__btn-wrapper--bio">
           <a href="<?php echo esc_url(home_url('/other#mecha')); ?>" class="p-wide__btn">メカ分野</a>

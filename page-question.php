@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="l-page-mv p-page-mv p-page-mv--question">
+  <section class="l-page-mv p-page-mv p-page-mv--career">
     <h2 class="c-section-title">recruiting</h2>
     <p class="p-page-mv__text">Q&A</p>
   </section>
@@ -68,22 +68,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="l-question p-question">
-    <div class="l-inner">
-      <div class="p-recruit__content p-recruitTable">
-        <table class="p-recruitTable__table p-recruitTable__table--possible">
-          <tr>
-            <th class="p-recruitTable__item">Q</th>
-            <td class="p-recruitTable__body">
-              <div class="p-recruitTable__select">
-                <p class="p-recruitTable__top">社名の由来は？</p>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div> -->
   <?php get_template_part('includes/banner'); ?>
 
 </main>

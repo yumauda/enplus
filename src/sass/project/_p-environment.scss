@@ -62,15 +62,20 @@
   transform: translateY(-50%);
 }
 .p-environment__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-top: rem(38);
-  gap: rem(24);
   @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: rem(56.1);
   }
 }
 .p-environment__card {
+}
+.p-environment__card + .p-environment__card {
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 .p-environment__card-titleWrapper {
   border-bottom: 1px solid #76778d;
