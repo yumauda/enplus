@@ -17,6 +17,9 @@ var slider2 = new Swiper ('.p-slider__swiper', {
 var slider3 = new Swiper ('.slider3', {
   effect: 'slide',
   slidesPerView: 1,
+  grabCursor: true,
+  clickable: true,
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

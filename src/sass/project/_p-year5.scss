@@ -16,7 +16,7 @@
   height: 72%;
   background: #f0f3f7;
   @include mq(md){
-    top: 40%;
+    top: 34%;
     height: 49%;
   }
 }
@@ -78,18 +78,4 @@
     margin-left: rem(162);
   }
 }
-.p-year5__img::before {
-  padding-top: 57.652%;
-  display: block;
-  content: "";
-}
-.p-year5__img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+

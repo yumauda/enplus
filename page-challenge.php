@@ -56,7 +56,7 @@
             <h3 class="c-year-title" data-year="ICテスト用">ICソケット</h3>
           </div>
           <div class="p-year2__text">
-            <p class="c-year-text">ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。</p>
+            <p class="c-year-text">ICのテスト用「ICソケット」を開発・製品化</p>
           </div>
         </div>
         <figure class="p-year2__img">
@@ -73,7 +73,8 @@
             <h3 class="c-year-title" data-year="世界初のターボチャージャー用">樹脂インペラー</h3>
           </div>
           <div class="p-year3__text">
-            <p class="c-year-text">ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。</p>
+            <p class="c-year-text">【世界初】<br>
+              ターボチャージャー用樹脂インペラーを開発</p>
           </div>
         </div>
         <figure class="p-year3__img--1990">
@@ -90,7 +91,8 @@
             <h3 class="c-year-title" data-year="携帯電話向けカメラ用">レンズモジュール</h3>
           </div>
           <div class="p-year4__text">
-            <p class="c-year-text">ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。</p>
+            <p class="c-year-text">【世界一】<br>
+              携帯電話用小型レンズユニット製品化</p>
           </div>
         </div>
         <figure class="p-year4__img">
@@ -107,7 +109,8 @@
             <h3 class="c-year-title" data-year="LED液晶テレビ用">Light Enhancer Cap（LE-Cap）</h3>
           </div>
           <div class="p-year5__text">
-            <p class="c-year-text">ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。</p>
+            <p class="c-year-text">【世界初・世界一】<br>
+              LED用光拡散レンズ製品化</p>
           </div>
         </div>
         <figure class="p-year5__img">
@@ -129,7 +132,7 @@
             </div>
           </div>
           <div class="p-year6__text">
-            <p class="c-year-text">ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。ダミー。製品についての説明文が入ります。</p>
+            <p class="c-year-text">Rotary Membrane Valve and Pump<br>（多種液体の注入排出操作用チップ）</p>
           </div>
         </div>
         <figure class="p-year6__img">

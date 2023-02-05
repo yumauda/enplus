@@ -65,21 +65,25 @@
         <div class="p-schedule__title-wrapper">
           <h3 class="p-schedule__title">1日のスケジュール</h3>
         </div>
-        <ul class="p-schedule__cards">
+        <div class="p-schedule__dl">
           <?php if (have_rows('group_schedule')) : ?>
             <?php while (have_rows('group_schedule')) : the_row(); ?>
-              <li class="p-schedule__card">
-                <time class="p-schedule__time"><?php the_sub_field('group_schedule_time'); ?></time>
-                <figure class="p-schedule__img">
-                  <img src="<?php the_sub_field('group_schedule_img'); ?>" alt="9:00">
-                </figure>
+              <div class="p-schedule__row">
+                <div class="p-schedule__time-wrapper">
+                  <time class="p-schedule__time"><?php the_sub_field('group_schedule_time'); ?></time>
+                </div>
+                <?php if (get_sub_field('group_schedule_img')) : ?>
+                  <figure class="p-schedule__img">
+                    <img src="<?php the_sub_field('group_schedule_img'); ?>" alt="9:00">
+                  </figure>
+                <?php endif; ?>
                 <div class="p-schedule__text">
                   <p class="c-solution-text"><?php the_sub_field('group_schedule_text'); ?></p>
                 </div>
-              </li>
+              </div>
             <?php endwhile; ?>
           <?php endif; ?>
-        </ul>
+        </div>
       </div>
     </div>
   </section>
