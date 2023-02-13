@@ -37,13 +37,13 @@
                     <p class="p-footer__head">環境を知る</p>
                 </div>
                 <div class="p-footer__list">
-                    <a href="#" class="p-footer__link">研修制度</a>
+                    <a href="<?php echo esc_url(home_url('/training/')); ?>" class="p-footer__link">研修制度</a>
                 </div>
                 <div class="p-footer__list">
                     <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-footer__link">福利厚生</a>
                 </div>
                 <div class="p-footer__list">
-                    <a href="#" class="p-footer__link">ギャラリー</a>
+                    <a href="<?php echo esc_url(home_url('/gallery/')); ?>" class="p-footer__link">ギャラリー</a>
                 </div>
             </div>
             <div class="p-footer__lists">

@@ -12,9 +12,10 @@
         </picture>
       </li>
       <li class="p-tomorrow__list p-tomorrow__list--center">
-        <figure class="p-tomorrow__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/common/tomorrow_text.png" alt="よりよき明日を目指して">
-        </figure>
+        <picture class="p-tomorrow__img">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/tomorrow_text.png" media="(min-width: 768px)" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/tomorrow_text_sp.png" alt="よりよき明日を目指して">
+        </picture>
       </li>
       <li class="p-tomorrow__list p-tomorrow__list--right">
         <picture class="p-tomorrow__right">
@@ -108,7 +109,7 @@
   </section>
   <section class="l-pioneer p-pioneer" data-company="future">
     <div class="l-inner">
-      <a href="<?php echo esc_url(home_url('/other/')); ?>" class="p-pioneer__hover">
+      <a href="<?php echo esc_url(home_url('/future/')); ?>" class="p-pioneer__hover">
         <div class="p-pioneer__content">
           <div class="p-pioneer__title-wrapper">
             <div class="p-pioneer__title">
@@ -137,7 +138,7 @@
   </section>
   <section class="l-top-number p-top-number">
     <div class="l-menu-inner">
-      <a href="" class="p-top-number__content">
+      <a href="<?php echo esc_url(home_url('/number/')); ?>" class="p-top-number__content">
         <div class="p-top-number__title-wrapper">
           <h3 class="p-top-number__title">数字を見る</h3>
         </div>
@@ -146,7 +147,7 @@
   </section>
   <section class="l-work p-work">
     <div class="l-menu-inner">
-      <a href="" class="p-work__content">
+      <a href="<?php echo esc_url(home_url('/introduce/')); ?>" class="p-work__content">
         <div class="p-work__title-wrapper">
           <h3 class="p-work__title">職種紹介</h3>
         </div>
@@ -171,7 +172,7 @@
         <?php
         // パラメータの設定
         $args = array(
-          'posts_per_page' => 8,
+          'posts_per_page' => 15,
           'post_status' => 'publish',
           'post_type' => 'post',
           'orderby' => 'date',
@@ -184,7 +185,7 @@
             <div class="swiper-slide p-slider__card">
               <a href="<?php the_permalink(); ?>" class="p-slider__link">
                 <figure class="p-slider__img">
-                  <img src="<?php the_post_thumbnail('large') ?>" alt="<?php the_title(); ?>">
+                  <img src="<?php the_field('group_img_top') ?>" alt="<?php the_title(); ?>">
                 </figure>
                 <div class="p-slider__detail">
                   <h4 class="p-slider__subTitle"><?php the_field('group_name') ?></h4>
@@ -211,7 +212,7 @@
             <div class="p-menu__detail">
               <h3 class="p-menu__title">研修制度</h3>
               <div class="p-menu__btn">
-                <a href="#" class="c-btn">Read&nbsp;more</a>
+                <a href="<?php echo esc_url(home_url('/training/')); ?>" class="c-btn">Read&nbsp;more</a>
               </div>
             </div>
           </li>

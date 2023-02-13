@@ -65,10 +65,6 @@
 }
 .p-single__occupation-wrapper {
   margin-top: rem(8);
-  @include mq(md) {
-    text-align: right;
-    margin-top: rem(-32);
-  }
 }
 .p-single__occupation {
   font-weight: 700;

@@ -121,9 +121,9 @@
                     <div class="p-drawer-content__items-row">
                         <div class="p-drawer-content__items">
                             <p class="p-drawer-content__text">環境を知る</p>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">研修制度</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/training')); ?>">研修制度</a></div>
                             <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/environment')); ?>">福利厚生</a></div>
-                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">ギャラリー</a></div>
+                            <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/gallery')); ?>">ギャラリー</a></div>
                         </div>
                         <div class="p-drawer-content__items">
                             <p class="p-drawer-content__text">採用情報</p>

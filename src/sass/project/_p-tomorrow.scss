@@ -42,18 +42,24 @@
   }
 }
 .p-tomorrow__img {
-  width: 90%;
+  max-width: rem(400);
+  width: 80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   @include mq(md) {
     width: 100%;
+    max-width: initial;
   }
 }
 .p-tomorrow__img::before {
-  padding-top: 38.93333%;
   display: block;
   content: "";
+  padding-top: 119%;
+  @include mq(md) {
+    padding-top: 38.93333%;
+  }
 }
 .p-tomorrow__img img {
   position: absolute;

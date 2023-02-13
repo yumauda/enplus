@@ -3,15 +3,15 @@
   <section class="l-single p-single">
     <h2 class="p-single__title c-section-title">work</h2>
     <figure class="p-single__img">
-      <img src="<?php the_field('group_img_top') ?>" alt="人物写真">
+      <?php the_post_thumbnail('large')?>
     </figure>
     <div class="p-single__subTitle-wrapper">
-      <p class="p-single__subTitle">社員インタビュー#<?php the_field('group_number') ?></p>
+      <p class="p-single__subTitle">社員インタビュー</p>
     </div>
     <div class="l-second-inner">
       <h3 class="p-single__sub"><?php the_field('group_reason') ?></h3>
       <div class="p-single__occupation-wrapper">
-        <p class="p-single__occupation"><?php the_field('group_name') ?> / <?php the_field('group_year') ?></p>
+        <p class="p-single__occupation"><?php the_field('group_name') ?><?php the_field('group_year') ?></p>
       </div>
     </div>
   </section>
@@ -48,12 +48,19 @@
             </div>
           </div>
         </div>
-        <div class="p-column__conclusion">
-          <div class="p-column__title">
-            <h4 class="c-column-title"><?php the_field('group_column_title3') ?></h4>
-          </div>
-          <div class="p-column__text p-column__text--conclusion">
-            <p class="c-solution-text"><?php the_field('group_column_text3') ?></p>
+        <div class="p-column__content">
+          <figure class="p-column__img">
+            <img src="<?php the_field('group_column_bottom') ?>" alt="紹介画像3">
+          </figure>
+          <div class="p-column__detail">
+            <div class="p-column__title">
+              <h4 class="c-column-title"><?php the_field('group_column_title3') ?></h4>
+            </div>
+            <div class="p-column__text-wrapper">
+              <div class="p-column__text">
+                <p class="c-solution-text"><?php the_field('group_column_text3') ?></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -87,11 +94,6 @@
       </div>
     </div>
   </section>
-  <div class="p-schedule__bottom">
-    <figure class="p-schedule__bottom-img">
-      <img src="<?php the_field('group_column_bottom') ?>" alt="<?php the_title(); ?>">
-    </figure>
-  </div>
   <div class="p-pager">
     <div class="l-inner">
       <div class="p-pager__content">
