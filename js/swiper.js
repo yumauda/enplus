@@ -9,10 +9,6 @@ var slider2 = new Swiper ('.p-slider__swiper', {
     loop: true,
     centeredSlides : true,
     clickable: true,
-    /* autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    }, */
 });
 var slider3 = new Swiper ('.slider3', {
   effect: 'slide',

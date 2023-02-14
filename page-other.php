@@ -136,9 +136,15 @@
               </div>
               <div class="p-life__sub">
                 <figure class="p-life__small">
-                  <img src="<?php echo get_template_directory_uri() ?>/images/common/life_sub.jpg" alt="パーソインソケット">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/common/life_sub.jpg" alt="マイクロ流路チップ">
                   <div class="p-life__small-text">
                     <p class="c-solution-text">マイクロ流路チップ</p>
+                  </div>
+                </figure>
+                <figure class="p-life__small">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/common/life_sub2.jpg" alt="エンドトキシンフリー関連">
+                  <div class="p-life__small-text">
+                    <p class="c-solution-text">エンドトキシンフリー関連</p>
                   </div>
                 </figure>
               </div>
@@ -192,6 +198,12 @@
                     <p class="c-solution-text">パラレル通信向けレンズアレイ</p>
                   </div>
                 </figure>
+                <figure class="p-digital__small">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/common/digital_2.jpg" alt="プラスチックバレル">
+                  <div class="p-digital__small-text">
+                    <p class="c-solution-text">プラスチックバレル</p>
+                  </div>
+                </figure>
               </div>
             </div>
         </div>
@@ -210,9 +222,15 @@
             </div>
             <div class="p-digital__sub">
               <figure class="p-digital__small">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/led_sub.jpg" alt="パラレル通信向けレンズアレイ">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/led_sub.jpg" alt="Light Enhancer Cap™（TV用）">
                 <div class="p-digital__small-text">
-                  <p class="c-solution-text">Light Enhancer Cap™</p>
+                  <p class="c-solution-text">Light Enhancer Cap™（TV用）</p>
+                </div>
+              </figure>
+              <figure class="p-digital__small">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/led_sub2.jpg" alt="Light Enhancer Cap™（看板用）">
+                <div class="p-digital__small-text">
+                  <p class="c-solution-text">Light Enhancer Cap™(看板用)</p>
                 </div>
               </figure>
             </div>
@@ -263,9 +281,15 @@
               </div>
               <div class="p-mecha__sub">
                 <figure class="p-mecha__small">
-                  <img src="<?php echo get_template_directory_uri() ?>/images/common/mecha_sub.jpg" alt="高精度ギヤ">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/common/mecha_sub.jpg" alt="遊星ギヤボックス">
                   <div class="p-mecha__small-text">
-                    <p class="c-solution-text">高精度ギヤ</p>
+                    <p class="c-solution-text">遊星ギヤボックス</p>
+                  </div>
+                </figure>
+                <figure class="p-mecha__small">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/common/mecha_sub2.jpg" alt="遊星ギヤボックスキャリア">
+                  <div class="p-mecha__small-text">
+                    <p class="c-solution-text">遊星ギヤボックスキャリア</p>
                   </div>
                 </figure>
               </div>

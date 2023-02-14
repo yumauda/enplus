@@ -76,7 +76,6 @@
   margin-top: rem(20);
   @include mq(md) {
     margin-top: initial;
-    width: rem(266);
   }
 }
 .p-conductor__under {
@@ -84,27 +83,19 @@
     margin-top: rem(56);
   }
 }
-
-.p-conductor__row {
-  @include mq(md) {
-    display: flex;
-    align-items: flex-start;
-  }
-}
 .p-conductor__sub {
   margin-top: rem(16);
   @include mq(md) {
-    margin-top: initial;
-    margin-left: rem(22);
-    width: rem(199);
+    display: flex;
+    align-items: center;
   }
 }
 .p-conductor__row {
   margin-top: rem(16);
 }
-.p-conductor__small + .p-conductor__small {
-  margin-top: rem(12);
-}
 .p-conductor__small-text {
   margin-top: rem(2);
+}
+.p-conductor__small + .p-conductor__small {
+  margin-left: rem(12);
 }

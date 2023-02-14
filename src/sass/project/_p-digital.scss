@@ -79,7 +79,6 @@
   margin-top: rem(20);
   @include mq(md) {
     margin-top: initial;
-    width: rem(266);
   }
 }
 .p-digital__under {
@@ -87,21 +86,13 @@
     margin-top: rem(56);
   }
 }
-
-.p-digital__row {
-  @include mq(md) {
-    display: flex;
-    align-items: flex-start;
-  }
-}
 .p-digital__sub {
   margin-top: rem(16);
-  @include mq(md) {
-    margin-top: initial;
-    margin-left: rem(22);
-    width: rem(199);
-  }
+  display: flex;
 }
 .p-digital__row {
   margin-top: rem(16);
+}
+.p-digital__small + .p-digital__small {
+  margin-left: rem(12);
 }

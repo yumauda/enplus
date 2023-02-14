@@ -69,7 +69,6 @@
   margin-top: rem(20);
   @include mq(md) {
     margin-top: initial;
-    width: rem(266);
   }
 }
 .p-life__under {
@@ -81,18 +80,11 @@
     margin-top: rem(56);
   }
 }
-.p-life__row {
-  @include mq(md) {
-    display: flex;
-    align-items: flex-start;
-    margin-top: rem(16);
-  }
-}
 .p-life__sub {
   margin-top: rem(16);
-  @include mq(md) {
-    margin-top: initial;
-    margin-left: rem(22);
-    width: rem(199);
-  }
+  display: flex;
+  align-items: center;
+}
+.p-life__small + .p-life__small {
+  margin-left: rem(12);
 }

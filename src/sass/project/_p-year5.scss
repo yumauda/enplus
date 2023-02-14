@@ -5,7 +5,7 @@
   padding-bottom: rem(40);
   position: relative;
   @include mq(md) {
-    padding-top: rem(157);
+    padding-top: rem(24);
   }
 }
 .p-year5::before {
@@ -42,7 +42,7 @@
   font-size: rem(72);
   top: rem(-100);
   @include mq(md) {
-    top: -63%;
+    top: -10%;
     font-size: rem(202.5);
   }
 }

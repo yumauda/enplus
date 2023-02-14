@@ -176,6 +176,7 @@
           'post_status' => 'publish',
           'post_type' => 'post',
           'orderby' => 'date',
+          'order' => 'ASC',
         );
         // WP_Queryインスタンスの生成
         $my_query = new WP_Query($args);

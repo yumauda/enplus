@@ -3,7 +3,7 @@
   <section class="l-single p-single">
     <h2 class="p-single__title c-section-title">work</h2>
     <figure class="p-single__img">
-      <?php the_post_thumbnail('large')?>
+      <img src="<?php the_post_thumbnail_url(); ?>" alt="紹介画像1">
     </figure>
     <div class="p-single__subTitle-wrapper">
       <p class="p-single__subTitle">社員インタビュー</p>

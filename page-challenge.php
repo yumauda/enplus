@@ -39,7 +39,7 @@
             <h3 class="c-year-title" data-year="テープレコーダー用">プラスチックカウンター</h3>
           </div>
           <div class="p-year__text">
-            <p class="c-year-text">【世界初・世界一】<br>独自設計ビデオカセット用リール「エンプラスリール｣を開発・製品化テープレコーダー用プラスチックカウンターを開発・製品化VTR用テープガイドローラー「VDGローラー｣を開発</p>
+            <p class="c-year-text">独自設計ビデオカセット用リール「エンプラスリール｣を開発・製品化テープレコーダー用プラスチックカウンターを開発・製品化<br>VTR用テープガイドローラー「VDGローラー｣を開発</p>
           </div>
         </div>
         <figure class="p-year__img--1970">
@@ -73,7 +73,7 @@
             <h3 class="c-year-title" data-year="世界初のターボチャージャー用">樹脂インペラー</h3>
           </div>
           <div class="p-year3__text">
-            <p class="c-year-text">【世界初】<br>
+            <p class="c-year-text">
               ターボチャージャー用樹脂インペラーを開発</p>
           </div>
         </div>
@@ -91,7 +91,7 @@
             <h3 class="c-year-title" data-year="携帯電話向けカメラ用">レンズモジュール</h3>
           </div>
           <div class="p-year4__text">
-            <p class="c-year-text">【世界一】<br>
+            <p class="c-year-text">
               携帯電話用小型レンズユニット製品化</p>
           </div>
         </div>
@@ -106,10 +106,10 @@
       <div class="p-year5__content">
         <div class="p-year5__detail">
           <div class="p-year5__title">
-            <h3 class="c-year-title" data-year="LED液晶テレビ用">Light Enhancer Cap（LE-Cap）</h3>
+            <h3 class="c-year-title" data-year="LED液晶テレビ用">Light Enhancer Cap™</h3>
           </div>
           <div class="p-year5__text">
-            <p class="c-year-text">【世界初・世界一】<br>
+            <p class="c-year-text">
               LED用光拡散レンズ製品化</p>
           </div>
         </div>
