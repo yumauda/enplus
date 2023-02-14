@@ -186,7 +186,7 @@
             <div class="swiper-slide p-slider__card">
               <a href="<?php the_permalink(); ?>" class="p-slider__link">
                 <figure class="p-slider__img">
-                  <img src="<?php the_field('group_img_top') ?>" alt="<?php the_title(); ?>">
+                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 </figure>
                 <div class="p-slider__detail">
                   <h4 class="p-slider__subTitle"><?php the_field('group_name') ?></h4>
@@ -254,10 +254,10 @@
           <a href="<?php echo esc_url(home_url('/question/')); ?>" class="p-information__btn">Q&A</a>
         </div>
         <div class="p-information__btn-wrapper">
-          <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-information__btn">新卒採用募集要項</a>
+          <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-information__btn">新卒募集要項</a>
         </div>
         <div class="p-information__btn-wrapper">
-          <a href="<?php echo esc_url(home_url('/career/')); ?>" class="p-information__btn">中途採用募集要項</a>
+          <a href="<?php echo esc_url(home_url('/career/')); ?>" class="p-information__btn">キャリア募集要項</a>
         </div>
       </div>
     </div>

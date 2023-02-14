@@ -18,6 +18,16 @@
       </li>
       <li class="p-number__list">
         <figure class="p-number__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/number_card2.5.jpg" alt="Essential製品比率">
+        </figure>
+      </li>
+      <li class="p-number__list">
+        <figure class="p-number__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/number_card2.6.jpg" alt="3年以内新製品比率">
+        </figure>
+      </li>
+      <li class="p-number__list">
+        <figure class="p-number__img">
           <img src="<?php echo get_template_directory_uri() ?>/images/common/number_card3.jpg" alt="売上比率">
         </figure>
       </li>

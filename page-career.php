@@ -2,7 +2,7 @@
 <main>
   <section class="l-page-mv p-page-mv p-page-mv--career">
     <h2 class="c-section-title">recruiting</h2>
-    <p class="p-page-mv__text u-desktop">キャリア募集要項</p>
+    <p class="p-page-mv__text">キャリア募集要項</p>
   </section>
   <section class="l-invite p-invite">
     <div class="l-inner">
@@ -152,7 +152,7 @@
             <th class="p-table__item">昇給・賞与</th>
             <td class="p-table__body">
               <div class="p-table__select">
-                <p class="p-table__top">■ 昇給あり年1回…4月<br>■賞与あり年2回…6月、12月</p>
+                <p class="p-table__top">■昇給あり年1回…4月<br>■賞与あり年2回…6月、12月</p>
               </div>
             </td>
           </tr>

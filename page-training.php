@@ -66,7 +66,7 @@
             <div class="p-training__detail">
               <h4 class="p-training__subTitle">階層別研修</h4>
               <div class="p-training__text-wrapper">
-                <p class="p-training__text">階層にあった知識習得・スキル向上を目的とし、ロジカルシンキング、タイムマネジメントなどを学習します、</p>
+                <p class="p-training__text">階層にあった知識習得・スキル向上を目的とし、ロジカルシンキング、タイムマネジメントなどを学習します。</p>
               </div>
             </div>
             <figure class="p-training__img">

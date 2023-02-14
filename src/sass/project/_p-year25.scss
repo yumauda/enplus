@@ -1,28 +1,25 @@
 @use "global" as *;
 
-.p-year2 {
+.p-year25 {
   position: relative;
-  padding-top: rem(64);
-  padding-bottom: rem(64);
-  @include mq(md) {
-    padding-top: rem(120);
-    padding-bottom: rem(40);
-  }
+  margin-top: rem(-64);
 }
-.p-year2::before {
+.p-year25::before {
   position: absolute;
   content: "";
   width: 100%;
   background: #f0f3f7;
-  top: 15%;
+  top: 1%;
   height: 75%;
+  z-index: -1;
   @include mq(md){
-    top: 32%;
-    height: 37%;
+    top: -5%;
+    height: 78%;
+
   }
 }
-.p-year2__content {
-  max-width: rem(922.5);
+.p-year25__content {
+  max-width: rem(940.5);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -33,45 +30,30 @@
     align-items: center;
   }
 }
-.p-year2__content::after {
-  content: "1980s";
-  position: absolute;
-  font-family: $second-font-family;
-  font-weight: 700;
-  color: #f0f3f7;
-  left: 0;
-  top: rem(-72);
-  z-index: -1;
-  font-size: rem(72);
-  @include mq(md) {
-    top: rem(-94);
-    left: initial;
-    right: 0;
-    font-size: rem(202.5);
-  }
-}
-.p-year2__detail {
+.p-year25__detail {
   max-width: rem(319.5);
   width: 100%;
   margin-top: rem(36);
   position: relative;
   z-index: 1;
   @include mq(md) {
-    margin-left: rem(53.25);
+    max-width: rem(330);
+    margin-left: rem(24);
   }
 }
-.p-year2__title {
+.p-year25__title {
   white-space: nowrap;
 }
-.p-year2__text {
+.p-year25__text {
   max-width: rem(254.25);
   width: 100%;
   margin-top: rem(12);
   @include mq(md) {
+    max-width: initial;
     margin-top: rem(22.5);
   }
 }
-.p-year2__img {
+.p-year25__img {
   max-width: rem(500.75);
   width: 100%;
   position: relative;

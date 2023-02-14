@@ -80,7 +80,7 @@
                             </ul>
                         </li>
                         <li class="p-header__list js-text">
-                            採用情報
+                        キャリア募集要項
                             <ul class="p-header__menus">
                                 <li class="p-header__menu">
                                     <a href="<?php echo esc_url(home_url('/question/')); ?>" class="p-header__menuLink">Q&A</a>

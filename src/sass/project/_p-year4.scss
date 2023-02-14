@@ -7,6 +7,7 @@
   @include mq(md) {
     padding-top: rem(32);
     padding-bottom: rem(40);
+    margin-top: rem(72);
   }
 }
 .p-year4::before {
@@ -17,8 +18,8 @@
   top: 15%;
   height: 88%;
   @include mq(md){
-    height: 41%;
-    top: 31%;
+    height: 55%;
+    top: 20%;
 
   }
 }
@@ -40,13 +41,13 @@
   font-family: $second-font-family;
   font-weight: 700;
   color: #f0f3f7;
-  top: rem(-100);
+  top: rem(-88);
   z-index: -1;
   font-size: rem(72);
   left: 0;
   @include mq(md) {
     font-size: rem(202.5);
-    top: rem(-60);
+    top: rem(-176);
     right: 0;
     left: initial;
   }

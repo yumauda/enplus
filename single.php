@@ -3,7 +3,7 @@
   <section class="l-single p-single">
     <h2 class="p-single__title c-section-title">work</h2>
     <figure class="p-single__img">
-      <img src="<?php the_post_thumbnail_url(); ?>" alt="紹介画像1">
+      <img src="<?php the_field('group_img_top') ?>" alt="紹介画像1">
     </figure>
     <div class="p-single__subTitle-wrapper">
       <p class="p-single__subTitle">社員インタビュー</p>
@@ -107,11 +107,11 @@
                   <figure class="p-pager__img">
                     <img src="<?php echo get_the_post_thumbnail($prevpost->ID); ?>" alt="前に戻る">
                   </figure>
-                  <div class="p-pager__data">
+                  <!-- <div class="p-pager__data">
                     <p class="p-pager__text">生産本部生産部</p>
                     <p class="p-pager__text">品質管理G</p>
                     <p class="p-pager__text">2020年入社</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </a>
@@ -132,11 +132,11 @@
                   <figure class="p-pager__img">
                     <img src="<?php echo get_the_post_thumbnail($nextpost->ID); ?>" alt="前に戻る">
                   </figure>
-                  <div class="p-pager__data">
+                  <!-- <div class="p-pager__data">
                     <p class="p-pager__text">生産本部生産部</p>
                     <p class="p-pager__text">品質管理G</p>
                     <p class="p-pager__text">2020年入社</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </a>

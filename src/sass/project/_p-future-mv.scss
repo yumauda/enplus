@@ -3,10 +3,15 @@
 .p-future-mv {
   height: rem(360);
   position: relative;
-  background: url(../images/common/mv_future.jpg);
+  background: url(../images/common/mv_future_sp.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: rem(73);
+  @include mq(md) {
+    background: url(../images/common/mv_future.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-

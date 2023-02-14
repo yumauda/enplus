@@ -65,6 +65,23 @@
       </div>
     </div>
   </section>
+  <section class="l-year25 p-year25">
+    <div class="l-inner">
+      <div class="p-year25__content">
+        <div class="p-year25__detail">
+          <div class="p-year25__title">
+            <h3 class="c-year-title" data-year="光通信用">プラスチックレンズ</h3>
+          </div>
+          <div class="p-year25__text">
+            <p class="c-year-text">「光通信用プラスチックレンズ」を開発・製品化</p>
+          </div>
+        </div>
+        <figure class="p-year25__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/year_img25.png" alt="プラスチックレンズ">
+        </figure>
+      </div>
+    </div>
+  </section>
   <section class="l-year3 p-year3">
     <div class="l-inner">
       <div class="p-year3__content">

@@ -175,7 +175,7 @@
   </section>
   <section class="l-digital p-digital" id="digital">
     <div class="p-digital__title">
-      <h3 class="c-solution-title c-solution-title--long" data-solution="digital communication">半導体分野</h3>
+      <h3 class="c-solution-title c-solution-title--long" data-solution="digital communication">光学分野</h3>
     </div>
     <div class="l-inner">
       <div class="p-digital__contents">

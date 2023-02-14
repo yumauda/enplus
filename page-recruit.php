@@ -148,7 +148,7 @@
               <div class="p-table__select">
                 <p class="p-table__top">エントリーはこちら(マイナビ)<br>
                   ※新型コロナウイルスへの対応を掲載しております。</p>
-                <a href="#" class="p-table__link">
+                <a href="https://job.mynavi.jp/24/pc/search/corp112714/outline.html" class="p-table__link" target="_blank" rel="noopener noreferrer">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mynavi.jpg" alt="マイナビ">
                 </a>
               </div>
@@ -190,7 +190,7 @@
         </table>
       </div>
       <div class="p-recruit__btn">
-        <a href="#" class="c-btn--big">entry</a>
+        <a href="https://job.mynavi.jp/24/pc/search/corp112714/outline.html" class="c-btn--big" target="_blank" rel="noopener noreferrer">entry</a>
       </div>
     </div>
   </div>
