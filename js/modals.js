@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
       openModalBtn.addEventListener("click", () => {
         // data-modalで設定したスライド番号を取得
         const modalIndex = openModalBtn.getAttribute('data-modal');
-        slider3.slideTo(modalIndex - 1);
+        slider3.slideTo(modalIndex);
         modal.classList.add("is-active");
       });
     });

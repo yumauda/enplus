@@ -3458,6 +3458,27 @@ select::-ms-expand {
   }
 }
 
+.p-menu__link:hover .c-btn::before {
+  width: 37.5px;
+  height: 37.5px;
+  background: url(../images/common/btn_box_reverse.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #050d9e;
+  z-index: 3;
+}
+
+.p-menu__link:hover .c-btn::after {
+  background: url(../images/common/btn_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 97px;
+  height: 6px;
+  left: 9px;
+}
+
 .p-message {
   padding-top: 37.5px;
   padding-top: 2.34375rem;
@@ -3693,8 +3714,8 @@ select::-ms-expand {
 .p-modal__content {
   position: relative;
   width: 100%;
-  max-width: 984px;
-  max-width: 61.5rem;
+  max-width: 780px;
+  max-width: 48.75rem;
   padding: 20px;
   padding: 1.25rem;
   display: -webkit-box;
@@ -3702,18 +3723,21 @@ select::-ms-expand {
   display: flex;
 }
 
-.p-modal__content .swiper-button-next,
-.p-modal__content .swiper-button-prev {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+@media screen and (min-width: 768px) {
+  .p-modal__content .swiper-button-next,
+  .p-modal__content .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .p-modal__inner {
   max-width: 980px;
   max-width: 61.25rem;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3732,7 +3756,7 @@ select::-ms-expand {
 /* 閉じるボタン */
 .p-modal__close-btn {
   position: absolute;
-  top: 27%;
+  top: -10%;
   background: transparent;
   cursor: pointer;
   z-index: 20;
@@ -3746,7 +3770,7 @@ select::-ms-expand {
   .p-modal__close-btn {
     width: 3.25rem;
     height: 3.25rem;
-    top: 32%;
+    top: -5%;
     right: 1%;
   }
 }
@@ -3792,57 +3816,34 @@ select::-ms-expand {
           transform: rotate(90deg);
 }
 
-.p-modal__img {
-  max-width: 580px;
-  max-width: 36.25rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  position: relative;
-}
-
 .p-modal__prev {
-  background: url(../images/common/modal-prev.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: transparent;
   width: 41.5px;
   width: 2.59375rem;
-  height: 8px;
-  height: 0.5rem;
-  left: -5%;
+  height: 20px;
+  height: 1.25rem;
+  left: 0;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .p-modal__prev {
     left: -8%;
-    width: 2.59375rem;
-    height: 0.5rem;
   }
 }
 
 .p-modal__next {
-  background: url(../images/common/modal-next.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 41.5px;
   width: 2.59375rem;
-  height: 8px;
-  height: 0.5rem;
-  right: -5%;
+  height: 20px;
+  height: 1.25rem;
+  display: inline-block;
+  right: 0;
   color: transparent;
 }
 @media screen and (min-width: 768px) {
   .p-modal__next {
     right: -8%;
-    width: 2.59375rem;
-    height: 0.5rem;
   }
-}
-
-.p-modal__swiper-wrapper {
-  margin-top: 60%;
 }
 
 .p-number {
@@ -7936,23 +7937,6 @@ select::-ms-expand {
   height: 2.5px;
 }
 
-/* .c-btn--white:hover {
-  color: $blue;
-}
-.c-btn--white:hover::after {
-  width: rem(75);
-  left: rem(15);
-  background: $blue;
-}
-.c-btn--white:hover::before {
-  width: rem(37.5);
-  height: rem(37.5);
-  background: url(../images/common/btn_box.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid $white;
-} */
 .c-btn--big {
   font-size: 30px;
   font-size: 1.875rem;

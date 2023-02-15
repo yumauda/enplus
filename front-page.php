@@ -207,37 +207,43 @@
       <div class="p-menu__content">
         <ul class="p-menu__cards">
           <li class="p-menu__card">
-            <figure class="p-menu__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img1.jpg" alt="研修制度">
-            </figure>
-            <div class="p-menu__detail">
-              <h3 class="p-menu__title">研修制度</h3>
-              <div class="p-menu__btn">
-                <a href="<?php echo esc_url(home_url('/training/')); ?>" class="c-btn">Read&nbsp;more</a>
+            <a href="<?php echo esc_url(home_url('/training/')); ?>" class="p-menu__link">
+              <figure class="p-menu__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img1.jpg" alt="研修制度">
+              </figure>
+              <div class="p-menu__detail">
+                <h3 class="p-menu__title">研修制度</h3>
+                <div class="p-menu__btn">
+                  <div class="c-btn">Read&nbsp;more</div>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="p-menu__card">
-            <figure class="p-menu__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img2.jpg" alt="福利厚生">
-            </figure>
-            <div class="p-menu__detail">
-              <h3 class="p-menu__title">福利厚生</h3>
-              <div class="p-menu__btn">
-                <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="c-btn">Read&nbsp;more</a>
+            <a href="<?php echo esc_url(home_url('/environment/')); ?>" class="p-menu__link">
+              <figure class="p-menu__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img2.jpg" alt="福利厚生">
+              </figure>
+              <div class="p-menu__detail">
+                <h3 class="p-menu__title">福利厚生</h3>
+                <div class="p-menu__btn">
+                  <div class="c-btn">Read&nbsp;more</div>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="p-menu__card">
-            <figure class="p-menu__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img3.jpg" alt="エンプラスの取り組み">
-            </figure>
-            <div class="p-menu__detail">
-              <h3 class="p-menu__title">ギャラリー</h3>
-              <div class="p-menu__btn">
-                <a href="<?php echo esc_url(home_url('/gallery/')); ?>" class="c-btn">Read&nbsp;more</a>
+            <a href="<?php echo esc_url(home_url('/gallery/')); ?>" class="p-menu__link">
+              <figure class="p-menu__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img3.jpg" alt="エンプラスの取り組み">
+              </figure>
+              <div class="p-menu__detail">
+                <h3 class="p-menu__title">ギャラリー</h3>
+                <div class="p-menu__btn">
+                  <div class="c-btn">Read&nbsp;more</div>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
