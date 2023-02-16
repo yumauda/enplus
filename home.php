@@ -17,9 +17,6 @@
               <div class="p-interview__detail">
                 <p class="p-interview__cardTitle"><?php the_field('group_name') ?></p>
                 <p class="p-interview__cardTitle"><?php the_field('group_year') ?></p>
-                <div class="p-interview__name-wrapper">
-                  <h3 class="p-interview__name"><?php the_title(); ?></h3>
-                </div>
               </div>
             </a>
           </li>
